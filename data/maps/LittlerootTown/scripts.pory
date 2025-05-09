@@ -1023,6 +1023,8 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 `
 script LittlerootTown_EventScript_NewSign {
     lockall
-    msgbox("Hello? Hello?")
+    msgbox(format("Welcome to my romhack! This romhack is designed to be nuzlocked, so prepare yourself accordingly! There are options in the lab
+	to set the play options to fit whatever you like."))
     releaseall
+	end
 }

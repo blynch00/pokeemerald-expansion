@@ -1,0 +1,75 @@
+raw `
+OldaleTown_House1_MapScripts::
+	.byte 0
+
+`
+
+script OldaleTown_House1_EventScript_Woman {
+
+    lockall
+    msgbox(format("Hello! I have this Eevee, but I think it is lonely. Do 
+    you mind taking care of it?"))
+    release
+    end
+}
+
+script OldaleTown_House1_EventScript_Pokeball{
+
+    lockall
+    showmonpic(SPECIES_EEVEE, 10, 3)
+    msgbox(format("Would you like to add Eevee to your party?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_EEVEE, 5, ITEM_ORAN_BERRY)
+        if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("You got Eevee!")
+            removeobject(2)
+            setflag(FLAG_GIFT_MON_0x264)
+            call(NicknamePartyMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("You got Eevee!")
+            removeobject(2)
+            setflag(FLAG_GIFT_MON_0x264)
+            call(NicknameBoxMon)
+        }
+        else{
+            hidemonpic
+            msgbox("No more room.")
+        }
+    }
+
+    else{
+        hidemonpic
+        msgbox(OldaleTown_House1_Pokeball_Not_Chosen)
+    }
+    waitmessage
+    releaseall
+    end
+}
+
+script NicknamePartyMon{
+    msgbox("Give this Eevee a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_GetGiftMonPartySlot)
+        call(Common_EventScript_NameReceivedPartyMon)
+
+    }
+}
+
+script NicknameBoxMon{
+    msgbox("Give this Eevee a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_NameReceivedBoxMon)
+    }
+    msgbox("Transferred to PC.")
+    call(Common_EventScript_TransferredToPC) //MUST BUFFER??
+
+}
+
+text OldaleTown_House1_Pokeball_Not_Chosen{
+    "You didn't take the Eevee."
+}

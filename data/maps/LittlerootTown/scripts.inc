@@ -2046,11 +2046,15 @@ LittlerootTown_EventScript_NewSign::
 	lockall
 # 1026 "data/maps/LittlerootTown/scripts.pory"
 	msgbox LittlerootTown_EventScript_NewSign_Text_0
-# 1027 "data/maps/LittlerootTown/scripts.pory"
+# 1028 "data/maps/LittlerootTown/scripts.pory"
 	releaseall
-	return
+	end
 
 
 LittlerootTown_EventScript_NewSign_Text_0:
 # 1026 "data/maps/LittlerootTown/scripts.pory"
-	.string "Hello? Hello?$"
+	.string "Welcome to my romhack! This romhack is\n"
+	.string "designed to be nuzlocked, so prepare\l"
+	.string "yourself accordingly! There are options\l"
+	.string "in the lab to set the play options to\l"
+	.string "fit whatever you like.$"
