@@ -45,3 +45,7 @@ tools/trainerproc/trainerproc
 *.smol
 *.fastSmol
 *.smolTM
+test.inc
+test.pory
+poryscript.exe
+poryscript
