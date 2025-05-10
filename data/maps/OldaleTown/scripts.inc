@@ -824,7 +824,7 @@ OldaleTown_EventScript_Meowth_Rare_Candy_2:
 # 409 "data/maps/OldaleTown/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 410 "data/maps/OldaleTown/scripts.pory"
-	giveitem ITEM_GOLD_BOTTLE_CAP, [ 99 ]
+	giveitem ITEM_MASTER_BALL, [ 99 ]
 # 411 "data/maps/OldaleTown/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 	goto OldaleTown_EventScript_Meowth_Rare_Candy_1
@@ -833,7 +833,7 @@ OldaleTown_EventScript_Meowth_Rare_Candy_2:
 OldaleTown_EventScript_Meowth_Rare_Candy_Text_0:
 # 406 "data/maps/OldaleTown/scripts.pory"
 	.string "It looks like Meowth wants to give you\n"
-	.string "rare candies and bottle caps. Do you\l"
+	.string "rare candies and Pokeballs. Do you\l"
 	.string "accept?$"
 
 OldaleTown_House1_No_Rare_Candies::

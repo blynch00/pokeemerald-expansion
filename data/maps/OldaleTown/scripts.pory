@@ -403,11 +403,11 @@ OldaleTown_Text_TownSign:
 script OldaleTown_EventScript_Meowth_Rare_Candy{
 
     lockall
-    msgbox(format("It looks like Meowth wants to give you rare candies and bottle caps. Do you accept?"), MSGBOX_YESNO)
+    msgbox(format("It looks like Meowth wants to give you rare candies and Pokeballs. Do you accept?"), MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
         giveitem(ITEM_RARE_CANDY, [99])
         playfanfare(MUS_OBTAIN_ITEM)
-		giveitem(ITEM_GOLD_BOTTLE_CAP, [99])
+		giveitem(ITEM_MASTER_BALL, [99])
         playfanfare(MUS_OBTAIN_ITEM)
         }
     else{
