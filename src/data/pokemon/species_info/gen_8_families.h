@@ -948,6 +948,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
             gOverworldPalette_Rookidee,
             gShinyOverworldPalette_Rookidee
         )
+        .perfectIVCount = 6,
         .levelUpLearnset = sRookideeLevelUpLearnset,
         .teachableLearnset = sRookideeTeachableLearnset,
         .eggMoveLearnset = sRookideeEggMoveLearnset,
