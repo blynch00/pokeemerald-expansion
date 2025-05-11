@@ -7,8 +7,12 @@ OldaleTown_House1_MapScripts::
 script OldaleTown_House1_EventScript_Woman {
 
     lockall
-    msgbox(format("Hello! I have this Eevee, but I think it is lonely. Do 
-    you mind taking care of it?"))
+    if (!(flag(FLAG_GIFT_MON_0x264))){
+    msgbox(format("Hello! I have this Eevee, but I think it is lonely. Please take care of it for me!"))
+    }
+    else{
+    msgbox(format("Thank you for being so kind to Pokemon!"))
+    }
     release
     end
 }
