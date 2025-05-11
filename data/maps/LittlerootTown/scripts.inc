@@ -2046,15 +2046,21 @@ LittlerootTown_EventScript_NewSign::
 	lockall
 # 1026 "data/maps/LittlerootTown/scripts.pory"
 	msgbox LittlerootTown_EventScript_NewSign_Text_0
-# 1028 "data/maps/LittlerootTown/scripts.pory"
+# 1032 "data/maps/LittlerootTown/scripts.pory"
 	releaseall
 	end
 
 
 LittlerootTown_EventScript_NewSign_Text_0:
 # 1026 "data/maps/LittlerootTown/scripts.pory"
-	.string "Welcome to my romhack! This romhack is\n"
-	.string "designed to be nuzlocked, so prepare\l"
-	.string "yourself accordingly! There are options\l"
-	.string "in the lab to set the play options to\l"
-	.string "fit whatever you like.$"
+	.string "Welcome to the romhack! Here are the\n"
+	.string "presets of the game:\n"
+	.string "1. All IVs have been automatically set\l"
+	.string "to 31.\n"
+	.string "2. All EVs have been disabled.\n"
+	.string "3. Level caps are present for every gym\l"
+	.string "leader, and for the clearance of\l"
+	.string "gauntlet routes.\n"
+	.string "4. Meowths and Care Package Guys can\l"
+	.string "be found in every major city.\n"
+	.string "Enjoy the game!$"

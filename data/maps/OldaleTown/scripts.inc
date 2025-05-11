@@ -809,12 +809,12 @@ OldaleTown_EventScript_Meowth_Rare_Candy::
 # 407 "data/maps/OldaleTown/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq OldaleTown_EventScript_Meowth_Rare_Candy_2
-# 414 "data/maps/OldaleTown/scripts.pory"
+# 415 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_House1_No_Rare_Candies
 OldaleTown_EventScript_Meowth_Rare_Candy_1:
-# 416 "data/maps/OldaleTown/scripts.pory"
-	waitmessage
 # 417 "data/maps/OldaleTown/scripts.pory"
+	waitmessage
+# 418 "data/maps/OldaleTown/scripts.pory"
 	releaseall
 	end
 
@@ -824,8 +824,10 @@ OldaleTown_EventScript_Meowth_Rare_Candy_2:
 # 409 "data/maps/OldaleTown/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 410 "data/maps/OldaleTown/scripts.pory"
-	giveitem ITEM_MASTER_BALL, [ 99 ]
+	giveitem ITEM_QUICK_BALL, [ 99 ]
 # 411 "data/maps/OldaleTown/scripts.pory"
+	giveitem ITEM_TIMER_BALL, [ 99 ]
+# 412 "data/maps/OldaleTown/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 	goto OldaleTown_EventScript_Meowth_Rare_Candy_1
 
@@ -837,5 +839,5 @@ OldaleTown_EventScript_Meowth_Rare_Candy_Text_0:
 	.string "accept?$"
 
 OldaleTown_House1_No_Rare_Candies::
-# 421 "data/maps/OldaleTown/scripts.pory"
+# 422 "data/maps/OldaleTown/scripts.pory"
 	.string "No items were given.$"

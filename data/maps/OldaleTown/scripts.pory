@@ -407,7 +407,8 @@ script OldaleTown_EventScript_Meowth_Rare_Candy{
     if(var(VAR_RESULT) == YES){
         giveitem(ITEM_RARE_CANDY, [99])
         playfanfare(MUS_OBTAIN_ITEM)
-		giveitem(ITEM_MASTER_BALL, [99])
+		giveitem(ITEM_QUICK_BALL, [99])
+		giveitem(ITEM_TIMER_BALL, [99])
         playfanfare(MUS_OBTAIN_ITEM)
         }
     else{
