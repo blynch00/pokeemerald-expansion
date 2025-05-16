@@ -794,11 +794,11 @@ script PetalburgCity_EventScript_Treeko_CarePackage {
 			setflag(FLAG_PETALBURG_GIFT_0x265)
         }
     	else{
-        msgbox(OldaleTown_House1_No_Rare_Candies)
+        msgbox(PetalburgCity_No_CarePackage)
     	}
 	}
 	else {
-	msgbox(format("Treeko grins at you."))
+	msgbox(format("{COLOR GREEN}Treeko grins at you."))
 	}
     waitmessage
     releaseall

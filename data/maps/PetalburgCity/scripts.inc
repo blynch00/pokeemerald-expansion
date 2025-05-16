@@ -1556,7 +1556,7 @@ PetalburgCity_EventScript_Treeko_CarePackage_2:
 	compare VAR_RESULT, YES
 	goto_if_eq PetalburgCity_EventScript_Treeko_CarePackage_5
 # 797 "data/maps/PetalburgCity/scripts.pory"
-	msgbox OldaleTown_House1_No_Rare_Candies
+	msgbox PetalburgCity_No_CarePackage
 	goto PetalburgCity_EventScript_Treeko_CarePackage_1
 
 PetalburgCity_EventScript_Treeko_CarePackage_5:
@@ -1608,7 +1608,7 @@ PetalburgCity_EventScript_Treeko_CarePackage_Text_0:
 
 PetalburgCity_EventScript_Treeko_CarePackage_Text_1:
 # 801 "data/maps/PetalburgCity/scripts.pory"
-	.string "Treeko grins at you.$"
+	.string "{COLOR GREEN}Treeko grins at you.$"
 
 PetalburgCity_No_CarePackage::
 # 808 "data/maps/PetalburgCity/scripts.pory"

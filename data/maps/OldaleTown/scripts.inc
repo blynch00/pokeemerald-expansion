@@ -828,11 +828,95 @@ OldaleTown_EventScript_Meowth_Rare_Candy_2:
 	goto OldaleTown_EventScript_Meowth_Rare_Candy_1
 
 
+OldaleTown_EventScript_OldRodFisherman::
+# 425 "data/maps/OldaleTown/scripts.pory"
+	lock
+# 426 "data/maps/OldaleTown/scripts.pory"
+	faceplayer
+# 427 "data/maps/OldaleTown/scripts.pory"
+	goto_if_set FLAG_RECEIVED_OLD_ROD, OldaleTown_EventScript_OldRodFisherman_2
+# 431 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_OldRodFisherman_Text_1, MSGBOX_YESNO
+# 432 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq OldaleTown_EventScript_OldRodFisherman_5
+# 437 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_OldRodFisherman_Text_2, MSGBOX_DEFAULT
+# 438 "data/maps/OldaleTown/scripts.pory"
+	release
+	end
+
+OldaleTown_EventScript_OldRodFisherman_1:
+# 442 "data/maps/OldaleTown/scripts.pory"
+	release
+	end
+
+OldaleTown_EventScript_OldRodFisherman_2:
+# 428 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_OldRodFisherman_Text_0, MSGBOX_DEFAULT
+	goto OldaleTown_EventScript_OldRodFisherman_1
+
+OldaleTown_EventScript_OldRodFisherman_5:
+# 433 "data/maps/OldaleTown/scripts.pory"
+	call OldaleTown_EventScript_GiveOldRod
+# 434 "data/maps/OldaleTown/scripts.pory"
+	setflag FLAG_RECEIVED_OLD_ROD
+	goto OldaleTown_EventScript_OldRodFisherman_1
+
+
+OldaleTown_EventScript_GiveOldRod::
+# 447 "data/maps/OldaleTown/scripts.pory"
+	checkitem ITEM_OLD_ROD
+# 448 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq OldaleTown_EventScript_GiveOldRod_2
+# 452 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq OldaleTown_EventScript_GiveOldRod_3
+OldaleTown_EventScript_GiveOldRod_1:
+	return
+
+OldaleTown_EventScript_GiveOldRod_2:
+# 449 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_GiveOldRod_Text_0, MSGBOX_DEFAULT
+# 450 "data/maps/OldaleTown/scripts.pory"
+	setflag FLAG_RECEIVED_OLD_ROD
+	goto OldaleTown_EventScript_GiveOldRod_1
+
+OldaleTown_EventScript_GiveOldRod_3:
+# 453 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_GiveOldRod_Text_1, MSGBOX_DEFAULT
+# 454 "data/maps/OldaleTown/scripts.pory"
+	giveitem ITEM_OLD_ROD, [ 1 ]
+	goto OldaleTown_EventScript_GiveOldRod_1
+
+
 OldaleTown_EventScript_Meowth_Rare_Candy_Text_0:
 # 406 "data/maps/OldaleTown/scripts.pory"
-	.string "It looks like Meowth wants to give you\n"
+	.string "{COLOR DARK_GRAY}It looks like Meowth wants to give you\n"
 	.string "rare candies and Pokeballs. Do you\l"
 	.string "accept?$"
+
+OldaleTown_EventScript_OldRodFisherman_Text_0:
+# 428 "data/maps/OldaleTown/scripts.pory"
+	.string "Hey there! Hope the fish are biting.\n"
+	.string "There are a lot of pokemon to catch!$"
+
+OldaleTown_EventScript_OldRodFisherman_Text_1:
+# 431 "data/maps/OldaleTown/scripts.pory"
+	.string "Hey there, trainer! Do you like to fish?$"
+
+OldaleTown_EventScript_OldRodFisherman_Text_2:
+# 437 "data/maps/OldaleTown/scripts.pory"
+	.string "Shame. Shame.$"
+
+OldaleTown_EventScript_GiveOldRod_Text_0:
+# 449 "data/maps/OldaleTown/scripts.pory"
+	.string "Looks like you already have an old rod.$"
+
+OldaleTown_EventScript_GiveOldRod_Text_1:
+# 453 "data/maps/OldaleTown/scripts.pory"
+	.string "Take this!$"
 
 OldaleTown_House1_No_Rare_Candies::
 # 420 "data/maps/OldaleTown/scripts.pory"

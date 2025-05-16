@@ -1023,11 +1023,11 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 `
 script LittlerootTown_EventScript_NewSign {
     lockall
-    msgbox(format("Welcome to the romhack! Here are the presets of the game:\n
-	1. All IVs have been automatically set to 31.\n
-	2. All EVs have been disabled.\n
-	3. Level caps are present for every gym leader, and for the clearance of gauntlet routes.\n
-	4. Meowths and Care Package Guys can be found in every major city.\n
+    msgbox(format("Welcome to the romhack! Here are the presets of the game:\p
+	1. All IVs have been automatically set to 31.\p
+	2. All EVs have been disabled.\p
+	3. Level caps are present for every gym leader, and for the clearance of gauntlet routes.\p
+	4. Meowths and Care Package Guys can be found in every major city.\p
 	Enjoy the game!"))
     releaseall
 	end

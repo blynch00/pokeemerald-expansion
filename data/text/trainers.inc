@@ -65,7 +65,7 @@ Route102_Text_TianaIntro:
 Route102_Text_TianaDefeated:
 	.string "I ended up furthering your career…$"
 
-Route102_Text_TianaPostBattle:
+Route102_Text_PostBattle:
 	.string "To keep winning my way up, I see that\n"
 	.string "I have to catch more POKéMON.$"
 

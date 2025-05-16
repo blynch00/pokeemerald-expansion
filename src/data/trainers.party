@@ -5940,7 +5940,7 @@ Hariyama
 Level: 39
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
-=== TRAINER_CALVIN_1 ===
+=== TRAINER_CALVIN_1 === /*Route 102*/
 Name: CALVIN
 Class: Youngster
 Pic: Youngster
@@ -5949,9 +5949,22 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Poochyena @ Oran Berry
+Level: 8
+Ability: ABILITY_RATTLED
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Tackle
+- Sand Attack
+- Bite
+- Howl
+
+Zigzagoon @ Oran Berry
+Level: 8
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Covet
+- Sand Attack
+- Growl
+- Tail Whip
 
 === TRAINER_BILLY ===
 Name: BILLY
@@ -6216,12 +6229,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Zigzagoon
-Level: 4
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Taillow
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Taillow @ Silk Scarf  
+Ability: Guts  
+Level: 9
+- Peck  
+- Quick Attack  
+- Growl
 
 === TRAINER_TIMMY ===
 Name: TIMMY
@@ -11051,15 +11067,36 @@ Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move 
 
-Zigzagoon
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rockruff @ Hard Stone  
+Ability: Vital Spirit  
+Level: 8  
+Adamant Nature  
+- Rock Throw  
+- Bite  
+- Leer  
+- Taunt  
 
-Shroomish
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bellsprout @ Oran Berry  
+Ability: Gluttony  
+Level: 8  
+Bold Nature   
+- Acid  
+- Magical Leaf  
+- Stun Spore  
+- Tickle  
+
+Lechonk @ Oran Berry  
+Ability: Thick Fat  
+Level: 10   
+Bashful Nature  
+- Covet  
+- Mud-Slap  
+- Stuff Cheeks  
+- Trailblaze  
+
+
 
 === TRAINER_HALEY_1 ===
 Name: HALEY
@@ -11257,13 +11294,21 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wurmple @ Oran Berry  
+Ability: Shield Dust  
+Level: 8  
+- Bug Bite  
+- String Shot  
+- Poison Sting  
+- Electroweb
 
-Wurmple
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Drowzee @ Twisted Spoon  
+Ability: Inner Focus  
+Level: 8  
+- Swift  
+- Confusion  
+- Taunt
 
 === TRAINER_LYLE ===
 Name: LYLE

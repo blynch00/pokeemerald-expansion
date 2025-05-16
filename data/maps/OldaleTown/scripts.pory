@@ -403,7 +403,7 @@ OldaleTown_Text_TownSign:
 script OldaleTown_EventScript_Meowth_Rare_Candy{
 
     lockall
-    msgbox(format("It looks like Meowth wants to give you rare candies and Pokeballs. Do you accept?"), MSGBOX_YESNO)
+    msgbox(format("{COLOR DARK_GRAY}It looks like Meowth wants to give you rare candies and Pokeballs. Do you accept?"), MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
         giveitem(ITEM_RARE_CANDY, [99])
 		giveitem(ITEM_QUICK_BALL, [99])
@@ -419,4 +419,39 @@ script OldaleTown_EventScript_Meowth_Rare_Candy{
 
 text OldaleTown_House1_No_Rare_Candies{
     "No items were given."
+}
+
+script OldaleTown_EventScript_OldRodFisherman{
+	lock
+	faceplayer
+	if(flag(FLAG_RECEIVED_OLD_ROD)){
+		msgbox(format("Hey there! Hope the fish are biting. There are a lot of pokemon to catch!"), MSGBOX_DEFAULT)
+	}
+	else{
+		msgbox (format("Hey there, trainer! Do you like to fish?"), MSGBOX_YESNO)
+			if(var(VAR_RESULT)== YES){
+				call(OldaleTown_EventScript_GiveOldRod)
+				setflag(FLAG_RECEIVED_OLD_ROD)
+				}
+			else{
+				msgbox(format("Shame. Shame."), MSGBOX_DEFAULT)
+				release
+				end
+			}
+	} 
+	release
+	end
+	}
+
+script OldaleTown_EventScript_GiveOldRod{
+	checkitem(ITEM_OLD_ROD)
+	if(var(VAR_RESULT) == TRUE){
+		msgbox(format("Looks like you already have an old rod."), MSGBOX_DEFAULT)
+		setflag(FLAG_RECEIVED_OLD_ROD)
+	}
+	elif(var(VAR_RESULT) == FALSE){
+		msgbox(format("Take this!"), MSGBOX_DEFAULT)
+		giveitem(ITEM_OLD_ROD, [1])
+	}
+	return
 }

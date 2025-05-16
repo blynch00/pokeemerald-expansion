@@ -27,6 +27,7 @@ script OldaleTown_House1_EventScript_Pokeball{
         if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("You got Eevee!")
+            bufferspeciesname(STR_VAR_1, SPECIES_EEVEE)
             removeobject(2)
             setflag(FLAG_GIFT_MON_0x264)
             call(NicknamePartyMon)
@@ -35,6 +36,7 @@ script OldaleTown_House1_EventScript_Pokeball{
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("You got Eevee!")
             removeobject(2)
+            bufferspeciesname(STR_VAR_2, SPECIES_EEVEE)
             setflag(FLAG_GIFT_MON_0x264)
             call(NicknameBoxMon)
         }
@@ -59,7 +61,6 @@ script NicknamePartyMon{
     if(var(VAR_RESULT) == YES){
         call(Common_EventScript_GetGiftMonPartySlot)
         call(Common_EventScript_NameReceivedPartyMon)
-
     }
 }
 
@@ -69,8 +70,9 @@ script NicknameBoxMon{
     if(var(VAR_RESULT) == YES){
         call(Common_EventScript_NameReceivedBoxMon)
     }
-    msgbox("Transferred to PC.")
-    call(Common_EventScript_TransferredToPC) //MUST BUFFER??
+    bufferspeciesname(STR_VAR_2, SPECIES_EEVEE)
+    setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_EEVEE)
+    call(Common_EventScript_TransferredToPC)
 
 }
 
