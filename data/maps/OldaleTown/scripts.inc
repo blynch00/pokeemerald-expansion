@@ -893,7 +893,7 @@ OldaleTown_EventScript_GiveOldRod_3:
 
 OldaleTown_EventScript_Meowth_Rare_Candy_Text_0:
 # 406 "data/maps/OldaleTown/scripts.pory"
-	.string "{COLOR DARK_GRAY}It looks like Meowth wants to give you\n"
+	.string "It looks like Meowth wants to give you\n"
 	.string "rare candies and Pokeballs. Do you\l"
 	.string "accept?$"
 

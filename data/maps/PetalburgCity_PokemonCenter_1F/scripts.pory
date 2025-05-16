@@ -1,0 +1,64 @@
+raw`
+.set LOCALID_NURSE, 1
+
+PetalburgCity_PokemonCenter_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, PetalburgCity_PokemonCenter_1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+PetalburgCity_PokemonCenter_1F_OnTransition:
+	setrespawn HEAL_LOCATION_PETALBURG_CITY
+	call Common_EventScript_UpdateBrineyLocation
+	end
+
+PetalburgCity_PokemonCenter_1F_EventScript_Nurse::
+	setvar VAR_0x800B, LOCALID_NURSE
+	call Common_EventScript_PkmnCenterNurse
+	waitmessage
+	waitbuttonpress
+	release
+	end
+
+PetalburgCity_PokemonCenter_1F_EventScript_FatMan::
+	msgbox PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem, MSGBOX_NPC
+	end
+
+PetalburgCity_PokemonCenter_1F_EventScript_Youngster::
+	msgbox PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP, MSGBOX_NPC
+	end
+
+
+PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem:
+	.string "That PC-based POKéMON Storage\n"
+	.string "System…\p"
+	.string "Whoever made it must be some kind\n"
+	.string "of a scientific wizard!$"
+
+PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP:
+	.string "When my POKéMON ate an\n"
+	.string "ORAN BERRY, it regained HP!$"
+
+`
+script PetalburgCity_PokemonCenter_1F_EventScript_BerryGuy{
+    lockall
+	faceplayer
+	msgbox (format("YO YO YO! I'm known as the berry guy around here. How would you like some free berries??"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == YES){
+        msgbox(format("See, I knew you were smart! Take these off my hands."), MSGBOX_DEFAULT)
+        giveitem(ITEM_CHILAN_BERRY, [99])
+		giveitem(ITEM_CHERI_BERRY, [99])
+		giveitem(ITEM_CHESTO_BERRY, [99])
+        giveitem(ITEM_PECHA_BERRY, [99])
+		giveitem(ITEM_RAWST_BERRY, [99])
+		giveitem(ITEM_ASPEAR_BERRY, [99])
+        msgbox(format("Come back if you ever need more. There are fellow berry enthusiasts such as I across the Hoenn region, so be on the
+        lookout for all of us."), MSGBOX_DEFAULT)
+    }
+    else{
+        msgbox(format("Well, suite yourself. These would be super helpful for the upcoming gauntlets."), MSGBOX_DEFAULT)
+    }
+    waitmessage
+	releaseall
+	end
+}
+	

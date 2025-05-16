@@ -993,11 +993,11 @@
 #define ITEM_POKESHI_DOLL 827
 
 #define ITEM_STRANGE_BALL 828
-
+#define ITEM_POKE_VIAL 829
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 829
+#define ITEMS_COUNT 830
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

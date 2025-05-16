@@ -60,6 +60,7 @@ static void CheckForHiddenItemsInMapConnection(u8);
 static void Task_OpenRegisteredPokeblockCase(u8);
 static void Task_AccessPokemonBoxLink(u8);
 static void ItemUseOnFieldCB_Bike(u8);
+static void ItemUseCB_PokeVial(u8);
 static void ItemUseOnFieldCB_Rod(u8);
 static void ItemUseOnFieldCB_Itemfinder(u8);
 static void ItemUseOnFieldCB_Berry(u8);
@@ -784,6 +785,31 @@ void ItemUseOutOfBattle_WailmerPail(u8 taskId)
     {
         DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
     }
+}
+
+extern u8 PokeVialHealScript[];
+
+void ItemUseOutOfBattle_PokeVial (u8 taskId)
+{
+    if(!gTasks[taskId].tUsingRegisteredKeyItem)
+    {
+        sItemUseOnFieldCB = ItemUseCB_PokeVial;
+        gFieldCallback = FieldCB_UseItemOnField;
+        gBagMenu->newScreenCallback = CB2_ReturnToField;
+        Task_FadeAndCloseBagMenu(taskId);
+    }
+    else
+    {
+       sItemUseOnFieldCB = ItemUseCB_PokeVial; 
+       SetUpItemUseOnFieldCallback(taskId);
+    }
+}
+
+void ItemUseCB_PokeVial (u8 taskId)
+{
+    LockPlayerFieldControls();
+    ScriptContext_SetupScript(PokeVialHealScript);
+    DestroyTask(taskId);
 }
 
 static void ItemUseOnFieldCB_WailmerPailBerry(u8 taskId)
