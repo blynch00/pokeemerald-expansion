@@ -140,3 +140,4 @@ PokeVialHealScript::
 
 PokeVialText::
 	.string "All Pokemon were healed.$"
+

@@ -4420,6 +4420,26 @@
       "secondary_tileset": "gTileset_RusturfTunnel",
       "border_filepath": "data/layouts/SecretTunnel/border.bin",
       "blockdata_filepath": "data/layouts/SecretTunnel/map.bin"
+    },
+    {
+      "id": "LAYOUT_BEACH_CAVE",
+      "name": "BeachCave_Layout",
+      "width": 9,
+      "height": 9,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/BeachCave/border.bin",
+      "blockdata_filepath": "data/layouts/BeachCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_BEACH_CAVE2F",
+      "name": "BeachCave2F_Layout",
+      "width": 9,
+      "height": 9,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/BeachCave2F/border.bin",
+      "blockdata_filepath": "data/layouts/BeachCave2F/map.bin"
     }
   ]
 }

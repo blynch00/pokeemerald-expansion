@@ -27,10 +27,10 @@ script OldaleTown_House1_EventScript_Pokeball{
         if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("You got Eevee!")
-            bufferspeciesname(STR_VAR_1, SPECIES_EEVEE)
+            bufferspeciesname(STR_VAR_2, SPECIES_EEVEE)
             removeobject(2)
             setflag(FLAG_GIFT_MON_0x264)
-            call(NicknamePartyMon)
+            call(OldaleTown_NicknamePartyMon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
@@ -38,7 +38,7 @@ script OldaleTown_House1_EventScript_Pokeball{
             removeobject(2)
             bufferspeciesname(STR_VAR_2, SPECIES_EEVEE)
             setflag(FLAG_GIFT_MON_0x264)
-            call(NicknameBoxMon)
+            call(OldaleTown_NicknameBoxMon)
         }
         else{
             hidemonpic
@@ -55,7 +55,7 @@ script OldaleTown_House1_EventScript_Pokeball{
     end
 }
 
-script NicknamePartyMon{
+script OldaleTown_NicknamePartyMon{
     msgbox("Give this Eevee a nickname?", MSGBOX_YESNO)
     hidemonpic
     if(var(VAR_RESULT) == YES){
@@ -64,7 +64,7 @@ script NicknamePartyMon{
     }
 }
 
-script NicknameBoxMon{
+script OldaleTown_NicknameBoxMon{
     msgbox("Give this Eevee a nickname?", MSGBOX_YESNO)
     hidemonpic
     if(var(VAR_RESULT) == YES){

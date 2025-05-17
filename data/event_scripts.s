@@ -1156,3 +1156,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/dexnav.inc"
 
 	.include "data/maps/SecretTunnel/scripts.inc"
+
+	.include "data/maps/BeachCave/scripts.inc"
+
+	.include "data/maps/BeachCave2F/scripts.inc"

@@ -65,13 +65,13 @@ OldaleTown_House1_EventScript_Pokeball_5:
 # 29 "data/maps/OldaleTown_House1/scripts.pory"
 	msgbox OldaleTown_House1_EventScript_Pokeball_Text_1
 # 30 "data/maps/OldaleTown_House1/scripts.pory"
-	bufferspeciesname STR_VAR_1, SPECIES_EEVEE
+	bufferspeciesname STR_VAR_2, SPECIES_EEVEE
 # 31 "data/maps/OldaleTown_House1/scripts.pory"
 	removeobject 2
 # 32 "data/maps/OldaleTown_House1/scripts.pory"
 	setflag FLAG_GIFT_MON_0x264
 # 33 "data/maps/OldaleTown_House1/scripts.pory"
-	call NicknamePartyMon
+	call OldaleTown_NicknamePartyMon
 	goto OldaleTown_House1_EventScript_Pokeball_1
 
 OldaleTown_House1_EventScript_Pokeball_6:
@@ -86,21 +86,21 @@ OldaleTown_House1_EventScript_Pokeball_6:
 # 40 "data/maps/OldaleTown_House1/scripts.pory"
 	setflag FLAG_GIFT_MON_0x264
 # 41 "data/maps/OldaleTown_House1/scripts.pory"
-	call NicknameBoxMon
+	call OldaleTown_NicknameBoxMon
 	goto OldaleTown_House1_EventScript_Pokeball_1
 
 
-NicknamePartyMon::
+OldaleTown_NicknamePartyMon::
 # 59 "data/maps/OldaleTown_House1/scripts.pory"
-	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
+	msgbox OldaleTown_NicknamePartyMon_Text_0, MSGBOX_YESNO
 # 60 "data/maps/OldaleTown_House1/scripts.pory"
 	hidemonpic
 # 61 "data/maps/OldaleTown_House1/scripts.pory"
 	compare VAR_RESULT, YES
-	goto_if_eq NicknamePartyMon_1
+	goto_if_eq OldaleTown_NicknamePartyMon_1
 	return
 
-NicknamePartyMon_1:
+OldaleTown_NicknamePartyMon_1:
 # 62 "data/maps/OldaleTown_House1/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
 # 63 "data/maps/OldaleTown_House1/scripts.pory"
@@ -108,15 +108,15 @@ NicknamePartyMon_1:
 	return
 
 
-NicknameBoxMon::
+OldaleTown_NicknameBoxMon::
 # 68 "data/maps/OldaleTown_House1/scripts.pory"
-	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
+	msgbox OldaleTown_NicknamePartyMon_Text_0, MSGBOX_YESNO
 # 69 "data/maps/OldaleTown_House1/scripts.pory"
 	hidemonpic
 # 70 "data/maps/OldaleTown_House1/scripts.pory"
 	compare VAR_RESULT, YES
-	goto_if_eq NicknameBoxMon_2
-NicknameBoxMon_1:
+	goto_if_eq OldaleTown_NicknameBoxMon_2
+OldaleTown_NicknameBoxMon_1:
 # 73 "data/maps/OldaleTown_House1/scripts.pory"
 	bufferspeciesname STR_VAR_2, SPECIES_EEVEE
 # 74 "data/maps/OldaleTown_House1/scripts.pory"
@@ -125,10 +125,10 @@ NicknameBoxMon_1:
 	call Common_EventScript_TransferredToPC
 	return
 
-NicknameBoxMon_2:
+OldaleTown_NicknameBoxMon_2:
 # 71 "data/maps/OldaleTown_House1/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
-	goto NicknameBoxMon_1
+	goto OldaleTown_NicknameBoxMon_1
 
 
 OldaleTown_House1_EventScript_Woman_Text_0:
@@ -153,7 +153,7 @@ OldaleTown_House1_EventScript_Pokeball_Text_2:
 # 45 "data/maps/OldaleTown_House1/scripts.pory"
 	.string "No more room.$"
 
-NicknamePartyMon_Text_0:
+OldaleTown_NicknamePartyMon_Text_0:
 # 59 "data/maps/OldaleTown_House1/scripts.pory"
 	.string "Give this Eevee a nickname?$"
 
