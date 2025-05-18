@@ -2119,13 +2119,26 @@ Class: Lady
 Pic: Lady
 Gender: Female
 Music: Female
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon @ Nugget
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nidorino @ Oran Berry  
+Ability: Poison Point  
+Level: 11  
+Quiet Nature  
+- Toxic  
+- Double Kick  
+- Venom Drench  
+- Confide
+
+Butterfree @ Oran Berry  
+Ability: Compound Eyes  
+Level: 12  
+Sassy Nature  
+- Stun Spore  
+- Draining Kiss  
+- Gust  
+- Infestation
 
 === TRAINER_DAPHNE ===
 Name: DAPHNE
@@ -5975,13 +5988,23 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Vulpix @ Passho Berry  
+Ability: Flash Fire  
+Level: 10  
+Bold Nature  
+- Hypnosis  
+- Fire Spin  
+- Confusion  
+- Confuse Ray
 
-Seedot
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Woobat  
+Ability: Simple  
+Level: 10
+Quiet Nature  
+- Charge Beam  
+- Taunt  
+- U-turn  
+- Confusion
 
 === TRAINER_JOSH ===
 Name: JOSH
@@ -11319,21 +11342,14 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Beedrill @ Poison Barb  
+Ability: Swarm  
+Level: 13  
+Docile Nature  
+- Rock Smash  
+- Aerial Ace  
+- Struggle Bug  
+- Poison Sting
 
 === TRAINER_JOSE ===
 Name: JOSE
@@ -11405,16 +11421,32 @@ Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
 Music: Male
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move
 
-Nincada
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cottonee @ Kebia Berry  
+Ability: Prankster  
+Level: 12  
+Naive Nature  
+- Stun Spore  
+- Encore  
+- Tailwind  
+- Helping Hand
 
-Nincada
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lombre @ Miracle Seed  
+Ability: Own Tempo  
+Level: 14  
+Naive Nature  
+- Fake Out  
+- Mega Drain  
+- Water Gun  
+- Astonish
+
+Togepi @ Eviolite  
+Ability: Serene Grace  
+Level: 12  
+Docile Nature  
+- Metronome
 
 === TRAINER_JAMES_2 ===
 Name: JAMES
@@ -13021,9 +13053,23 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tentacool  
+Ability: Clear Body  
+Level: 10  
+Calm Nature  
+- Toxic Spikes  
+- Acid  
+- Water Gun  
+- Wrap
+
+Corphish @ Mystic Water  
+Ability: Adaptability  
+Level: 10  
+Adamant Nature  
+- Aqua Jet  
+- Double Hit  
+- Whirlpool  
+- Endeavor
 
 === TRAINER_HAILEY ===
 Name: HAILEY

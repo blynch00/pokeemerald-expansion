@@ -9,7 +9,7 @@ script BeachCave2F_EventScript_SadCubone{
     msgbox(format("This Cubone is alone and afraid. It looks at you, wondering if you will take care of it.
     Do you accept?"), MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_CUBONE, 5, ITEM_THICK_CLUB)
+        givemon(SPECIES_CUBONE, 5, ITEM_ORAN_BERRY)
         if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("You got Cubone!")

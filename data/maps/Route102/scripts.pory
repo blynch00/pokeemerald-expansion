@@ -115,6 +115,13 @@ script Route102_EventScript_Tiana{
 		release
 		end
 	}
+	else{
+		lockall
+		faceplayer
+		msgbox(format("What are you looking at?"), MSGBOX_AUTOCLOSE)
+		release
+		end
+	}
 
 }
 

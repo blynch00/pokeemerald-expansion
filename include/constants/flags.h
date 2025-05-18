@@ -661,10 +661,10 @@
 #define FLAG_ROUTE102_CLEAR_0x266  0x266 // Unused Flag
 #define FLAG_ROUTE102_GIFTS_0x267  0x267 // Unused Flag
 #define FLAG_GIFT_BEACHCAVE_0x268  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
+#define FLAG_ROUTE104_PART1_CLEAR_0x269  0x269 // Unused Flag
+#define FLAG_ROUTE104_PART1_REWARDS_0x26A  0x26A // Unused Flag
+#define FLAG_PETALBURGWOODS_CLEAR_0x26B  0x26B // Unused Flag
+#define FLAG_PETALBURGWOODS_REWARDS_0x26C  0x26C // Unused Flag
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag
 #define FLAG_UNUSED_0x26F  0x26F // Unused Flag
