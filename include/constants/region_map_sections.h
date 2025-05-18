@@ -215,7 +215,9 @@
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
 #define MAPSEC_BEACH_CAVE                   0xD5
-#define MAPSEC_NONE                         0xD6
+#define MAPSEC_LOST_WOODS                   0xD6
+#define MAPSEC_SECRET_TUNNEL                0xD7
+#define MAPSEC_NONE                         0xD8
 
 
 #define METLOC_SPECIAL_EGG                  0xFD

@@ -4440,6 +4440,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/BeachCave2F/border.bin",
       "blockdata_filepath": "data/layouts/BeachCave2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_LOST_WOODS",
+      "name": "LostWoods_Layout",
+      "width": 30,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LostWoods/border.bin",
+      "blockdata_filepath": "data/layouts/LostWoods/map.bin"
     }
   ]
 }
