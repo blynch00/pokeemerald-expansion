@@ -665,8 +665,8 @@
 #define FLAG_ROUTE104_PART1_REWARDS_0x26A  0x26A // Unused Flag
 #define FLAG_PETALBURGWOODS_CLEAR_0x26B  0x26B // Unused Flag
 #define FLAG_PETALBURGWOODS_REWARDS_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
+#define FLAG_ROUTE104_PART2_CLEAR_0x26D  0x26D // Unused Flag
+#define FLAG_ROUTE104_PART2_REWARDS_0x26E  0x26E // Unused Flag
 #define FLAG_UNUSED_0x26F  0x26F // Unused Flag
 #define FLAG_UNUSED_0x270  0x270 // Unused Flag
 #define FLAG_UNUSED_0x271  0x271 // Unused Flag

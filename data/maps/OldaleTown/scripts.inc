@@ -802,6 +802,8 @@ OldaleTown_Text_TownSign:
 	.string "“Where things start off scarce.”$"
 
 OldaleTown_EventScript_Meowth_Rare_Candy::
+# 404 "data/maps/OldaleTown/scripts.pory"
+	faceplayer
 # 405 "data/maps/OldaleTown/scripts.pory"
 	lockall
 # 406 "data/maps/OldaleTown/scripts.pory"

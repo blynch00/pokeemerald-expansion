@@ -2536,13 +2536,28 @@ Class: Rich Boy
 Pic: Rich Boy
 Gender: Male
 Music: Rich
-Items: Full Restore
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER 
 
-Zigzagoon @ Nugget
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Kricketune @ Silver Powder  
+Level: 14
+Ability: Technician   
+Naive Nature  
+- Sing  
+- Sticky Web  
+- Fury Cutter  
+- Aerial Ace
+
+Bibarel @ Mystic Water  
+Level: 14
+Ability: Simple  
+Happiness: 100   
+Sassy Nature  
+- Aqua Jet  
+- Return  
+- Super Fang 
+- Defense Curl
+
 
 === TRAINER_MOLLIE ===
 Name: MOLLIE
@@ -6366,19 +6381,29 @@ Pic: Fisherman
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER
 
-Magikarp
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Feebas @ Expert Belt  
+Ability: Adaptability  
+Level: 14    
+Modest Nature  
+- Ice Beam  
+- Surf  
+- Mud Shot  
+- Scale Shot
 
-Magikarp
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Magikarp @ Choice Scarf 
+Level: 14 
+Ability: Swift Swim  
+- Hydro Pump
 
-Magikarp
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Kabuto @ Oran Berry  
+Ability: Battle Armor  
+Level: 15   
+- Rock Tomb  
+- Aerial Ace  
+- Confuse Ray  
+- Ancient Power
 
 === TRAINER_CLAUDE ===
 Name: CLAUDE
@@ -8843,15 +8868,33 @@ Pic: Twins
 Gender: Male
 Music: Twins
 Double Battle: Yes
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER 
 
-Seedot
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Murkrow @ Oran Berry  
+Ability: Super Luck  
+Level: 15   
+Jolly Nature  
+- Lash Out  
+- Wing Attack  
+- Quick Attack  
+- Taunt
 
-Lotad
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Diglett @ Hard Stone  
+Ability: Arena Trap 
+Level: 15  
+Jolly Nature  
+- Rock Slide  
+- Rock Tomb  
+- Bulldoze  
+- Pursuit
+
+
+Minccino @ Eviolite  
+Ability: Technician  
+Level: 14  
+- Tail Slap  
+- Super Fang
+- Sing
 
 === TRAINER_MIU_AND_YUKI ===
 Name: MIU & YUKI
@@ -11128,15 +11171,34 @@ Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER
 
-Lotad
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Combusken @ Charcoal  
+Ability: Blaze  
+Level: 14  
+Adamant Nature  
+- Rock Tomb  
+- Rock Smash  
+- Flame Charge  
+- Dual Chop
 
-Shroomish
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bayleef @ Miracle Seed  
+Level: 14 
+Ability: Overgrow  
+Rash Nature  
+IVs: 0 Atk  
+- Giga Drain  
+- Draining Kiss  
+- Grass Whistle  
+
+Prinplup @ Mystic Water
+Level: 14   
+Ability: Torrent  
+Calm Nature  
+- Brine  
+- Yawn  
+- Flip Turn  
+- Icy Wind
 
 === TRAINER_JANICE ===
 Name: JANICE

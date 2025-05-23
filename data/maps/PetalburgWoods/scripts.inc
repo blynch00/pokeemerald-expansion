@@ -983,12 +983,12 @@ PetalburgWoods_EventScript_Rewards::
 # 504 "data/maps/PetalburgWoods/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq PetalburgWoods_EventScript_Rewards_2
-# 512 "data/maps/PetalburgWoods/scripts.pory"
+# 511 "data/maps/PetalburgWoods/scripts.pory"
 	msgbox PetalburgWoods_EventScript_Rewards_Text_1, MSGBOX_DEFAULT
 PetalburgWoods_EventScript_Rewards_1:
-# 515 "data/maps/PetalburgWoods/scripts.pory"
+# 513 "data/maps/PetalburgWoods/scripts.pory"
 	waitmessage
-# 516 "data/maps/PetalburgWoods/scripts.pory"
+# 514 "data/maps/PetalburgWoods/scripts.pory"
 	releaseall
 	end
 
@@ -996,10 +996,8 @@ PetalburgWoods_EventScript_Rewards_2:
 # 505 "data/maps/PetalburgWoods/scripts.pory"
 	giveitem ITEM_WISE_GLASSES, [ 1 ]
 # 506 "data/maps/PetalburgWoods/scripts.pory"
-	giveitem ITEM_MUSCLE_BAND, [ 1 ]
-# 507 "data/maps/PetalburgWoods/scripts.pory"
 	setflag FLAG_PETALBURGWOODS_REWARDS_0x26C
-# 508 "data/maps/PetalburgWoods/scripts.pory"
+# 507 "data/maps/PetalburgWoods/scripts.pory"
 	removeobject 17
 	goto PetalburgWoods_EventScript_Rewards_1
 
@@ -1022,13 +1020,13 @@ PetalburgWoods_EventScript_James_Text_1:
 
 PetalburgWoods_Route_Clear_Text_0:
 # 497 "data/maps/PetalburgWoods/scripts.pory"
-	.string "Level cap has increased to 16.$"
+	.string "Level cap has increased to 15.$"
 
 PetalburgWoods_EventScript_Rewards_Text_0:
 # 503 "data/maps/PetalburgWoods/scripts.pory"
 	.string "Would you like to accept the route\n"
-	.string "rewards?$"
+	.string "reward?$"
 
 PetalburgWoods_EventScript_Rewards_Text_1:
-# 512 "data/maps/PetalburgWoods/scripts.pory"
+# 511 "data/maps/PetalburgWoods/scripts.pory"
 	.string "No items were taken.$"

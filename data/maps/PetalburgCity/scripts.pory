@@ -770,6 +770,7 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 `
 script PetalburgCity_EventScript_Treeko_CarePackage {
     lockall
+	faceplayer
 	if (!(flag(FLAG_PETALBURG_GIFT_0x265))){
 		msgbox(format("It looks like Treeko has made you a care package! Do you accept?"), MSGBOX_YESNO)
     	if(var(VAR_RESULT) == YES){

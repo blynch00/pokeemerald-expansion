@@ -312,10 +312,6 @@ Route104_EventScript_FlowerShopSign::
 	msgbox Route104_Text_PrettyPetalFlowShop, MSGBOX_SIGN
 	end
 
-Route104_EventScript_TrainerTipsDoubleBattles::
-	msgbox Route104_Text_TrainerTipsDoubleBattles, MSGBOX_SIGN
-	end
-
 Route104_EventScript_Boy1::
 	msgbox Route104_Text_ThrowBallAtWeakenedPokemon, MSGBOX_NPC
 	end
@@ -850,46 +846,7 @@ Route104_EventScript_Ivan::
 	end
 
 
-Route104_EventScript_Haley::
-	trainerbattle_single TRAINER_HALEY_1, Route104_Text_HaleyIntro, Route104_Text_HaleyDefeat, Route104_EventScript_TryRegisterHaleyAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route104_EventScript_RematchHaley
-	setvar VAR_0x8004, TRAINER_HALEY_1
-	specialvar VAR_RESULT, IsTrainerRegistered
-	goto_if_eq VAR_RESULT, FALSE, Route104_EventScript_TryRegisterHaley
-	msgbox Route104_Text_HaleyPostBattle, MSGBOX_DEFAULT
-	release
-	end
 
-Route104_EventScript_TryRegisterHaleyAfterBattle::
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	goto_if_set FLAG_HAS_MATCH_CALL, Route104_EventScript_RegisterHaleyAfterBattle
-	release
-	end
-
-Route104_EventScript_RegisterHaleyAfterBattle::
-	msgbox Route104_Text_HaleyRegister2, MSGBOX_DEFAULT
-	register_matchcall TRAINER_HALEY_1
-	release
-	end
-
-Route104_EventScript_TryRegisterHaley::
-	goto_if_set FLAG_HAS_MATCH_CALL, Route104_EventScript_RegisterHaley
-	msgbox Route104_Text_HaleyPostBattle, MSGBOX_DEFAULT
-	release
-	end
-
-Route104_EventScript_RegisterHaley::
-	msgbox Route104_Text_HaleyRegister1, MSGBOX_DEFAULT
-	register_matchcall TRAINER_HALEY_1
-	release
-	end
-
-Route104_EventScript_RematchHaley::
-	trainerbattle_rematch TRAINER_HALEY_1, Route104_Text_HaleyRematchIntro, Route104_Text_HaleyRematchDefeat
-	msgbox Route104_Text_HaleyPostRematch, MSGBOX_AUTOCLOSE
-	end
 
 Route104_EventScript_Winston::
 	trainerbattle_single TRAINER_WINSTON_1, Route104_Text_WinstonIntro, Route104_Text_WinstonDefeat, Route104_EventScript_TryRegisterWinstonAfterBattle
@@ -1045,16 +1002,6 @@ Route104_Text_RouteSignRustboro:
 Route104_Text_PrettyPetalFlowShop:
 	.string "PRETTY PETAL FLOWER SHOP$"
 
-Route104_Text_TrainerTipsDoubleBattles:
-	.string "TRAINER TIPS\p"
-	.string "In the HOENN region there are pairs\n"
-	.string "of TRAINERS who challenge others\l"
-	.string "for 2-on-2 POKéMON battles called\l"
-	.string "DOUBLE BATTLES.\p"
-	.string "In a DOUBLE BATTLE, the TRAINER must\n"
-	.string "send out two POKéMON, the one at the\l"
-	.string "left of the list and the top one.\l"
-	.string "Watch how POKéMON are lined up.$"
 
 Route104_Text_MayWeShouldRegister:
 	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
@@ -1195,15 +1142,13 @@ script Route104_Wingull_Scared{
 }
 
 
-script Route104_EventScript_Girl1{
+script Route104_EventScript_RewardGirl{
 	lockall
 	faceplayer
     if (!(flag(FLAG_ROUTE104_PART1_REWARDS_0x26A))){
-    msgbox(format("Thank you for clearing the trainers! Would you like the rewards?"), MSGBOX_YESNO)
+    msgbox(format("Thank you for clearing the trainers! Would you like the reward?"), MSGBOX_YESNO)
 		if(var(VAR_RESULT) == YES){
-			call(Route_104_RouteReward_RockTomb_TM)
-			call(Route_104_RouteReward_WaterPulse_TM)
-			call(Route_104_RouteReward_GigaDrain_Pulse_TM)
+			giveitem(ITEM_MUSCLE_BAND, [1])
 			setflag(FLAG_ROUTE104_PART1_REWARDS_0x26A)
 		}
     }
@@ -1215,47 +1160,105 @@ script Route104_EventScript_Girl1{
 
 }
 	
-script Route_104_RouteReward_RockTomb_TM{
-	checkitem(ITEM_TM_ROCK_TOMB)
-	if(var(VAR_RESULT) == TRUE){
-		msgbox(format("Looks like you already have Rock Tomb."), MSGBOX_DEFAULT)
-		setflag(FLAG_RECEIVED_TM_ROCK_TOMB)
-	}
-	elif(var(VAR_RESULT) == FALSE){
-		giveitem(ITEM_TM_ROCK_TOMB, [1])
-		setflag(FLAG_RECEIVED_TM_ROCK_TOMB)
-	}
-	return
-}
+// script Route_104_RouteReward_RockTomb_TM{
+// 	checkitem(ITEM_TM_ROCK_TOMB)
+// 	if(var(VAR_RESULT) == TRUE){
+// 		msgbox(format("Looks like you already have Rock Tomb."), MSGBOX_DEFAULT)
+// 		setflag(FLAG_RECEIVED_TM_ROCK_TOMB)
+// 	}
+// 	elif(var(VAR_RESULT) == FALSE){
+// 		giveitem(ITEM_TM_ROCK_TOMB, [1])
+// 		setflag(FLAG_RECEIVED_TM_ROCK_TOMB)
+// 	}
+// 	return
+// }
 
-script Route_104_RouteReward_WaterPulse_TM{
-	checkitem(ITEM_TM_WATER_PULSE)
-	if(var(VAR_RESULT) == TRUE){
-		msgbox(format("Looks like you already have Water Pulse."), MSGBOX_DEFAULT)
-		setflag(FLAG_RECEIVED_TM_WATER_PULSE)
-	}
-	elif(var(VAR_RESULT) == FALSE){
-		giveitem(ITEM_TM_WATER_PULSE, [1])
-		setflag(FLAG_RECEIVED_TM_WATER_PULSE)
-	}
-	return
-}
+// script Route_104_RouteReward_WaterPulse_TM{
+// 	checkitem(ITEM_TM_WATER_PULSE)
+// 	if(var(VAR_RESULT) == TRUE){
+// 		msgbox(format("Looks like you already have Water Pulse."), MSGBOX_DEFAULT)
+// 		setflag(FLAG_RECEIVED_TM_WATER_PULSE)
+// 	}
+// 	elif(var(VAR_RESULT) == FALSE){
+// 		giveitem(ITEM_TM_WATER_PULSE, [1])
+// 		setflag(FLAG_RECEIVED_TM_WATER_PULSE)
+// 	}
+// 	return
+// }
 
-script Route_104_RouteReward_GigaDrain_Pulse_TM{
-	checkitem(ITEM_TM_GIGA_DRAIN)
-	if(var(VAR_RESULT) == TRUE){
-		msgbox(format("Looks like you already have Giga Drain."), MSGBOX_DEFAULT)
-		setflag(FLAG_RECEIVED_TM_GIGA_DRAIN)
-	}
-	elif(var(VAR_RESULT) == FALSE){
-		giveitem(ITEM_TM_GIGA_DRAIN, [1])
-		setflag(FLAG_RECEIVED_TM_GIGA_DRAIN)
-	}
-	return
-}
+// script Route_104_RouteReward_GigaDrain_Pulse_TM{
+// 	checkitem(ITEM_TM_GIGA_DRAIN)
+// 	if(var(VAR_RESULT) == TRUE){
+// 		msgbox(format("Looks like you already have Giga Drain."), MSGBOX_DEFAULT)
+// 		setflag(FLAG_RECEIVED_TM_GIGA_DRAIN)
+// 	}
+// 	elif(var(VAR_RESULT) == FALSE){
+// 		giveitem(ITEM_TM_GIGA_DRAIN, [1])
+// 		setflag(FLAG_RECEIVED_TM_GIGA_DRAIN)
+// 	}
+// 	return
+// }
 
 script Route_104_GauntletBlockade_Message{
 	lockall
 	msgbox(format("This Corphish is staring you down. It's best to not ask it to move."), MSGBOX_AUTOCLOSE)
 	end
+}
+
+script Route104_Text_TrainerTipsDoubleBattles{
+	lockall
+	msgbox(format("Route 104, Gauntlet 2. Levels: 14-15. Defeat all trainers to reach Rustboro City."), MSGBOX_DEFAULT)
+	release
+	end
+}
+
+
+script Route_104_Gauntlet2Blockade_Message{
+	lockall
+	faceplayer
+	msgbox(format("The Wurmple looks upset. The constant battling must have left it exhausted."), MSGBOX_DEFAULT)
+	release
+	end
+}
+
+
+script Route104_EventScript_Haley{
+	trainerbattle_single (TRAINER_HALEY_1, Route104_Text_HaleyIntro, Route104_Text_HaleyDefeat, Route104_Gauntlet2_EventScript_ClearRoute)
+	if(flag(FLAG_ROUTE104_PART2_CLEAR_0x26D) == TRUE){
+		lockall
+		faceplayer
+		msgbox(format("I feel guilty about disrupting the Pokemon. I just wanted to get stronger!"), MSGBOX_AUTOCLOSE)
+		release
+		end
+	}
+	else{
+		lockall
+		faceplayer
+		msgbox(format("What are you looking at?"), MSGBOX_AUTOCLOSE)
+	}
+	release
+	end
+}
+	
+script Route104_Gauntlet2_EventScript_ClearRoute{
+	removeobject(39)
+	removeobject(41)
+	removeobject(42)
+	msgbox(format("Level cap has increased to 15."), MSGBOX_AUTOCLOSE)
+	setflag(FLAG_ROUTE104_PART2_CLEAR_0x26D)
+	return
+}
+
+script Route104_Gauntlet2_ClearReward{
+	lockall
+    if (!(flag(FLAG_ROUTE104_PART2_REWARDS_0x26E))){
+    msgbox(format("Would you like the route reward?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			giveitem(ITEM_SCOPE_LENS, [1])
+			setflag(FLAG_ROUTE104_PART2_REWARDS_0x26E)
+			removeobject(43)
+		}
+    }
+    release
+    end
 }

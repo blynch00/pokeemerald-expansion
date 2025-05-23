@@ -494,16 +494,15 @@ script PetalburgWoods_Route_Clear{
     removeobject(14)
 	removeobject(15)
 	removeobject(16)
-	msgbox(format("Level cap has increased to 16."), MSGBOX_AUTOCLOSE)
+	msgbox(format("Level cap has increased to 15."), MSGBOX_AUTOCLOSE)
 	setflag(FLAG_PETALBURGWOODS_CLEAR_0x26B)
 	return
 }
 
 script PetalburgWoods_EventScript_Rewards{
-    msgbox(format("Would you like to accept the route rewards?"), MSGBOX_YESNO)
+    msgbox(format("Would you like to accept the route reward?"), MSGBOX_YESNO)
         if(var(VAR_RESULT) == YES){
         giveitem(ITEM_WISE_GLASSES, [1])
-		giveitem(ITEM_MUSCLE_BAND, [1])
 		setflag(FLAG_PETALBURGWOODS_REWARDS_0x26C)
         removeobject(17)   
 	}
@@ -511,7 +510,6 @@ script PetalburgWoods_EventScript_Rewards{
 	else{
 	msgbox(format("No items were taken."), MSGBOX_DEFAULT)
 	}
-
     waitmessage
     releaseall
     end

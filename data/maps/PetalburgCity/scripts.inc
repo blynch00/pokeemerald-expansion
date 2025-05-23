@@ -1539,77 +1539,79 @@ PetalburgCity_EventScript_Treeko_CarePackage::
 # 772 "data/maps/PetalburgCity/scripts.pory"
 	lockall
 # 773 "data/maps/PetalburgCity/scripts.pory"
+	faceplayer
+# 774 "data/maps/PetalburgCity/scripts.pory"
 	goto_if_unset FLAG_PETALBURG_GIFT_0x265, PetalburgCity_EventScript_Treeko_CarePackage_2
-# 801 "data/maps/PetalburgCity/scripts.pory"
+# 802 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_Treeko_CarePackage_Text_1
 PetalburgCity_EventScript_Treeko_CarePackage_1:
-# 803 "data/maps/PetalburgCity/scripts.pory"
-	waitmessage
 # 804 "data/maps/PetalburgCity/scripts.pory"
+	waitmessage
+# 805 "data/maps/PetalburgCity/scripts.pory"
 	releaseall
 	end
 
 PetalburgCity_EventScript_Treeko_CarePackage_2:
-# 774 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_Treeko_CarePackage_Text_0, MSGBOX_YESNO
 # 775 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_Treeko_CarePackage_Text_0, MSGBOX_YESNO
+# 776 "data/maps/PetalburgCity/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq PetalburgCity_EventScript_Treeko_CarePackage_5
-# 797 "data/maps/PetalburgCity/scripts.pory"
+# 798 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_No_CarePackage
 	goto PetalburgCity_EventScript_Treeko_CarePackage_1
 
 PetalburgCity_EventScript_Treeko_CarePackage_5:
-# 776 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_BLACK_BELT, [ 5 ]
 # 777 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_BLACK_GLASSES, [ 5 ]
+	giveitem ITEM_BLACK_BELT, [ 5 ]
 # 778 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_CHARCOAL, [ 5 ]
+	giveitem ITEM_BLACK_GLASSES, [ 5 ]
 # 779 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_DRAGON_FANG, [ 5 ]
+	giveitem ITEM_CHARCOAL, [ 5 ]
 # 780 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_FOCUS_BAND, [ 1 ]
+	giveitem ITEM_DRAGON_FANG, [ 5 ]
 # 781 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_HARD_STONE, [ 5 ]
+	giveitem ITEM_FOCUS_BAND, [ 1 ]
 # 782 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_SHARP_BEAK, [ 5 ]
+	giveitem ITEM_HARD_STONE, [ 5 ]
 # 783 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_SOFT_SAND, [ 5 ]
+	giveitem ITEM_SHARP_BEAK, [ 5 ]
 # 784 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_SILK_SCARF, [ 5 ]
+	giveitem ITEM_SOFT_SAND, [ 5 ]
 # 785 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_SILVER_POWDER, [ 5 ]
+	giveitem ITEM_SILK_SCARF, [ 5 ]
 # 786 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_SPELL_TAG, [ 5 ]
+	giveitem ITEM_SILVER_POWDER, [ 5 ]
 # 787 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_MAGNET, [ 5 ]
+	giveitem ITEM_SPELL_TAG, [ 5 ]
 # 788 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_METAL_COAT, [ 5 ]
+	giveitem ITEM_MAGNET, [ 5 ]
 # 789 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_MIRACLE_SEED, [ 5 ]
+	giveitem ITEM_METAL_COAT, [ 5 ]
 # 790 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_MYSTIC_WATER, [ 5 ]
+	giveitem ITEM_MIRACLE_SEED, [ 5 ]
 # 791 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_NEVER_MELT_ICE, [ 5 ]
+	giveitem ITEM_MYSTIC_WATER, [ 5 ]
 # 792 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_POISON_BARB, [ 5 ]
+	giveitem ITEM_NEVER_MELT_ICE, [ 5 ]
 # 793 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_TWISTED_SPOON, [ 5 ]
+	giveitem ITEM_POISON_BARB, [ 5 ]
 # 794 "data/maps/PetalburgCity/scripts.pory"
+	giveitem ITEM_TWISTED_SPOON, [ 5 ]
+# 795 "data/maps/PetalburgCity/scripts.pory"
 	setflag FLAG_PETALBURG_GIFT_0x265
 	goto PetalburgCity_EventScript_Treeko_CarePackage_1
 
 
 PetalburgCity_EventScript_Treeko_CarePackage_Text_0:
-# 774 "data/maps/PetalburgCity/scripts.pory"
+# 775 "data/maps/PetalburgCity/scripts.pory"
 	.string "It looks like Treeko has made you a care\n"
 	.string "package! Do you accept?$"
 
 PetalburgCity_EventScript_Treeko_CarePackage_Text_1:
-# 801 "data/maps/PetalburgCity/scripts.pory"
+# 802 "data/maps/PetalburgCity/scripts.pory"
 	.string "{COLOR GREEN}Treeko grins at you.$"
 
 PetalburgCity_No_CarePackage::
-# 808 "data/maps/PetalburgCity/scripts.pory"
+# 809 "data/maps/PetalburgCity/scripts.pory"
 	.string "No items were given.$"

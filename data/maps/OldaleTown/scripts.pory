@@ -401,7 +401,7 @@ OldaleTown_Text_TownSign:
 	.string "“Where things start off scarce.”$"
 `
 script OldaleTown_EventScript_Meowth_Rare_Candy{
-
+	faceplayer
     lockall
     msgbox(format("It looks like Meowth wants to give you rare candies and Pokeballs. Do you accept?"), MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){

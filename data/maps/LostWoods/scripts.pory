@@ -1,0 +1,22 @@
+raw`
+LostWoods_MapScripts::
+	.byte 0
+
+`
+
+script LostWoods_LittleGirl{
+    lockall
+    faceplayer
+    msgbox(format("A powerful pokemon lives in this forest, and other Pokemon in the forest guard it day and night. 
+    I heard it is waiting for a worthy trainer to accompany."), MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script LostWoodsAbsolBlockade{
+    lockall
+    faceplayer
+    msgbox(format("The Absol look deep into your soul, and find you worthy. Return with 4 gym badges, and claim your right to the Pokemon they guard."), MSGBOX_DEFAULT)
+    release
+    end
+}

@@ -143,7 +143,7 @@
       "flag": "FLAG_HIDE_PETALBURG_CITY_SCOTT"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_TREECKO_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TREECKO)",
       "x": 23,
       "y": 15,
       "elevation": 0,

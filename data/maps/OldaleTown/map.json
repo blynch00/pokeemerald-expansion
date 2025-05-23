@@ -83,7 +83,7 @@
       "flag": "FLAG_HIDE_OLDALE_TOWN_RIVAL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MEOWTH_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MEOWTH)",
       "x": 17,
       "y": 6,
       "elevation": 0,
