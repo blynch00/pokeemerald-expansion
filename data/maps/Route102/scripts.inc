@@ -230,53 +230,57 @@ Route102_EventScript_Tiana_1:
 
 Route102_Clear::
 # 129 "data/maps/Route102/scripts.pory"
-	removeobject 10
+	fadescreen FADE_TO_BLACK
 # 130 "data/maps/Route102/scripts.pory"
-	removeobject 11
+	removeobject 10
 # 131 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Clear_Text_0, MSGBOX_AUTOCLOSE
+	removeobject 11
 # 132 "data/maps/Route102/scripts.pory"
+	msgbox Route102_Clear_Text_0, MSGBOX_DEFAULT
+# 133 "data/maps/Route102/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 134 "data/maps/Route102/scripts.pory"
 	setflag FLAG_ROUTE102_CLEAR_0x266
 	return
 
 
 Route102_EventScript_RouteClearItem::
-# 140 "data/maps/Route102/scripts.pory"
-	lockall
-# 141 "data/maps/Route102/scripts.pory"
-	msgbox Route102_EventScript_RouteClearItem_Text_0, MSGBOX_YESNO
 # 142 "data/maps/Route102/scripts.pory"
+	lockall
+# 143 "data/maps/Route102/scripts.pory"
+	msgbox Route102_EventScript_RouteClearItem_Text_0, MSGBOX_YESNO
+# 144 "data/maps/Route102/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route102_EventScript_RouteClearItem_2
-# 150 "data/maps/Route102/scripts.pory"
+# 152 "data/maps/Route102/scripts.pory"
 	msgbox Route102_EventScript_RouteClearItem_Text_1, MSGBOX_DEFAULT
 Route102_EventScript_RouteClearItem_1:
-# 153 "data/maps/Route102/scripts.pory"
+# 155 "data/maps/Route102/scripts.pory"
 	waitmessage
-# 154 "data/maps/Route102/scripts.pory"
+# 156 "data/maps/Route102/scripts.pory"
 	releaseall
 	end
 
 Route102_EventScript_RouteClearItem_2:
-# 143 "data/maps/Route102/scripts.pory"
-	giveitem ITEM_ORAN_BERRY, [ 500 ]
-# 144 "data/maps/Route102/scripts.pory"
-	giveitem ITEM_POMEG_BERRY, [ 999 ]
 # 145 "data/maps/Route102/scripts.pory"
-	setflag FLAG_ROUTE102_GIFTS_0x267
+	giveitem ITEM_ORAN_BERRY, [ 500 ]
 # 146 "data/maps/Route102/scripts.pory"
+	giveitem ITEM_POMEG_BERRY, [ 999 ]
+# 147 "data/maps/Route102/scripts.pory"
+	setflag FLAG_ROUTE102_GIFTS_0x267
+# 148 "data/maps/Route102/scripts.pory"
 	removeobject 1
 	goto Route102_EventScript_RouteClearItem_1
 
 
 Route_102_EventScript_BarrierText::
-# 160 "data/maps/Route102/scripts.pory"
+# 162 "data/maps/Route102/scripts.pory"
 	lockall
-# 161 "data/maps/Route102/scripts.pory"
-	msgbox Route_102_EventScript_BarrierText_Text_0, MSGBOX_DEFAULT
 # 163 "data/maps/Route102/scripts.pory"
+	msgbox Route_102_EventScript_BarrierText_Text_0, MSGBOX_DEFAULT
+# 165 "data/maps/Route102/scripts.pory"
 	waitmessage
-# 164 "data/maps/Route102/scripts.pory"
+# 166 "data/maps/Route102/scripts.pory"
 	releaseall
 	end
 
@@ -284,7 +288,7 @@ Route_102_EventScript_BarrierText::
 Route102_EventScript_RouteSignOldale_Text_0:
 # 103 "data/maps/Route102/scripts.pory"
 	.string "This is the first gauntlet: Level of\n"
-	.string "Trainers: 8-10. Defeat all trainers to\l"
+	.string "Trainers: 6-8. Defeat all trainers to\l"
 	.string "reach Petalburg City.$"
 
 Route102_EventScript_Tiana_Text_0:
@@ -297,20 +301,20 @@ Route102_EventScript_Tiana_Text_1:
 	.string "What are you looking at?$"
 
 Route102_Clear_Text_0:
-# 131 "data/maps/Route102/scripts.pory"
-	.string "Level cap has increased to 16.$"
+# 132 "data/maps/Route102/scripts.pory"
+	.string "Level cap has increased to 12.$"
 
 Route102_EventScript_RouteClearItem_Text_0:
-# 141 "data/maps/Route102/scripts.pory"
+# 143 "data/maps/Route102/scripts.pory"
 	.string "Would you like to receive the route\n"
 	.string "rewards?$"
 
 Route102_EventScript_RouteClearItem_Text_1:
-# 150 "data/maps/Route102/scripts.pory"
+# 152 "data/maps/Route102/scripts.pory"
 	.string "No items were taken.$"
 
 Route_102_EventScript_BarrierText_Text_0:
-# 161 "data/maps/Route102/scripts.pory"
+# 163 "data/maps/Route102/scripts.pory"
 	.string "This pokemon seems disturbed by the\n"
 	.string "ruckus the trainers are causing in it's\l"
 	.string "route. I am sure it will calm down if they\l"

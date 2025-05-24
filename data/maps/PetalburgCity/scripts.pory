@@ -778,6 +778,7 @@ script PetalburgCity_EventScript_Treeko_CarePackage {
 			giveitem(ITEM_BLACK_GLASSES, [5])
 			giveitem(ITEM_CHARCOAL, [5])
 			giveitem(ITEM_DRAGON_FANG, [5])
+			giveitem(ITEM_FAIRY_FEATHER, [5])
 			giveitem(ITEM_FOCUS_BAND, [1])
 			giveitem(ITEM_HARD_STONE, [5])
 			giveitem(ITEM_SHARP_BEAK, [5])

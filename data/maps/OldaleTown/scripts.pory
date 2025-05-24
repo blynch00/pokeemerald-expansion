@@ -405,7 +405,7 @@ script OldaleTown_EventScript_Meowth_Rare_Candy{
     lockall
     msgbox(format("It looks like Meowth wants to give you rare candies and Pokeballs. Do you accept?"), MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        giveitem(ITEM_RARE_CANDY, [99])
+        giveitem(ITEM_RARE_CANDY, [499])
 		giveitem(ITEM_QUICK_BALL, [99])
 		giveitem(ITEM_TIMER_BALL, [99])
     }

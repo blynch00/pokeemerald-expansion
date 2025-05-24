@@ -822,7 +822,7 @@ OldaleTown_EventScript_Meowth_Rare_Candy_1:
 
 OldaleTown_EventScript_Meowth_Rare_Candy_2:
 # 408 "data/maps/OldaleTown/scripts.pory"
-	giveitem ITEM_RARE_CANDY, [ 99 ]
+	giveitem ITEM_RARE_CANDY, [ 499 ]
 # 409 "data/maps/OldaleTown/scripts.pory"
 	giveitem ITEM_QUICK_BALL, [ 99 ]
 # 410 "data/maps/OldaleTown/scripts.pory"

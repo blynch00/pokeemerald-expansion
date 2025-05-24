@@ -491,10 +491,12 @@ script PetalburgWoods_EventScript_James{
 
 
 script PetalburgWoods_Route_Clear{
+	fadescreen(FADE_TO_BLACK)
     removeobject(14)
 	removeobject(15)
 	removeobject(16)
-	msgbox(format("Level cap has increased to 15."), MSGBOX_AUTOCLOSE)
+	msgbox(format("Level cap has increased to 14."), MSGBOX_DEFAULT)
+	fadescreen(FADE_FROM_BLACK)
 	setflag(FLAG_PETALBURGWOODS_CLEAR_0x26B)
 	return
 }

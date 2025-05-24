@@ -229,11 +229,26 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER 
 
-Poochyena
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Thievul (M) @ Chople Berry  
+Ability: Stakeout  
+Level: 12  
+Adamant Nature  
+- Quick Attack  
+- Ice Fang  
+- Attract  
+- Assurance  
+
+Golbat @ Oran Berry  
+Ability: Inner Focus  
+Level: 12  
+Jolly Nature  
+- Poison Fang  
+- Pluck  
+- U-turn  
+- Taunt  
+
 
 === TRAINER_MARCEL ===
 Name: MARCEL
@@ -241,7 +256,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -529,7 +543,6 @@ Class: Aqua Admin
 Pic: Aqua Admin M
 Gender: Male
 Music: Aqua
-Items: Super Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -594,7 +607,6 @@ Class: Aqua Leader
 Pic: Aqua Leader Archie
 Gender: Male
 Music: Aqua
-Items: Super Potion / Super Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -667,7 +679,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
@@ -1264,7 +1275,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -1281,7 +1291,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -1298,7 +1307,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -1315,7 +1323,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -1331,7 +1338,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -1381,7 +1387,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
@@ -1403,7 +1408,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
@@ -1421,7 +1425,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Super Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -1443,7 +1446,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
@@ -1461,7 +1463,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
@@ -1479,7 +1480,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
@@ -1501,7 +1501,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
@@ -1527,7 +1526,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
@@ -1549,7 +1547,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -1571,7 +1568,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -1593,7 +1589,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
@@ -1615,7 +1610,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
@@ -1637,7 +1631,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
@@ -1655,7 +1648,6 @@ Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -1671,7 +1663,6 @@ Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -2120,11 +2111,11 @@ Pic: Lady
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER 
 
 Nidorino @ Oran Berry  
 Ability: Poison Point  
-Level: 11  
+Level: 10  
 Quiet Nature  
 - Toxic  
 - Double Kick  
@@ -2133,7 +2124,7 @@ Quiet Nature
 
 Butterfree @ Oran Berry  
 Ability: Compound Eyes  
-Level: 12  
+Level: 10  
 Sassy Nature  
 - Stun Spore  
 - Draining Kiss  
@@ -2540,7 +2531,7 @@ Double Battle: No
 AI: AI_FLAG_SMART_TRAINER 
 
 Kricketune @ Silver Powder  
-Level: 14
+Level: 13
 Ability: Technician   
 Naive Nature  
 - Sing  
@@ -2549,7 +2540,7 @@ Naive Nature
 - Aerial Ace
 
 Bibarel @ Mystic Water  
-Level: 14
+Level: 13
 Ability: Simple  
 Happiness: 100   
 Sassy Nature  
@@ -4822,33 +4813,44 @@ Class: Leader
 Pic: Leader Roxanne
 Gender: Female
 Music: Female
-Items: Potion / Potion
 Double Battle: No
-AI: Basic Trainer
+AI: AI_FLAG_SMART_TRAINER
 
-Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+Corsola-Galar @ Sitrus Berry  
+Ability: Cursed Body  
+Level: 14  
+- Rock Tomb  
+- Will-O-Wisp  
+- Self-Destruct  
+- Curse  
 
-Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+Shuppet @ Eviolite  
+Ability: Insomnia  
+Level: 14  
+Bashful Nature  
+- Pursuit  
+- Icy Wind  
+- Ominous Wind  
+- Facade  
 
-Nosepass @ Oran Berry
-Level: 15
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Block
-- Harden
-- Tackle
-- Rock Tomb
+Raticate @ Flame Orb  
+Ability: Guts  
+Level: 16  
+Naive Nature  
+- Quick Attack  
+- Retaliate  
+- Rock Smash  
+- Hyper Fang  
+
+Anorith @ Hard Stone  
+Ability: Swift Swim  
+Level: 14  
+- Smack Down  
+- Aqua Jet  
+- Metal Claw  
+- Bug Bite  
+
+
 
 === TRAINER_BRAWLY_1 ===
 Name: BRAWLY
@@ -5278,11 +5280,24 @@ Pic: School Kid F
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER
 
-Shroomish
-Level: 9
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Hattrem @ Eviolite  
+Ability: Magic Bounce  
+Level: 13  
+Quiet Nature   
+- Psybeam  
+- Magical Leaf  
+- Draining Kiss  
+- Calm Mind
+
+Gurdurr @ Muscle Band  
+Ability: Iron Fist  
+Level: 15  
+Adamant Nature  
+- Rock Throw  
+- Force Palm  
+- Dig
 
 === TRAINER_GEORGIA ===
 Name: GEORGIA
@@ -5975,10 +5990,10 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER
 
 Poochyena @ Oran Berry
-Level: 8
+Level: 6
 Ability: ABILITY_RATTLED
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Tackle
@@ -5987,7 +6002,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Howl
 
 Zigzagoon @ Oran Berry
-Level: 8
+Level: 7
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Covet
 - Sand Attack
@@ -6001,11 +6016,11 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER 
 
 Vulpix @ Passho Berry  
 Ability: Flash Fire  
-Level: 10  
+Level: 9 
 Bold Nature  
 - Hypnosis  
 - Fire Spin  
@@ -6014,7 +6029,7 @@ Bold Nature
 
 Woobat  
 Ability: Simple  
-Level: 10
+Level: 9
 Quiet Nature  
 - Charge Beam  
 - Taunt  
@@ -6059,11 +6074,26 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER
 
-Machop
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Yanma @ Bug Gem  
+Ability: Compound Eyes  
+Level: 15  
+Timid Nature  
+IVs: 0 Atk  
+- Air Cutter  
+- Sonic Boom  
+- Bug Buzz  
+- Screech
+
+Machop @ Eviolite  
+Ability: No Guard  
+Level: 15  
+Adamant Nature  
+- Submission  
+- Mega Punch  
+- Swagger  
+- Bullet Punch
 
 === TRAINER_BEN ===
 Name: BEN
@@ -6264,15 +6294,19 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER
 
-Zigzagoon
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lillipup @ Normal Gem  
+Ability: Pickup  
+Level: 7  
+- Tackle  
+- Yawn  
+- Fire Fang  
+- Bite
 
 Taillow @ Silk Scarf  
 Ability: Guts  
-Level: 9
+Level: 8
 - Peck  
 - Quick Attack  
 - Growl
@@ -6385,7 +6419,7 @@ AI: AI_FLAG_SMART_TRAINER
 
 Feebas @ Expert Belt  
 Ability: Adaptability  
-Level: 14    
+Level: 13    
 Modest Nature  
 - Ice Beam  
 - Surf  
@@ -6393,13 +6427,13 @@ Modest Nature
 - Scale Shot
 
 Magikarp @ Choice Scarf 
-Level: 14 
+Level: 15 
 Ability: Swift Swim  
 - Hydro Pump
 
 Kabuto @ Oran Berry  
 Ability: Battle Armor  
-Level: 15   
+Level: 13   
 - Rock Tomb  
 - Aerial Ace  
 - Confuse Ray  
@@ -8872,7 +8906,7 @@ AI: AI_FLAG_SMART_TRAINER
 
 Murkrow @ Oran Berry  
 Ability: Super Luck  
-Level: 15   
+Level: 14   
 Jolly Nature  
 - Lash Out  
 - Wing Attack  
@@ -11133,11 +11167,11 @@ Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move 
+AI: AI_FLAG_SMART_TRAINER 
 
 Rockruff @ Hard Stone  
 Ability: Vital Spirit  
-Level: 8  
+Level: 7  
 Adamant Nature  
 - Rock Throw  
 - Bite  
@@ -11146,16 +11180,16 @@ Adamant Nature
 
 Bellsprout @ Oran Berry  
 Ability: Gluttony  
-Level: 8  
+Level: 7  
 Bold Nature   
 - Acid  
 - Magical Leaf  
 - Stun Spore  
-- Tickle  
+- Clear Smog 
 
 Lechonk @ Oran Berry  
 Ability: Thick Fat  
-Level: 10   
+Level: 8   
 Bashful Nature  
 - Covet  
 - Mud-Slap  
@@ -11175,7 +11209,7 @@ AI: AI_FLAG_SMART_TRAINER
 
 Combusken @ Charcoal  
 Ability: Blaze  
-Level: 14  
+Level: 13  
 Adamant Nature  
 - Rock Tomb  
 - Rock Smash  
@@ -11183,7 +11217,7 @@ Adamant Nature
 - Dual Chop
 
 Bayleef @ Miracle Seed  
-Level: 14 
+Level: 13 
 Ability: Overgrow  
 Rash Nature  
 IVs: 0 Atk  
@@ -11192,7 +11226,7 @@ IVs: 0 Atk
 - Grass Whistle  
 
 Prinplup @ Mystic Water
-Level: 14   
+Level: 13   
 Ability: Torrent  
 Calm Nature  
 - Brine  
@@ -11377,11 +11411,11 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER
 
 Wurmple @ Oran Berry  
 Ability: Shield Dust  
-Level: 8  
+Level: 6  
 - Bug Bite  
 - String Shot  
 - Poison Sting  
@@ -11402,7 +11436,7 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER 
 
 Beedrill @ Poison Barb  
 Ability: Swarm  
@@ -11420,15 +11454,25 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER
 
-Wurmple
-Level: 8
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Weepinbell @ Iapapa Berry  
+Ability: Gluttony  
+Level: 15    
+Modest Nature  
+- Giga Drain  
+- Toxic  
+- Venoshock  
+- Hidden Power
 
-Nincada
-Level: 8
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Whirlipede @ Scope Lens  
+Ability: Poison Point  
+Level: 15  
+Jolly Nature  
+- Pursuit  
+- Bug Bite  
+- Poison Tail  
+- Venoshock
 
 === TRAINER_DOUG ===
 Name: DOUG
@@ -11484,7 +11528,7 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER 
 
 Cottonee @ Kebia Berry  
 Ability: Prankster  
@@ -11497,7 +11541,7 @@ Naive Nature
 
 Lombre @ Miracle Seed  
 Ability: Own Tempo  
-Level: 14  
+Level: 12 
 Naive Nature  
 - Fake Out  
 - Mega Drain  
@@ -11506,7 +11550,7 @@ Naive Nature
 
 Togepi @ Eviolite  
 Ability: Serene Grace  
-Level: 12  
+Level: 13  
 Docile Nature  
 - Metronome
 
@@ -11686,11 +11730,26 @@ Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Carkol @ Passho Berry  
+Ability: Flash Fire  
+Level: 15  
+Hasty Nature  
+- Will-O-Wisp  
+- Rock Tomb  
+- Flame Charge  
+- Ancient Power  
+
+Wormadam @ Coba Berry  
+Ability: Overcoat  
+Level: 15  
+Calm Nature  
+- Bug Bite  
+- Worry Seed  
+- Seed Bomb  
+- Toxic  
+
 
 === TRAINER_ERIC ===
 Name: ERIC
@@ -13113,11 +13172,11 @@ Pic: Fisherman
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER 
 
 Tentacool  
 Ability: Clear Body  
-Level: 10  
+Level: 9  
 Calm Nature  
 - Toxic Spikes  
 - Acid  
@@ -13126,7 +13185,7 @@ Calm Nature
 
 Corphish @ Mystic Water  
 Ability: Adaptability  
-Level: 10  
+Level: 9  
 Adamant Nature  
 - Aqua Jet  
 - Double Hit  
@@ -14010,15 +14069,24 @@ Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_RISKY 
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Onix @ Berry Juice  
+Ability: Sturdy  
+Level: 15  
+Careful Nature  
+- Rock Tomb  
+- Screech  
+- Self-Destruct  
+- Stealth Rock
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bonsly @ Berry Juice  
+Ability: Sturdy  
+Level: 15  
+- Self-Destruct  
+- Rock Polish  
+- Rock Tomb  
+- Covet
 
 === TRAINER_JOHNSON ===
 Name: JOHNSON
@@ -14026,16 +14094,43 @@ Class: Youngster
 Pic: Youngster
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: AI_FLAG_SMART_TRAINER 
 
-Shroomish
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Archen @ Oran Berry  
+Ability: Defeatist  
+Level: 15  
+Jolly Nature  
+- Rock Throw  
+- Acrobatics  
+- Rock Smash  
+- Bite  
 
-Lotad
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mienfoo @ Normal Gem  
+Ability: Regenerator  
+Level: 15  
+Lax Nature  
+- Fake Out  
+- U-turn  
+- Rock Smash  
+
+Salandit (F) @ Poison Barb  
+Ability: Corrosion  
+Level: 16  
+- Toxic  
+- Fake Out  
+- Venoshock  
+- Ember  
+
+Carvanha @ Iron Ball  
+Ability: Rough Skin  
+Level: 15  
+Adamant Nature  
+- Bite  
+- Aqua Jet  
+- Assurance  
+- Water Pulse  
+
 
 === TRAINER_MELINA ===
 Name: MELINA

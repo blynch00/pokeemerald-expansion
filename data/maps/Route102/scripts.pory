@@ -100,7 +100,7 @@ Route102_Text_RouteSignPetalburg:
 
 script Route102_EventScript_RouteSignOldale{
     lockall
-    msgbox(format("This is the first gauntlet: Level of Trainers: 8-10. Defeat all trainers to reach Petalburg City."), MSGBOX_AUTOCLOSE)
+    msgbox(format("This is the first gauntlet: Level of Trainers: 6-8. Defeat all trainers to reach Petalburg City."), MSGBOX_AUTOCLOSE)
     release
     end
 
@@ -126,9 +126,11 @@ script Route102_EventScript_Tiana{
 }
 
 script Route102_Clear{
+	fadescreen(FADE_TO_BLACK)
 	removeobject(10)
 	removeobject(11)
-	msgbox(format("Level cap has increased to 16."), MSGBOX_AUTOCLOSE)
+	msgbox(format("Level cap has increased to 12."), MSGBOX_DEFAULT)
+	fadescreen(FADE_FROM_BLACK)
 	setflag(FLAG_ROUTE102_CLEAR_0x266)
 	return
 }
