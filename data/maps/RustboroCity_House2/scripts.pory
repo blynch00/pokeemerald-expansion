@@ -1,0 +1,129 @@
+raw `
+RustboroCity_House2_MapScripts::
+	.byte 0
+
+
+RustboroCity_House2_EventScript_LittleGirl::
+	msgbox RustboroCity_House2_Text_RoxanneKnowsALot, MSGBOX_NPC
+	end
+
+RustboroCity_House2_Text_TrainerSchoolExcellent:
+	.string "The TRAINER'S SCHOOL is excellent.\p"
+	.string "If you study there, you could even\n"
+	.string "become a GYM LEADER.$"
+
+RustboroCity_House2_Text_RoxanneKnowsALot:
+	.string "ROXANNE, the GYM LEADER, really knows\n"
+	.string "a lot about POKéMON.\p"
+	.string "She's really strong, too!$"
+
+`
+
+script RustboroCity_House2_EventScript_KantoStarter{
+    lockall
+    faceplayer
+    if(!(flag(FLAG_BADGE01_GET))){
+        msgbox(format("I see you are a trainer! Please return to me once you have defeated Roxanne, I will give you
+        something to help in your journey."), MSGBOX_DEFAULT)
+    }
+    else{
+        if(!(flag(FLAG_RUSTBORO_GEN1_GIFT_0x271))){
+            msgbox(format("I see you have gotten your first badge! My family has been raising the Kanto starter
+            Pokemon for years. Please, take one to assist you."), MSGBOX_DEFAULT)
+            multichoice(25,5, MULTI_KANTO_STARTER_CHOICE, 0)
+            if (var(VAR_RESULT) == 0){
+                call(GivePlayerBulbasaur)
+            }
+            elif (var(VAR_RESULT) == 1){
+                call(GivePlayerSquirtle)
+            }
+            elif (var(VAR_RESULT) == 2){
+                call(GivePlayerCharmander)
+            }
+        }
+        else{
+            msgbox(format("Please raise your Pokemon well!"), MSGBOX_DEFAULT)
+        }
+    }
+    release
+    end
+}
+
+script GivePlayerBulbasaur{
+    givemon(SPECIES_BULBASAUR, 5, ITEM_ORAN_BERRY)
+    if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("You got Bulbasaur!")
+            bufferspeciesname(STR_VAR_2, SPECIES_BULBASAUR)
+            setflag(FLAG_RUSTBORO_GEN1_GIFT_0x271)
+            call(RustboroKanto_NicknamePartyMon)
+        }
+    elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("You got Bulbasaur!")
+            setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_BULBASAUR)
+            setflag(FLAG_RUSTBORO_GEN1_GIFT_0x271)
+            call(RustboroKanto_NicknameBoxMon)
+        }
+        else{
+            msgbox("No more room.")
+        }
+}
+
+script GivePlayerSquirtle{
+    givemon(SPECIES_SQUIRTLE, 5, ITEM_ORAN_BERRY)
+    if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("You got Squirtle!")
+            bufferspeciesname(STR_VAR_2, SPECIES_SQUIRTLE)
+            setflag(FLAG_RUSTBORO_GEN1_GIFT_0x271)
+            call(RustboroKanto_NicknamePartyMon)
+        }
+    elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("You got Squirtle!")
+            setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SQUIRTLE)
+            setflag(FLAG_RUSTBORO_GEN1_GIFT_0x271)
+            call(RustboroKanto_NicknameBoxMon)
+        }
+        else{
+            msgbox("No more room.")
+        }
+}
+
+script GivePlayerCharmander{
+    givemon(SPECIES_CHARMANDER, 5, ITEM_ORAN_BERRY)
+    if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("You got Charmander!")
+            bufferspeciesname(STR_VAR_2, SPECIES_CHARMANDER)
+            setflag(FLAG_RUSTBORO_GEN1_GIFT_0x271)
+            call(RustboroKanto_NicknamePartyMon)
+        }
+    elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("You got Charmander!")
+            setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHARMANDER)
+            setflag(FLAG_RUSTBORO_GEN1_GIFT_0x271)
+            call(RustboroKanto_NicknameBoxMon)
+        }
+        else{
+            msgbox("No more room.")
+        }
+}
+
+script RustboroKanto_NicknamePartyMon{
+    msgbox("Give this Pokemon a nickname?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_GetGiftMonPartySlot)
+        call(Common_EventScript_NameReceivedPartyMon)
+    }
+}
+
+script RustboroKanto_NicknameBoxMon{
+    msgbox("Give this Pokemon a nickname?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_NameReceivedBoxMon)
+    }
+    call(Common_EventScript_TransferredToPC)
+}

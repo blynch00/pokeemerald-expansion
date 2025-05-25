@@ -668,8 +668,8 @@
 #define FLAG_ROUTE104_PART2_CLEAR_0x26D  0x26D // Unused Flag
 #define FLAG_ROUTE104_PART2_REWARDS_0x26E  0x26E // Unused Flag
 #define FLAG_ROUTE116_CLEAR_0x26F  0x26F // Unused Flag
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
+#define FLAG_ROXANNE_CLEAR_0x270  0x270 // Unused Flag
+#define FLAG_RUSTBORO_GEN1_GIFT_0x271  0x271 // Unused Flag
 #define FLAG_UNUSED_0x272  0x272 // Unused Flag
 #define FLAG_UNUSED_0x273  0x273 // Unused Flag
 #define FLAG_UNUSED_0x274  0x274 // Unused Flag

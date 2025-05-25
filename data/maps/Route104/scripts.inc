@@ -2391,6 +2391,18 @@ Route104_Gauntlet2_ClearReward_4:
 	goto Route104_Gauntlet2_ClearReward_1
 
 
+BrineyHouseBlockage::
+# 1271 "data/maps/Route104/scripts.pory"
+	lockall
+# 1272 "data/maps/Route104/scripts.pory"
+	faceplayer
+# 1273 "data/maps/Route104/scripts.pory"
+	msgbox BrineyHouseBlockage_Text_0, MSGBOX_DEFAULT
+# 1274 "data/maps/Route104/scripts.pory"
+	release
+	end
+
+
 Route104_EventScript_Cindy_Text_0:
 # 1114 "data/maps/Route104/scripts.pory"
 	.string "Sorry for the ruckus. We will settle\n"
@@ -2448,3 +2460,10 @@ Route104_Gauntlet2_EventScript_ClearRoute_Text_0:
 Route104_Gauntlet2_ClearReward_Text_0:
 # 1259 "data/maps/Route104/scripts.pory"
 	.string "Would you like the route reward?$"
+
+BrineyHouseBlockage_Text_0:
+# 1273 "data/maps/Route104/scripts.pory"
+	.string "Hey trainer! I saw another trainer\n"
+	.string "around your age who was asking to see\l"
+	.string "you again. I believe they are in\l"
+	.string "Rustboro.$"

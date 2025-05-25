@@ -783,6 +783,14 @@ static const struct MenuAction MultichoiceList_Exit[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiceList_KantoStarters[] = 
+{
+    {gText_Kanto_GrassStarter},
+    {gText_Kanto_WaterStarter},
+    {gText_Kanto_FireStarter},
+};
+
+
 struct MultichoiceListStruct
 {
     const struct MenuAction *list;
@@ -906,6 +914,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_FALLARBOR_TENT_RULES]       = MULTICHOICE(MultichoiceList_FallarborTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
     [MULTI_BERRY_PLOT]                 = MULTICHOICE(MultichoiceList_BerryPlot),
+    [MULTI_KANTO_STARTER_CHOICE]       = MULTICHOICE(MultichoiceList_KantoStarters),
 };
 
 const u8 *const gStdStrings[] =

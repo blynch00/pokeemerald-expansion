@@ -334,11 +334,24 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_ACE_POKEMON
 
-Poochyena
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Palpitoad @ Sitrus Berry  
+Ability: Water Absorb  
+Level: 16    
+Modest Nature  
+- Scald  
+- Secret Power  
+- Mud Shot  
+- Toxic  
+
+Arbok @ Poison Barb  
+Ability: Intimidate  
+Level: 16  
+- Pursuit  
+- Bulldoze  
+- Poison Fang  
+- Snarl  
 
 === TRAINER_GRUNT_WEATHER_INST_1 ===
 Name: GRUNT
@@ -4814,7 +4827,7 @@ Pic: Leader Roxanne
 Gender: Female
 Music: Female
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER 
 
 Corsola-Galar @ Sitrus Berry  
 Ability: Cursed Body  
@@ -4838,13 +4851,13 @@ Ability: Guts
 Level: 16  
 Naive Nature  
 - Quick Attack  
-- Retaliate  
+- Headbutt 
 - Rock Smash  
 - Hyper Fang  
 
 Anorith @ Hard Stone  
 Ability: Swift Swim  
-Level: 14  
+Level: 16  
 - Smack Down  
 - Aqua Jet  
 - Metal Claw  
@@ -6043,12 +6056,42 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER
 
-Geodude
-Level: 10
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
+Meowth @ Normal Gem  
+Ability: Technician  
+Level: 15  
+- Fake Out  
+- Thief  
+- Fury Swipes  
+- U-turn  
+
+Dwebble @ Oran Berry  
+Ability: Sturdy  
+Level: 15  
+Naive Nature  
+- Shell Smash  
+- Rock Tomb  
+- Rock Smash  
+- Bug Bite  
+
+Carkol @ Shuca Berry  
+Ability: Steam Engine  
+Level: 16  
+Brave Nature  
+- Flame Charge  
+- Rock Blast  
+- Incinerate  
+- Sleep Talk  
+
+Stufful @ Muscle Band  
+Ability: Fluffy  
+Level: 15  
+Adamant Nature  
+- Rock Tomb  
+- Aerial Ace  
+- Low Sweep  
+- Stomp  
 
 === TRAINER_TOMMY ===
 Name: TOMMY
@@ -6056,16 +6099,34 @@ Class: Youngster
 Pic: Youngster
 Gender: Male
 Music: Male
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move
 
-Geodude
-Level: 8
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Igglybuff @ Eviolite  
+Ability: Friend Guard  
+Level: 15  
+Calm Nature  
+- Draining Kiss  
+- Wish  
+- Screech  
+- Helping Hand  
 
-Geodude
-Level: 8
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Larvitar @ Flame Orb  
+Ability: Guts  
+Level: 16  
+Adamant Nature  
+- Rock Slide  
+- Dragon Dance  
+- Iron Head  
+- Bulldoze  
+
+Taillow @ Toxic Orb  
+Ability: Guts  
+Level: 15  
+Adamant Nature  
+- Quick Attack  
+- Aerial Ace  
+- Reversal 
 
 === TRAINER_JOEY ===
 Name: JOEY
@@ -10674,15 +10735,34 @@ Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_ACE_POKEMON
 
-Geodude
-Level: 8
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Shuckle @ Oran Berry  
+Ability: Sturdy  
+Level: 14  
+Sassy Nature  
+IVs: 0 Atk  
+- Sticky Web  
+- Stealth Rock  
+- Rest  
+- Sleep Talk  
 
-Geodude
-Level: 8
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Geodude @ Berry Juice  
+Ability: Sturdy  
+Level: 15  
+Adamant Nature  
+- Rock Throw  
+- Magnitude  
+
+Munchlax @ Salac Berry  
+Ability: Gluttony  
+Level: 15  
+Jolly Nature  
+- Belly Drum  
+- Facade  
+- Sleep Talk  
+- Rock Tomb  
+
 
 === TRAINER_BRENDEN ===
 Name: BRENDEN
@@ -10965,15 +11045,44 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER
 
-Lotad
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Beedrill @ Charti Berry  
+Ability: Sniper  
+Level: 17   
+Jolly Nature  
+- Poison Jab  
+- U-turn  
+- Bug Bite  
+- Acrobatics  
 
-Torchic
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Combusken @ Muscle Band  
+Ability: Blaze  
+Level: 18   
+Jolly Nature  
+- Flame Charge  
+- Will-O-Wisp  
+- Poison Jab  
+- Brick Break  
+
+Dunsparce @ Sitrus Berry  
+Ability: Serene Grace  
+Level: 17    
+Quirky Nature  
+- Ancient Power  
+- Headbutt  
+- Agility  
+- Poison Jab  
+
+Tinkatuff @ Chesto Berry  
+Ability: Mold Breaker  
+Level: 17   
+Adamant Nature  
+- Fake Out  
+- Thunder Wave  
+- Play Rough  
+- Rest  
+
 
 === TRAINER_BRENDAN_RUSTBORO_MUDKIP ===
 Name: BRENDAN
@@ -10982,15 +11091,44 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER
 
-Wingull
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Beedrill @ Charti Berry  
+Ability: Sniper  
+Level: 17   
+Jolly Nature  
+- Poison Jab  
+- U-turn  
+- Bug Bite  
+- Acrobatics  
 
-Treecko
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Grovyle @ Expert Belt  
+Ability: Overgrow  
+Level: 18    
+Adamant Nature  
+- Aerial Ace  
+- Seed Bomb  
+- X-Scissor  
+- Thunder Punch  
+
+Sealeo @ Chesto Berry  
+Ability: Thick Fat  
+Level: 17    
+Sassy Nature  
+- Ice Beam  
+- Toxic  
+- Rest  
+- Bulldoze  
+
+Girafarig @ Sitrus Berry  
+Ability: Inner Focus  
+Level: 17    
+Quirky Nature   
+- Attract  
+- Round  
+- Confusion  
+- Grass Knot  
+
 
 === TRAINER_PAXTON ===
 Name: PAXTON
@@ -11089,15 +11227,41 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Basic Trainer
+AI: AI_FLAG_SMART_TRAINER
 
-Slugma
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Beedrill @ Charti Berry  
+Ability: Sniper  
+Level: 17   
+Jolly Nature  
+- Poison Jab  
+- U-turn  
+- Bug Bite  
+- Acrobatics  
 
-Mudkip
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Miltank @ Silk Scarf  
+Ability: Sap Sipper  
+Level: 17   
+- Body Slam  
+- Wake-Up Slap  
+- Stealth Rock  
+- Milk Drink  
+
+Marshtomp @ Eviolite  
+Ability: Torrent  
+Level: 18   
+Relaxed Nature  
+- Ice Punch  
+- Bulldoze  
+- Scald  
+- Yawn  
+
+Lampent @ Charcoal  
+Ability: Flash Fire  
+Level: 17     
+- Flame Burst  
+- Shock Wave  
+- Will-O-Wisp  
+- Hex  
 
 === TRAINER_MAY_RUSTBORO_MUDKIP ===
 Name: MAY
@@ -11106,15 +11270,44 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: AI_FLAG_SMART_TRAINER
 
-Wingull
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Kadabra @ Twisted Spoon  
+Ability: Synchronize  
+Level: 17  
+Naive Nature  
+IVs: 31 HP / 0 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+- Grass Knot  
+- Confusion  
+- Disable  
+- Hidden Power
 
-Treecko
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Sealeo @ Chesto Berry  
+Ability: Thick Fat  
+Level: 17  
+Sassy Nature  
+- Ice Beam  
+- Toxic  
+- Rest  
+- Bulldoze  
+
+Lopunny @ Toxic Orb  
+Ability: Cute Charm  
+Level: 17  
+Adamant Nature  
+- Switcheroo  
+- Drain Punch  
+- Retaliate  
+- Brutal Swing  
+
+Grovyle @ Expert Belt  
+Ability: Overgrow  
+Level: 18  
+Adamant Nature  
+- Aerial Ace  
+- Seed Bomb  
+- X-Scissor  
+- Thunder Punch  
 
 === TRAINER_MAXIE_MAGMA_HIDEOUT ===
 Name: MAXIE
@@ -14374,15 +14567,44 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Basic Trainer
+AI: AI_FLAG_SMART_TRAINER
 
-Lotad
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Combusken @ Muscle Band  
+Ability: Blaze  
+Level: 18  
+Jolly Nature  
+- Flame Charge  
+- Will-O-Wisp  
+- Poison Jab  
+- Brick Break  
 
-Torchic
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Lopunny @ Toxic Orb  
+Ability: Cute Charm  
+Level: 17  
+Adamant Nature  
+- Switcheroo  
+- Drain Punch  
+- Retaliate  
+- Brutal Swing  
+
+Lombre @ Wise Glasses  
+Ability: Own Tempo  
+Level: 17  
+Modest Nature  
+- Fake Out  
+- Giga Drain  
+- Knock Off  
+- Water Pulse  
+
+Dunsparce @ Sitrus Berry  
+Ability: Serene Grace  
+Level: 17  
+Quirky Nature  
+- Ancient Power  
+- Headbutt  
+- Agility  
+- Poison Jab  
+
 
 === TRAINER_MAY_RUSTBORO_TORCHIC ===
 Name: MAY
@@ -14391,15 +14613,43 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Basic Trainer
+AI: AI_FLAG_SMART_TRAINER
 
-Torkoal
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Lopunny @ Toxic Orb  
+Ability: Cute Charm  
+Level: 17   
+Adamant Nature  
+- Switcheroo  
+- Drain Punch  
+- Retaliate  
+- Brutal Swing  
 
-Mudkip
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Fletchinder @ Sharp Beak  
+Ability: Gale Wings  
+Level: 17    
+Jolly Nature  
+- Dual Wingbeat  
+- Will-O-Wisp  
+- Flame Charge  
+- Roost  
+
+Miltank @ Silk Scarf  
+Ability: Sap Sipper  
+Level: 17    
+- Body Slam  
+- Wake-Up Slap  
+- Stealth Rock  
+- Milk Drink  
+
+Marshtomp @ Eviolite  
+Ability: Torrent  
+Level: 18   
+Relaxed Nature  
+- Ice Punch  
+- Bulldoze  
+- Scald  
+- Yawn  
+
 
 === TRAINER_ROXANNE_2 ===
 Name: ROXANNE

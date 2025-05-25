@@ -1266,3 +1266,11 @@ script Route104_Gauntlet2_ClearReward{
     release
     end
 }
+
+script BrineyHouseBlockage {
+	lockall
+	faceplayer
+	msgbox(format("Hey trainer! I saw another trainer around your age who was asking to see you again. I believe they are in Rustboro."), MSGBOX_DEFAULT)
+	release
+	end
+}

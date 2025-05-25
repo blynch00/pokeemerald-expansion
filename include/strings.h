@@ -2394,6 +2394,11 @@ extern const u8 gText_PkmnForSwap[];
 extern const u8 gText_SamePkmnInPartyAlready[];
 extern const u8 gText_Cancel3[];
 
+// Starter Gift Selection Multichoice
+extern const u8 gText_Kanto_GrassStarter[];
+extern const u8 gText_Kanto_WaterStarter[];
+extern const u8 gText_Kanto_FireStarter[];
+
 // Naming Screen
 extern const u8 gText_MoveOkBack[];
 extern const u8 gText_YourName[];
