@@ -1370,7 +1370,7 @@
               {
                 "min_level": 6,
                 "max_level": 6,
-                "species": "SPECIES_SURSKIT"
+                "species": "SPECIES_FLETCHLING"
               },
               {
                 "min_level": 6,
@@ -1910,7 +1910,7 @@
               {
                 "min_level": 6,
                 "max_level": 6,
-                "species": "SPECIES_GEODUDE_ALOLA"
+                "species": "SPECIES_BRONZOR"
               },
               {
                 "min_level": 6,
@@ -3204,7 +3204,7 @@
               {
                 "min_level": 5,
                 "max_level": 8,
-                "species": "SPECIES_GRANBULL"
+                "species": "SPECIES_SNUBBULL"
               },
               {
                 "min_level": 5,

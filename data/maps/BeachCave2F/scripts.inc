@@ -28,7 +28,7 @@ BeachCave2F_EventScript_SadCubone_1:
 
 BeachCave2F_EventScript_SadCubone_2:
 # 12 "data/maps/BeachCave2F/scripts.pory"
-	givemon SPECIES_CUBONE, 5, ITEM_ORAN_BERRY
+	givemon SPECIES_CUBONE, 5, ITEM_THICK_CLUB
 # 13 "data/maps/BeachCave2F/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq BeachCave2F_EventScript_SadCubone_5
