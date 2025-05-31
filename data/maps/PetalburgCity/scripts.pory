@@ -801,7 +801,7 @@ script PetalburgCity_EventScript_Treeko_CarePackage {
         msgbox(PetalburgCity_No_CarePackage)
     	}
 	}
-	else {
+	else{
 	msgbox(format("{COLOR GREEN}Treeko grins at you."))
 	}
     waitmessage

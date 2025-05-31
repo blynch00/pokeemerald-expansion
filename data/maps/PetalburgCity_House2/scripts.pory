@@ -6,9 +6,7 @@ PetalburgCity_House2_EventScript_Woman::
 	msgbox PetalburgCity_House2_Text_NormanBecameGymLeader, MSGBOX_NPC
 	end
 
-PetalburgCity_House2_EventScript_SchoolKid::
-	msgbox PetalburgCity_House2_Text_BattledNormanOnce, MSGBOX_NPC
-	end
+
 
 PetalburgCity_House2_Text_NormanBecameGymLeader:
 	.string "NORMAN became our town's new\n"
@@ -18,11 +16,82 @@ PetalburgCity_House2_Text_NormanBecameGymLeader:
     .string "the Hoenn region settle back into\n"
     .string "normalcy. What a great guy!$"
 
-PetalburgCity_House2_Text_BattledNormanOnce:
-	.string "I battled NORMAN once, but, whew,\n"
-	.string "he was way too strong.\p"
-	.string "How would I put it?\p"
-	.string "I just got the feeling that he\n"
-	.string "lives for POKéMON.$"
-
 `
+
+script PetalburgCity_House2_EventScript_SchoolKid{
+	lockall
+	faceplayer
+	if(!(flag(FLAG_BABY_POKEMON_PETALBURG_0x497) == TRUE)){
+		msgbox (format("Well, I had planned on hatching this egg, but it just doesn't seem to want to come out. Would you like it?"), MSGBOX_YESNO)
+			if(var(VAR_RESULT) == YES){
+				getpartysize
+				compare(VAR_RESULT, 6)
+				goto_if_eq(Player_Has_Full_Party)
+				goto_if_ne(Player_Receives_Egg)
+			}
+			else{
+				msgbox(format("Oh well, I guess I'll just sit here and stare at it until it hatches."), MSGBOX_DEFAULT)
+			}
+		
+			}
+			
+	else{
+		msgbox(format("Hey there! Hope that POKéMON is treated well, and you form an inexplicable bond together."), MSGBOX_DEFAULT)
+	}
+	release
+	end
+}
+	
+script Player_Has_Full_Party{
+	msgbox(format("Oh, too bad, you don't have room in your party."), MSGBOX_DEFAULT)
+	release
+	end
+}
+script Player_Receives_Egg{
+	random(5)
+	if(var(VAR_RESULT) == 0){
+		giveegg(SPECIES_TOGEPI)
+		playfanfare(MUS_OBTAIN_ITEM)
+		msgbox(format("{PLAYER} received an egg!"), MSGBOX_DEFAULT)
+		waitmessage
+		waitfanfare
+		setflag(FLAG_BABY_POKEMON_PETALBURG_0x497)
+	}
+	elif(var(VAR_RESULT) == 1){
+		giveegg(SPECIES_SMOOCHUM)
+		playfanfare(MUS_OBTAIN_ITEM)
+		msgbox(format("{PLAYER} received an egg!"), MSGBOX_DEFAULT)
+		waitmessage
+		waitfanfare
+		setflag(FLAG_BABY_POKEMON_PETALBURG_0x497)
+	}
+	elif(var(VAR_RESULT) == 2){
+		giveegg(SPECIES_MAGBY)
+		playfanfare(MUS_OBTAIN_ITEM)
+		msgbox(format("{PLAYER} received an egg!"), MSGBOX_DEFAULT)
+		waitmessage
+		waitfanfare
+		setflag(FLAG_BABY_POKEMON_PETALBURG_0x497)
+	}
+	elif(var(VAR_RESULT) == 3){
+		giveegg(SPECIES_ELEKID)
+		playfanfare(MUS_OBTAIN_ITEM)
+		msgbox(format("{PLAYER} received an egg!"), MSGBOX_DEFAULT)
+		waitmessage
+		waitfanfare
+		setflag(FLAG_BABY_POKEMON_PETALBURG_0x497)
+	}
+	elif(var(VAR_RESULT) == 4){
+		giveegg(SPECIES_MUNCHLAX)
+		playfanfare(MUS_OBTAIN_ITEM)
+		msgbox(format("{PLAYER} received an egg!"), MSGBOX_DEFAULT)
+		waitmessage
+		waitfanfare
+		setflag(FLAG_BABY_POKEMON_PETALBURG_0x497)
+	}
+	else{
+		msgbox(format("ERROR: NUM OUTSIDE RANGE"), MSGBOX_DEFAULT)
+	}
+	release
+	end
+}
