@@ -735,8 +735,10 @@ PetalburgCity_Text_WaterReflection:
 PetalburgCity_Text_FullPartyExplanation:
 	.string "Let's say you have six POKéMON.\n"
 	.string "If you catch another one…\p"
-	.string "It is automatically sent to a STORAGE\n"
-	.string "BOX over a PC connection.$"
+	.string "It is usually sent to a STORAGE\n"
+	.string "BOX over a PC connection.\p"
+	.string "However, now you can choose to add\n"
+	.string "it directly to your party!$"
 
 PetalburgCity_Text_GymSign:
 	.string "PETALBURG CITY POKéMON GYM\n"
@@ -774,25 +776,25 @@ script PetalburgCity_EventScript_Treeko_CarePackage {
 	if (!(flag(FLAG_PETALBURG_GIFT_0x265))){
 		msgbox(format("It looks like Treeko has made you a care package! Do you accept?"), MSGBOX_YESNO)
     	if(var(VAR_RESULT) == YES){
-			giveitem(ITEM_BLACK_BELT, [5])
-			giveitem(ITEM_BLACK_GLASSES, [5])
-			giveitem(ITEM_CHARCOAL, [5])
-			giveitem(ITEM_DRAGON_FANG, [5])
-			giveitem(ITEM_FAIRY_FEATHER, [5])
+			giveitem(ITEM_BLACK_BELT, [2])
+			giveitem(ITEM_BLACK_GLASSES, [2])
+			giveitem(ITEM_CHARCOAL, [2])
+			giveitem(ITEM_DRAGON_FANG, [2])
+			giveitem(ITEM_FAIRY_FEATHER, [2])
 			giveitem(ITEM_FOCUS_BAND, [1])
-			giveitem(ITEM_HARD_STONE, [5])
-			giveitem(ITEM_SHARP_BEAK, [5])
-			giveitem(ITEM_SOFT_SAND, [5])
-			giveitem(ITEM_SILK_SCARF, [5])
-			giveitem(ITEM_SILVER_POWDER, [5])
-			giveitem(ITEM_SPELL_TAG, [5])
-			giveitem(ITEM_MAGNET, [5])
-			giveitem(ITEM_METAL_COAT, [5])
-			giveitem(ITEM_MIRACLE_SEED, [5])
-			giveitem(ITEM_MYSTIC_WATER, [5])
-			giveitem(ITEM_NEVER_MELT_ICE, [5])
-			giveitem(ITEM_POISON_BARB, [5])
-			giveitem(ITEM_TWISTED_SPOON, [5])
+			giveitem(ITEM_HARD_STONE, [2])
+			giveitem(ITEM_SHARP_BEAK, [2])
+			giveitem(ITEM_SOFT_SAND, [2])
+			giveitem(ITEM_SILK_SCARF, [2])
+			giveitem(ITEM_SILVER_POWDER, [2])
+			giveitem(ITEM_SPELL_TAG, [2])
+			giveitem(ITEM_MAGNET, [2])
+			giveitem(ITEM_METAL_COAT, [2])
+			giveitem(ITEM_MIRACLE_SEED, [2])
+			giveitem(ITEM_MYSTIC_WATER, [2])
+			giveitem(ITEM_NEVER_MELT_ICE, [2])
+			giveitem(ITEM_POISON_BARB, [2])
+			giveitem(ITEM_TWISTED_SPOON, [2])
 			setflag(FLAG_PETALBURG_GIFT_0x265)
         }
     	else{

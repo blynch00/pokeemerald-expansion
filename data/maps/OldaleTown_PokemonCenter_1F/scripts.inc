@@ -97,114 +97,50 @@ OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat:
 # 49 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 	.string "as you like, and it's all for free.\l"
 # 50 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	.string "You never have to worry!$"
+	.string "You never have to worry!\p"
 # 51 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-
+	.string "As it gets harder and harder to be\n"
 # 52 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable:
+	.string "a trainer, I sure am glad to have \n"
 # 53 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	.string "The POKéMON WIRELESS CLUB on\n"
+	.string "our local POKéMON CENTERS!$"
 # 54 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	.string "the second floor was built recently.\p"
-# 55 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	.string "But they say they're still making\n"
-# 56 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	.string "adjustments.$"
-# 57 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 
-# 58 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub:
-# 59 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
+# 55 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
+OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable:
+# 56 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 	.string "The POKéMON WIRELESS CLUB on\n"
-# 60 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
+# 57 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 	.string "the second floor was built recently.\p"
+# 58 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
+	.string "But they say they're still making\n"
+# 59 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
+	.string "adjustments.$"
+# 60 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
+
 # 61 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
+OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub:
+# 62 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
+	.string "The POKéMON WIRELESS CLUB on\n"
+# 63 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
+	.string "the second floor was built recently.\p"
+# 64 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 	.string "I traded POKéMON right away.$"
 
-OldaleTown_PokemonCenter_1F_EventScript_Gentleman::
-# 66 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
+OldaleTown_PokemonCenter_EventScript_Gentleman::
+# 106 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 	lockall
-# 67 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
+# 107 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 	faceplayer
-# 68 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	goto_if_set FLAG_GOT_POKE_VIAL_0x493, OldaleTown_PokemonCenter_1F_EventScript_Gentleman_2
-# 73 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	msgbox OldaleTown_PokemonCenter_1F_EventScript_Gentleman_Text_1, MSGBOX_YESNO
-# 74 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	compare VAR_RESULT, YES
-	goto_if_eq OldaleTown_PokemonCenter_1F_EventScript_Gentleman_5
-# 79 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	msgbox OldaleTown_PokemonCenter_1F_EventScript_Gentleman_Text_2, MSGBOX_DEFAULT
-# 80 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
+# 108 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
+	msgbox OldaleTown_PokemonCenter_EventScript_Gentleman_Text_0, MSGBOX_DEFAULT
+# 109 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 	release
 	end
 
-OldaleTown_PokemonCenter_1F_EventScript_Gentleman_1:
-# 84 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	release
-	end
 
-OldaleTown_PokemonCenter_1F_EventScript_Gentleman_2:
-# 69 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	msgbox OldaleTown_PokemonCenter_1F_EventScript_Gentleman_Text_0, MSGBOX_DEFAULT
-	goto OldaleTown_PokemonCenter_1F_EventScript_Gentleman_1
-
-OldaleTown_PokemonCenter_1F_EventScript_Gentleman_5:
-# 75 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	call OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial
-# 76 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	setflag FLAG_GOT_POKE_VIAL_0x493
-	goto OldaleTown_PokemonCenter_1F_EventScript_Gentleman_1
-
-
-OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial::
-# 111 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	checkitem ITEM_POKE_VIAL
-# 112 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	compare VAR_RESULT, TRUE
-	goto_if_eq OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial_2
-# 116 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	compare VAR_RESULT, FALSE
-	goto_if_eq OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial_3
-OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial_1:
-	return
-
-OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial_2:
-# 113 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	msgbox OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial_Text_0, MSGBOX_DEFAULT
-# 114 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	setflag FLAG_GOT_POKE_VIAL_0x493
-	goto OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial_1
-
-OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial_3:
-# 117 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	msgbox OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial_Text_1, MSGBOX_DEFAULT
-# 118 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	giveitem ITEM_POKE_VIAL, [ 1 ]
-	goto OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial_1
-
-
-OldaleTown_PokemonCenter_1F_EventScript_Gentleman_Text_0:
-# 69 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	.string "You can access the Poke Vial via the\n"
-	.string "Key Items menu!$"
-
-OldaleTown_PokemonCenter_1F_EventScript_Gentleman_Text_1:
-# 73 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	.string "Running back and forth to the Pokemon\n"
-	.string "centers can be so annoying. Don't you\l"
-	.string "agree?$"
-
-OldaleTown_PokemonCenter_1F_EventScript_Gentleman_Text_2:
-# 79 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	.string "Well, if you really enjoy running, I\n"
-	.string "understand!$"
-
-OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial_Text_0:
-# 113 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	.string "Looks like you already have the Poke\n"
-	.string "Vial.$"
-
-OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial_Text_1:
-# 117 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	.string "Smart Lad! Here, a gift from me to you.$"
+OldaleTown_PokemonCenter_EventScript_Gentleman_Text_0:
+# 108 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
+	.string "My wife is lovely. She stands outside\n"
+	.string "this building to give local trainers her\l"
+	.string "healing item.$"

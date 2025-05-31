@@ -693,233 +693,319 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 # 347 "data/maps/OldaleTown/scripts.pory"
 OldaleTown_Text_SavingMyProgress:
 # 348 "data/maps/OldaleTown/scripts.pory"
-	.string "I want to take a rest, so I'm saving my\n"
+	.string "I want to go to Petalburg, but\n"
 # 349 "data/maps/OldaleTown/scripts.pory"
-	.string "progress.$"
+	.string "the route is taken over. I guess\n"
 # 350 "data/maps/OldaleTown/scripts.pory"
-
+	.string "I'll have to wait here....$"
 # 351 "data/maps/OldaleTown/scripts.pory"
-OldaleTown_Text_IWorkAtPokemonMart:
+
 # 352 "data/maps/OldaleTown/scripts.pory"
-	.string "Hi!\n"
+OldaleTown_Text_IWorkAtPokemonMart:
 # 353 "data/maps/OldaleTown/scripts.pory"
-	.string "I work at a POKéMON MART.\p"
+	.string "Hi!\n"
 # 354 "data/maps/OldaleTown/scripts.pory"
-	.string "Can I get you to come with me?$"
+	.string "I work at a POKéMON MART.\p"
 # 355 "data/maps/OldaleTown/scripts.pory"
-
+	.string "Can I get you to come with me?$"
 # 356 "data/maps/OldaleTown/scripts.pory"
-OldaleTown_Text_ThisIsAPokemonMart:
+
 # 357 "data/maps/OldaleTown/scripts.pory"
-	.string "This is a POKéMON MART.\n"
+OldaleTown_Text_ThisIsAPokemonMart:
 # 358 "data/maps/OldaleTown/scripts.pory"
-	.string "Just look for our blue roof.\p"
+	.string "This is a POKéMON MART.\n"
 # 359 "data/maps/OldaleTown/scripts.pory"
-	.string "We sell a variety of goods including\n"
+	.string "Just look for our blue roof.\p"
 # 360 "data/maps/OldaleTown/scripts.pory"
-	.string "POKé BALLS for catching POKéMON.\p"
+	.string "We sell a variety of goods including\n"
 # 361 "data/maps/OldaleTown/scripts.pory"
-	.string "Here, I'd like you to have this as\n"
+	.string "POKé BALLS for catching POKéMON.\p"
 # 362 "data/maps/OldaleTown/scripts.pory"
-	.string "a promotional item.$"
+	.string "Here, I'd like you to have this as\n"
 # 363 "data/maps/OldaleTown/scripts.pory"
-
+	.string "a promotional item.$"
 # 364 "data/maps/OldaleTown/scripts.pory"
-OldaleTown_Text_PotionExplanation:
-# 365 "data/maps/OldaleTown/scripts.pory"
-	.string "A POTION can be used anytime, so it's\n"
-# 366 "data/maps/OldaleTown/scripts.pory"
-	.string "even more useful than a POKéMON CENTER\l"
-# 367 "data/maps/OldaleTown/scripts.pory"
-	.string "in certain situations.$"
-# 368 "data/maps/OldaleTown/scripts.pory"
 
+# 365 "data/maps/OldaleTown/scripts.pory"
+OldaleTown_Text_PotionExplanation:
+# 366 "data/maps/OldaleTown/scripts.pory"
+	.string "A POTION can be used anytime, so it's\n"
+# 367 "data/maps/OldaleTown/scripts.pory"
+	.string "even more useful than a POKéMON CENTER\l"
+# 368 "data/maps/OldaleTown/scripts.pory"
+	.string "in certain situations.$"
 # 369 "data/maps/OldaleTown/scripts.pory"
-OldaleTown_Text_WaitDontComeInHere:
+
 # 370 "data/maps/OldaleTown/scripts.pory"
-	.string "Aaaaah! Wait!\n"
+OldaleTown_Text_WaitDontComeInHere:
 # 371 "data/maps/OldaleTown/scripts.pory"
-	.string "Please don't come in here.\p"
+	.string "Aaaaah! Wait!\n"
 # 372 "data/maps/OldaleTown/scripts.pory"
-	.string "I just discovered the footprints of\n"
+	.string "Please don't come in here.\p"
 # 373 "data/maps/OldaleTown/scripts.pory"
-	.string "a rare POKéMON!\p"
+	.string "I think there are trainers fighting\n"
 # 374 "data/maps/OldaleTown/scripts.pory"
-	.string "Wait until I finish sketching\n"
+	.string "wild POKéMON in this route!\n"
 # 375 "data/maps/OldaleTown/scripts.pory"
-	.string "them, okay?$"
+	.string "Wait until they settle down, okay?$"
 # 376 "data/maps/OldaleTown/scripts.pory"
 
 # 377 "data/maps/OldaleTown/scripts.pory"
 OldaleTown_Text_DiscoveredFootprints:
 # 378 "data/maps/OldaleTown/scripts.pory"
-	.string "I just discovered the footprints of\n"
+	.string "I think there are trainers fighting\n"
 # 379 "data/maps/OldaleTown/scripts.pory"
-	.string "a rare POKéMON!\p"
+	.string "wild POKéMON in this route!\n"
 # 380 "data/maps/OldaleTown/scripts.pory"
-	.string "Wait until I finish sketching\n"
+	.string "Wait until they settle down, okay?$"
 # 381 "data/maps/OldaleTown/scripts.pory"
-	.string "them, okay?$"
+
 # 382 "data/maps/OldaleTown/scripts.pory"
-
-# 383 "data/maps/OldaleTown/scripts.pory"
 OldaleTown_Text_FinishedSketchingFootprints:
-# 384 "data/maps/OldaleTown/scripts.pory"
+# 383 "data/maps/OldaleTown/scripts.pory"
 	.string "I finished sketching the footprints of\n"
-# 385 "data/maps/OldaleTown/scripts.pory"
+# 384 "data/maps/OldaleTown/scripts.pory"
 	.string "a rare POKéMON.\p"
-# 386 "data/maps/OldaleTown/scripts.pory"
+# 385 "data/maps/OldaleTown/scripts.pory"
 	.string "But it turns out they were only my\n"
-# 387 "data/maps/OldaleTown/scripts.pory"
+# 386 "data/maps/OldaleTown/scripts.pory"
 	.string "own footprints…$"
+# 387 "data/maps/OldaleTown/scripts.pory"
+
 # 388 "data/maps/OldaleTown/scripts.pory"
-
-# 389 "data/maps/OldaleTown/scripts.pory"
 OldaleTown_Text_MayLetsGoBack:
-# 390 "data/maps/OldaleTown/scripts.pory"
+# 389 "data/maps/OldaleTown/scripts.pory"
 	.string "MAY: {PLAYER}{KUN}!\n"
-# 391 "data/maps/OldaleTown/scripts.pory"
+# 390 "data/maps/OldaleTown/scripts.pory"
 	.string "Over here!\l"
-# 392 "data/maps/OldaleTown/scripts.pory"
+# 391 "data/maps/OldaleTown/scripts.pory"
 	.string "Let's hurry home!$"
+# 392 "data/maps/OldaleTown/scripts.pory"
+
 # 393 "data/maps/OldaleTown/scripts.pory"
-
-# 394 "data/maps/OldaleTown/scripts.pory"
 OldaleTown_Text_BrendanLetsGoBack:
-# 395 "data/maps/OldaleTown/scripts.pory"
+# 394 "data/maps/OldaleTown/scripts.pory"
 	.string "BRENDAN: I'm heading back to my dad's\n"
-# 396 "data/maps/OldaleTown/scripts.pory"
+# 395 "data/maps/OldaleTown/scripts.pory"
 	.string "LAB now.\l"
-# 397 "data/maps/OldaleTown/scripts.pory"
+# 396 "data/maps/OldaleTown/scripts.pory"
 	.string "{PLAYER}, you should hustle back, too.$"
-# 398 "data/maps/OldaleTown/scripts.pory"
+# 397 "data/maps/OldaleTown/scripts.pory"
 
-# 399 "data/maps/OldaleTown/scripts.pory"
+# 398 "data/maps/OldaleTown/scripts.pory"
 OldaleTown_Text_TownSign:
-# 400 "data/maps/OldaleTown/scripts.pory"
+# 399 "data/maps/OldaleTown/scripts.pory"
 	.string "OLDALE TOWN\n"
-# 401 "data/maps/OldaleTown/scripts.pory"
+# 400 "data/maps/OldaleTown/scripts.pory"
 	.string "“Where things start off scarce.”$"
 
 OldaleTown_EventScript_Meowth_Rare_Candy::
-# 404 "data/maps/OldaleTown/scripts.pory"
+# 403 "data/maps/OldaleTown/scripts.pory"
 	faceplayer
-# 405 "data/maps/OldaleTown/scripts.pory"
+# 404 "data/maps/OldaleTown/scripts.pory"
 	lockall
-# 406 "data/maps/OldaleTown/scripts.pory"
+# 405 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_EventScript_Meowth_Rare_Candy_Text_0, MSGBOX_YESNO
-# 407 "data/maps/OldaleTown/scripts.pory"
+# 406 "data/maps/OldaleTown/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq OldaleTown_EventScript_Meowth_Rare_Candy_2
-# 413 "data/maps/OldaleTown/scripts.pory"
+# 412 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_House1_No_Rare_Candies
 OldaleTown_EventScript_Meowth_Rare_Candy_1:
-# 415 "data/maps/OldaleTown/scripts.pory"
+# 414 "data/maps/OldaleTown/scripts.pory"
 	waitmessage
-# 416 "data/maps/OldaleTown/scripts.pory"
+# 415 "data/maps/OldaleTown/scripts.pory"
 	releaseall
 	end
 
 OldaleTown_EventScript_Meowth_Rare_Candy_2:
-# 408 "data/maps/OldaleTown/scripts.pory"
+# 407 "data/maps/OldaleTown/scripts.pory"
 	giveitem ITEM_RARE_CANDY, [ 499 ]
-# 409 "data/maps/OldaleTown/scripts.pory"
+# 408 "data/maps/OldaleTown/scripts.pory"
 	giveitem ITEM_QUICK_BALL, [ 99 ]
-# 410 "data/maps/OldaleTown/scripts.pory"
+# 409 "data/maps/OldaleTown/scripts.pory"
 	giveitem ITEM_TIMER_BALL, [ 99 ]
 	goto OldaleTown_EventScript_Meowth_Rare_Candy_1
 
 
 OldaleTown_EventScript_OldRodFisherman::
-# 425 "data/maps/OldaleTown/scripts.pory"
+# 424 "data/maps/OldaleTown/scripts.pory"
 	lock
-# 426 "data/maps/OldaleTown/scripts.pory"
+# 425 "data/maps/OldaleTown/scripts.pory"
 	faceplayer
-# 427 "data/maps/OldaleTown/scripts.pory"
+# 426 "data/maps/OldaleTown/scripts.pory"
 	goto_if_set FLAG_RECEIVED_OLD_ROD, OldaleTown_EventScript_OldRodFisherman_2
-# 431 "data/maps/OldaleTown/scripts.pory"
+# 430 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_EventScript_OldRodFisherman_Text_1, MSGBOX_YESNO
-# 432 "data/maps/OldaleTown/scripts.pory"
+# 431 "data/maps/OldaleTown/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq OldaleTown_EventScript_OldRodFisherman_5
-# 437 "data/maps/OldaleTown/scripts.pory"
+# 436 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_EventScript_OldRodFisherman_Text_2, MSGBOX_DEFAULT
-# 438 "data/maps/OldaleTown/scripts.pory"
+# 437 "data/maps/OldaleTown/scripts.pory"
 	release
 	end
 
 OldaleTown_EventScript_OldRodFisherman_1:
-# 442 "data/maps/OldaleTown/scripts.pory"
+# 441 "data/maps/OldaleTown/scripts.pory"
 	release
 	end
 
 OldaleTown_EventScript_OldRodFisherman_2:
-# 428 "data/maps/OldaleTown/scripts.pory"
+# 427 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_EventScript_OldRodFisherman_Text_0, MSGBOX_DEFAULT
 	goto OldaleTown_EventScript_OldRodFisherman_1
 
 OldaleTown_EventScript_OldRodFisherman_5:
-# 433 "data/maps/OldaleTown/scripts.pory"
+# 432 "data/maps/OldaleTown/scripts.pory"
 	call OldaleTown_EventScript_GiveOldRod
-# 434 "data/maps/OldaleTown/scripts.pory"
+# 433 "data/maps/OldaleTown/scripts.pory"
 	setflag FLAG_RECEIVED_OLD_ROD
 	goto OldaleTown_EventScript_OldRodFisherman_1
 
 
 OldaleTown_EventScript_GiveOldRod::
-# 447 "data/maps/OldaleTown/scripts.pory"
+# 446 "data/maps/OldaleTown/scripts.pory"
 	checkitem ITEM_OLD_ROD
-# 448 "data/maps/OldaleTown/scripts.pory"
+# 447 "data/maps/OldaleTown/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq OldaleTown_EventScript_GiveOldRod_2
-# 452 "data/maps/OldaleTown/scripts.pory"
+# 451 "data/maps/OldaleTown/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq OldaleTown_EventScript_GiveOldRod_3
 OldaleTown_EventScript_GiveOldRod_1:
 	return
 
 OldaleTown_EventScript_GiveOldRod_2:
-# 449 "data/maps/OldaleTown/scripts.pory"
+# 448 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_EventScript_GiveOldRod_Text_0, MSGBOX_DEFAULT
-# 450 "data/maps/OldaleTown/scripts.pory"
+# 449 "data/maps/OldaleTown/scripts.pory"
 	setflag FLAG_RECEIVED_OLD_ROD
 	goto OldaleTown_EventScript_GiveOldRod_1
 
 OldaleTown_EventScript_GiveOldRod_3:
-# 453 "data/maps/OldaleTown/scripts.pory"
+# 452 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_EventScript_GiveOldRod_Text_1, MSGBOX_DEFAULT
-# 454 "data/maps/OldaleTown/scripts.pory"
+# 453 "data/maps/OldaleTown/scripts.pory"
 	giveitem ITEM_OLD_ROD, [ 1 ]
 	goto OldaleTown_EventScript_GiveOldRod_1
 
 
+OldaleTown__EventScript_GivePokeVial::
+# 459 "data/maps/OldaleTown/scripts.pory"
+	lockall
+# 460 "data/maps/OldaleTown/scripts.pory"
+	faceplayer
+# 461 "data/maps/OldaleTown/scripts.pory"
+	goto_if_set FLAG_GOT_POKE_VIAL_0x493, OldaleTown__EventScript_GivePokeVial_2
+# 466 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown__EventScript_GivePokeVial_Text_1, MSGBOX_YESNO
+# 467 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq OldaleTown__EventScript_GivePokeVial_5
+# 472 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown__EventScript_GivePokeVial_Text_2, MSGBOX_DEFAULT
+# 473 "data/maps/OldaleTown/scripts.pory"
+	release
+	end
+
+OldaleTown__EventScript_GivePokeVial_1:
+# 477 "data/maps/OldaleTown/scripts.pory"
+	release
+	end
+
+OldaleTown__EventScript_GivePokeVial_2:
+# 462 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown__EventScript_GivePokeVial_Text_0, MSGBOX_DEFAULT
+	goto OldaleTown__EventScript_GivePokeVial_1
+
+OldaleTown__EventScript_GivePokeVial_5:
+# 468 "data/maps/OldaleTown/scripts.pory"
+	call OldaleTown_EventScript_ReceivePokeVial
+# 469 "data/maps/OldaleTown/scripts.pory"
+	setflag FLAG_GOT_POKE_VIAL_0x493
+	goto OldaleTown__EventScript_GivePokeVial_1
+
+
+OldaleTown_EventScript_ReceivePokeVial::
+# 482 "data/maps/OldaleTown/scripts.pory"
+	checkitem ITEM_POKE_VIAL
+# 483 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq OldaleTown_EventScript_ReceivePokeVial_2
+# 487 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq OldaleTown_EventScript_ReceivePokeVial_3
+OldaleTown_EventScript_ReceivePokeVial_1:
+	return
+
+OldaleTown_EventScript_ReceivePokeVial_2:
+# 484 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_ReceivePokeVial_Text_0, MSGBOX_DEFAULT
+# 485 "data/maps/OldaleTown/scripts.pory"
+	setflag FLAG_GOT_POKE_VIAL_0x493
+	goto OldaleTown_EventScript_ReceivePokeVial_1
+
+OldaleTown_EventScript_ReceivePokeVial_3:
+# 488 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_ReceivePokeVial_Text_1, MSGBOX_DEFAULT
+# 489 "data/maps/OldaleTown/scripts.pory"
+	giveitem ITEM_POKE_VIAL, [ 1 ]
+	goto OldaleTown_EventScript_ReceivePokeVial_1
+
+
 OldaleTown_EventScript_Meowth_Rare_Candy_Text_0:
-# 406 "data/maps/OldaleTown/scripts.pory"
+# 405 "data/maps/OldaleTown/scripts.pory"
 	.string "It looks like Meowth wants to give you\n"
 	.string "rare candies and Pokeballs. Do you\l"
 	.string "accept?$"
 
 OldaleTown_EventScript_OldRodFisherman_Text_0:
-# 428 "data/maps/OldaleTown/scripts.pory"
+# 427 "data/maps/OldaleTown/scripts.pory"
 	.string "Hey there! Hope the fish are biting.\n"
 	.string "There are a lot of pokemon to catch!$"
 
 OldaleTown_EventScript_OldRodFisherman_Text_1:
-# 431 "data/maps/OldaleTown/scripts.pory"
+# 430 "data/maps/OldaleTown/scripts.pory"
 	.string "Hey there, trainer! Do you like to fish?$"
 
 OldaleTown_EventScript_OldRodFisherman_Text_2:
-# 437 "data/maps/OldaleTown/scripts.pory"
+# 436 "data/maps/OldaleTown/scripts.pory"
 	.string "Shame. Shame.$"
 
 OldaleTown_EventScript_GiveOldRod_Text_0:
-# 449 "data/maps/OldaleTown/scripts.pory"
+# 448 "data/maps/OldaleTown/scripts.pory"
 	.string "Looks like you already have an old rod.$"
 
 OldaleTown_EventScript_GiveOldRod_Text_1:
-# 453 "data/maps/OldaleTown/scripts.pory"
+# 452 "data/maps/OldaleTown/scripts.pory"
 	.string "Take this!$"
 
+OldaleTown__EventScript_GivePokeVial_Text_0:
+# 462 "data/maps/OldaleTown/scripts.pory"
+	.string "You can access the Poke Vial via the\n"
+	.string "Key Items menu!$"
+
+OldaleTown__EventScript_GivePokeVial_Text_1:
+# 466 "data/maps/OldaleTown/scripts.pory"
+	.string "Running back and forth to the Pokemon\n"
+	.string "centers can be so annoying. Don't you\l"
+	.string "agree?$"
+
+OldaleTown__EventScript_GivePokeVial_Text_2:
+# 472 "data/maps/OldaleTown/scripts.pory"
+	.string "Well, if you really enjoy running, I\n"
+	.string "understand!$"
+
+OldaleTown_EventScript_ReceivePokeVial_Text_0:
+# 484 "data/maps/OldaleTown/scripts.pory"
+	.string "Looks like you already have the Poke\n"
+	.string "Vial.$"
+
+OldaleTown_EventScript_ReceivePokeVial_Text_1:
+# 488 "data/maps/OldaleTown/scripts.pory"
+	.string "Smart lad! Here, a gift from me to you.$"
+
 OldaleTown_House1_No_Rare_Candies::
-# 420 "data/maps/OldaleTown/scripts.pory"
+# 419 "data/maps/OldaleTown/scripts.pory"
 	.string "No items were given.$"

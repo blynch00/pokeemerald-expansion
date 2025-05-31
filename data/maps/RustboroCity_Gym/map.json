@@ -117,6 +117,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RoxanneBlockage",
       "flag": "FLAG_ROXANNE_CLEAR_0x270"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATICATE)",
+      "x": 4,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RustboroGym_Follower_Raticate",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ANORITH)",
+      "x": 6,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RustboroGym_Follower_Anorith",
+      "flag": "0"
     }
   ],
   "warp_events": [

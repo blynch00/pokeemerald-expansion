@@ -12,7 +12,9 @@ PetalburgCity_House1_EventScript_Woman::
 PetalburgCity_House1_Text_TravelingIsWonderful:
 	.string "Traveling is wonderful!\p"
 	.string "When I was young, I roamed the seas\n"
-	.string "and the mountains!$"
+	.string "and the mountains!\n"
+	.string "Now, it's hard to even travel\n"
+	.string "to Rustboro City.$"
 
 PetalburgCity_House1_Text_GoOnAdventure:
 	.string "Sigh…\p"

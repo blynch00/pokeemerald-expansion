@@ -605,6 +605,30 @@ RustboroGym_Clear::
 	end
 
 
+RustboroGym_Follower_Raticate::
+# 310 "data/maps/RustboroCity_Gym/scripts.pory"
+	lockall
+# 311 "data/maps/RustboroCity_Gym/scripts.pory"
+	faceplayer
+# 312 "data/maps/RustboroCity_Gym/scripts.pory"
+	msgbox RustboroGym_Follower_Raticate_Text_0, MSGBOX_DEFAULT
+# 313 "data/maps/RustboroCity_Gym/scripts.pory"
+	release
+	end
+
+
+RustboroGym_Follower_Anorith::
+# 318 "data/maps/RustboroCity_Gym/scripts.pory"
+	lockall
+# 319 "data/maps/RustboroCity_Gym/scripts.pory"
+	faceplayer
+# 320 "data/maps/RustboroCity_Gym/scripts.pory"
+	msgbox RustboroGym_Follower_Anorith_Text_0, MSGBOX_DEFAULT
+# 321 "data/maps/RustboroCity_Gym/scripts.pory"
+	release
+	end
+
+
 RoxanneBlockage_Text_0:
 # 293 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "Looks like these pokemon won't move\n"
@@ -613,3 +637,13 @@ RoxanneBlockage_Text_0:
 RustboroGym_Clear_Text_0:
 # 303 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "Roxanne is ready to battle!$"
+
+RustboroGym_Follower_Raticate_Text_0:
+# 312 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "The Raticate leers at you disarmingly.\n"
+	.string "It looks excited to fight.$"
+
+RustboroGym_Follower_Anorith_Text_0:
+# 320 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "The Anorith looks like it's sniffing you.\n"
+	.string "It may want to eat your berries.$"

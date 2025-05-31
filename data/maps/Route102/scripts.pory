@@ -7,9 +7,6 @@ Route102_EventScript_RouteSignPetalburg::
 	msgbox Route102_Text_RouteSignPetalburg, MSGBOX_SIGN
 	end
 
-Route102_EventScript_Boy::
-	msgbox Route102_Text_CatchWholeBunchOfPokemon, MSGBOX_NPC
-	end
 
 Route102_EventScript_Calvin::
 	trainerbattle_single TRAINER_CALVIN_1, Route102_Text_CalvinIntro, Route102_Text_CalvinDefeated, Route102_EventScript_CalvinRegisterMatchCallAfterBattle
@@ -86,10 +83,6 @@ Route102_Text_ImNotVeryTall:
 	.string "Fwafwafwafwafwa…\p"
 	.string "Fwatchoo!$"
 
-Route102_Text_CatchWholeBunchOfPokemon:
-	.string "I'm going to catch a whole bunch of\n"
-	.string "POKéMON!$"
-
 
 Route102_Text_RouteSignPetalburg:
 	.string "ROUTE 102\n"
@@ -129,7 +122,7 @@ script Route102_Clear{
 	fadescreen(FADE_TO_BLACK)
 	removeobject(10)
 	removeobject(11)
-	msgbox(format("Level cap has increased to 12."), MSGBOX_DEFAULT)
+	msgbox(format("Level cap has increased to 10."), MSGBOX_DEFAULT)
 	fadescreen(FADE_FROM_BLACK)
 	setflag(FLAG_ROUTE102_CLEAR_0x266)
 	return
@@ -165,4 +158,17 @@ script Route_102_EventScript_BarrierText{
 	waitmessage
     releaseall
     end
+}
+
+script Route102_EventScript_Boy{
+	lockall	
+	faceplayer
+	if (!(flag(FLAG_ROUTE102_GIFTS_0x267) ==  TRUE)){
+		msgbox(format("These trainers have taken over the route! I wish there was something I could do."), MSGBOX_DEFAULT)
+	}
+	else{
+		msgbox(format("Oh boy! Thanks so much for dealing with those hooligans. I'm telling my mom about you!!"), MSGBOX_DEFAULT)
+	}
+	release	
+	end
 }

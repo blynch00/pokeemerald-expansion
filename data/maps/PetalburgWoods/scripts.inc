@@ -751,17 +751,17 @@ PetalburgWoods_Text_YoureLoadedWithItems:
 # 376 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_Text_GoBugPokemonTeam:
 # 377 "data/maps/PetalburgWoods/scripts.pory"
-	.string "I caught a whole bunch of POKéMON!\p"
+	.string "I need to a get a whole bunch\n"
 # 378 "data/maps/PetalburgWoods/scripts.pory"
-	.string "Go, go, go!\n"
+	.string "of POKéMON! Go! Go! Go!\p"
 # 379 "data/maps/PetalburgWoods/scripts.pory"
-	.string "My BUG POKéMON team!$"
+	.string "My BUG POKéMON!$"
 # 380 "data/maps/PetalburgWoods/scripts.pory"
 
 # 381 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_Text_ICouldntWin:
 # 382 "data/maps/PetalburgWoods/scripts.pory"
-	.string "I have all these POKéMON,\n"
+	.string "I have strong POKéMON,\n"
 # 383 "data/maps/PetalburgWoods/scripts.pory"
 	.string "but I couldn't win…$"
 # 384 "data/maps/PetalburgWoods/scripts.pory"
@@ -857,180 +857,178 @@ PetalburgWoods_Text_StayOutOfTallGrass:
 # 429 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_Text_HiddenItemsExplanation:
 # 430 "data/maps/PetalburgWoods/scripts.pory"
-	.string "Sometimes, there are things on the\n"
+	.string "GRRRR! I'm so sick of all these\n"
 # 431 "data/maps/PetalburgWoods/scripts.pory"
-	.string "ground even if you can't see them.\p"
+	.string "rowdy trainers! Why can't we have\n"
 # 432 "data/maps/PetalburgWoods/scripts.pory"
-	.string "That's why I always check where I'm\n"
+	.string "a single normal day around here?$"
 # 433 "data/maps/PetalburgWoods/scripts.pory"
-	.string "walking.$"
+
 # 434 "data/maps/PetalburgWoods/scripts.pory"
-
-# 435 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_Text_TryUsingThisItem:
-# 436 "data/maps/PetalburgWoods/scripts.pory"
+# 435 "data/maps/PetalburgWoods/scripts.pory"
 	.string "Oh, neat!\n"
-# 437 "data/maps/PetalburgWoods/scripts.pory"
+# 436 "data/maps/PetalburgWoods/scripts.pory"
 	.string "That's the BADGE from RUSTBORO GYM!\p"
-# 438 "data/maps/PetalburgWoods/scripts.pory"
+# 437 "data/maps/PetalburgWoods/scripts.pory"
 	.string "You must be a TRAINER.\n"
-# 439 "data/maps/PetalburgWoods/scripts.pory"
+# 438 "data/maps/PetalburgWoods/scripts.pory"
 	.string "You should try using this item.$"
+# 439 "data/maps/PetalburgWoods/scripts.pory"
+
 # 440 "data/maps/PetalburgWoods/scripts.pory"
-
-# 441 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_Text_MiracleSeedExplanation:
-# 442 "data/maps/PetalburgWoods/scripts.pory"
+# 441 "data/maps/PetalburgWoods/scripts.pory"
 	.string "It's a MIRACLE SEED.\n"
-# 443 "data/maps/PetalburgWoods/scripts.pory"
+# 442 "data/maps/PetalburgWoods/scripts.pory"
 	.string "If a POKéMON holds that item, its\l"
-# 444 "data/maps/PetalburgWoods/scripts.pory"
+# 443 "data/maps/PetalburgWoods/scripts.pory"
 	.string "GRASS-type moves become stronger.\p"
-# 445 "data/maps/PetalburgWoods/scripts.pory"
+# 444 "data/maps/PetalburgWoods/scripts.pory"
 	.string "Besides MIRACLE SEED, I think there are\n"
-# 446 "data/maps/PetalburgWoods/scripts.pory"
+# 445 "data/maps/PetalburgWoods/scripts.pory"
 	.string "other convenient items for POKéMON\l"
-# 447 "data/maps/PetalburgWoods/scripts.pory"
+# 446 "data/maps/PetalburgWoods/scripts.pory"
 	.string "to hold.$"
-# 448 "data/maps/PetalburgWoods/scripts.pory"
+# 447 "data/maps/PetalburgWoods/scripts.pory"
 
-# 449 "data/maps/PetalburgWoods/scripts.pory"
+# 448 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_Text_TrainerTipsExperience:
-# 450 "data/maps/PetalburgWoods/scripts.pory"
+# 449 "data/maps/PetalburgWoods/scripts.pory"
 	.string "Petalburg Woods Gauntlet.\p"
-# 451 "data/maps/PetalburgWoods/scripts.pory"
+# 450 "data/maps/PetalburgWoods/scripts.pory"
 	.string "Levels: 12-14.\n"
-# 452 "data/maps/PetalburgWoods/scripts.pory"
+# 451 "data/maps/PetalburgWoods/scripts.pory"
 	.string "Unique end of gauntlet item, for use\n"
-# 453 "data/maps/PetalburgWoods/scripts.pory"
+# 452 "data/maps/PetalburgWoods/scripts.pory"
 	.string "during the first gym.$"
+# 453 "data/maps/PetalburgWoods/scripts.pory"
+
 # 454 "data/maps/PetalburgWoods/scripts.pory"
 
 # 455 "data/maps/PetalburgWoods/scripts.pory"
-
-# 456 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_Text_TrainerTipsPP:
-# 457 "data/maps/PetalburgWoods/scripts.pory"
+# 456 "data/maps/PetalburgWoods/scripts.pory"
 	.string "TRAINER TIPS\p"
-# 458 "data/maps/PetalburgWoods/scripts.pory"
+# 457 "data/maps/PetalburgWoods/scripts.pory"
 	.string "In addition to Hit Points (HP), POKéMON\n"
-# 459 "data/maps/PetalburgWoods/scripts.pory"
+# 458 "data/maps/PetalburgWoods/scripts.pory"
 	.string "have Power Points (PP) that are used to\l"
-# 460 "data/maps/PetalburgWoods/scripts.pory"
+# 459 "data/maps/PetalburgWoods/scripts.pory"
 	.string "make moves during battle.\p"
-# 461 "data/maps/PetalburgWoods/scripts.pory"
+# 460 "data/maps/PetalburgWoods/scripts.pory"
 	.string "If a POKéMON runs out of PP, it must be\n"
-# 462 "data/maps/PetalburgWoods/scripts.pory"
+# 461 "data/maps/PetalburgWoods/scripts.pory"
 	.string "taken to a POKéMON CENTER.$"
 
 PetalburgWoods_EventScript_Shroomish::
-# 467 "data/maps/PetalburgWoods/scripts.pory"
+# 466 "data/maps/PetalburgWoods/scripts.pory"
 	lockall
-# 468 "data/maps/PetalburgWoods/scripts.pory"
+# 467 "data/maps/PetalburgWoods/scripts.pory"
 	faceplayer
-# 469 "data/maps/PetalburgWoods/scripts.pory"
+# 468 "data/maps/PetalburgWoods/scripts.pory"
 	msgbox PetalburgWoods_EventScript_Shroomish_Text_0, MSGBOX_DEFAULT
-# 470 "data/maps/PetalburgWoods/scripts.pory"
+# 469 "data/maps/PetalburgWoods/scripts.pory"
 	waitmessage
-# 471 "data/maps/PetalburgWoods/scripts.pory"
+# 470 "data/maps/PetalburgWoods/scripts.pory"
 	release
 	end
 
 
 PetalburgWoods_EventScript_James::
-# 477 "data/maps/PetalburgWoods/scripts.pory"
+# 476 "data/maps/PetalburgWoods/scripts.pory"
 	trainerbattle_single TRAINER_JAMES_1, PetalburgWoods_Text_InstantlyPopularWithBugPokemon, PetalburgWoods_Text_CantBePopularIfILose, PetalburgWoods_Route_Clear
-# 478 "data/maps/PetalburgWoods/scripts.pory"
+# 477 "data/maps/PetalburgWoods/scripts.pory"
 	goto_if_set FLAG_PETALBURGWOODS_CLEAR_0x26B, PetalburgWoods_EventScript_James_2
-# 484 "data/maps/PetalburgWoods/scripts.pory"
+# 483 "data/maps/PetalburgWoods/scripts.pory"
 	lockall
-# 485 "data/maps/PetalburgWoods/scripts.pory"
+# 484 "data/maps/PetalburgWoods/scripts.pory"
 	faceplayer
-# 486 "data/maps/PetalburgWoods/scripts.pory"
+# 485 "data/maps/PetalburgWoods/scripts.pory"
 	msgbox PetalburgWoods_EventScript_James_Text_1, MSGBOX_AUTOCLOSE
 PetalburgWoods_EventScript_James_1:
-# 488 "data/maps/PetalburgWoods/scripts.pory"
+# 487 "data/maps/PetalburgWoods/scripts.pory"
 	release
 	end
 
 PetalburgWoods_EventScript_James_2:
-# 479 "data/maps/PetalburgWoods/scripts.pory"
+# 478 "data/maps/PetalburgWoods/scripts.pory"
 	lockall
-# 480 "data/maps/PetalburgWoods/scripts.pory"
+# 479 "data/maps/PetalburgWoods/scripts.pory"
 	faceplayer
-# 481 "data/maps/PetalburgWoods/scripts.pory"
+# 480 "data/maps/PetalburgWoods/scripts.pory"
 	msgbox PetalburgWoods_EventScript_James_Text_0, MSGBOX_AUTOCLOSE
 	goto PetalburgWoods_EventScript_James_1
 
 
 PetalburgWoods_Route_Clear::
-# 494 "data/maps/PetalburgWoods/scripts.pory"
+# 493 "data/maps/PetalburgWoods/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 495 "data/maps/PetalburgWoods/scripts.pory"
+# 494 "data/maps/PetalburgWoods/scripts.pory"
 	removeobject 14
-# 496 "data/maps/PetalburgWoods/scripts.pory"
+# 495 "data/maps/PetalburgWoods/scripts.pory"
 	removeobject 15
-# 497 "data/maps/PetalburgWoods/scripts.pory"
+# 496 "data/maps/PetalburgWoods/scripts.pory"
 	removeobject 16
-# 498 "data/maps/PetalburgWoods/scripts.pory"
+# 497 "data/maps/PetalburgWoods/scripts.pory"
 	msgbox PetalburgWoods_Route_Clear_Text_0, MSGBOX_DEFAULT
-# 499 "data/maps/PetalburgWoods/scripts.pory"
+# 498 "data/maps/PetalburgWoods/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 500 "data/maps/PetalburgWoods/scripts.pory"
+# 499 "data/maps/PetalburgWoods/scripts.pory"
 	setflag FLAG_PETALBURGWOODS_CLEAR_0x26B
 	return
 
 
 PetalburgWoods_EventScript_Rewards::
-# 505 "data/maps/PetalburgWoods/scripts.pory"
+# 504 "data/maps/PetalburgWoods/scripts.pory"
 	msgbox PetalburgWoods_EventScript_Rewards_Text_0, MSGBOX_YESNO
-# 506 "data/maps/PetalburgWoods/scripts.pory"
+# 505 "data/maps/PetalburgWoods/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq PetalburgWoods_EventScript_Rewards_2
-# 513 "data/maps/PetalburgWoods/scripts.pory"
+# 512 "data/maps/PetalburgWoods/scripts.pory"
 	msgbox PetalburgWoods_EventScript_Rewards_Text_1, MSGBOX_DEFAULT
 PetalburgWoods_EventScript_Rewards_1:
-# 515 "data/maps/PetalburgWoods/scripts.pory"
+# 514 "data/maps/PetalburgWoods/scripts.pory"
 	waitmessage
-# 516 "data/maps/PetalburgWoods/scripts.pory"
+# 515 "data/maps/PetalburgWoods/scripts.pory"
 	releaseall
 	end
 
 PetalburgWoods_EventScript_Rewards_2:
-# 507 "data/maps/PetalburgWoods/scripts.pory"
+# 506 "data/maps/PetalburgWoods/scripts.pory"
 	giveitem ITEM_WISE_GLASSES, [ 1 ]
-# 508 "data/maps/PetalburgWoods/scripts.pory"
+# 507 "data/maps/PetalburgWoods/scripts.pory"
 	setflag FLAG_PETALBURGWOODS_REWARDS_0x26C
-# 509 "data/maps/PetalburgWoods/scripts.pory"
+# 508 "data/maps/PetalburgWoods/scripts.pory"
 	removeobject 17
 	goto PetalburgWoods_EventScript_Rewards_1
 
 
 PetalburgWoods_EventScript_Shroomish_Text_0:
-# 469 "data/maps/PetalburgWoods/scripts.pory"
+# 468 "data/maps/PetalburgWoods/scripts.pory"
 	.string "It seems the Shroomish are upset by\n"
 	.string "the bug trainers in the route. They look\l"
 	.string "like they want you to fight them.$"
 
 PetalburgWoods_EventScript_James_Text_0:
-# 481 "data/maps/PetalburgWoods/scripts.pory"
+# 480 "data/maps/PetalburgWoods/scripts.pory"
 	.string "We feel bad about disturbing the\n"
-	.string "Pokemon. We just love bug Pokemon, so\l"
+	.string "Pokemon. We just love bug POKéMON, so\l"
 	.string "we wanted to catch more.$"
 
 PetalburgWoods_EventScript_James_Text_1:
-# 486 "data/maps/PetalburgWoods/scripts.pory"
+# 485 "data/maps/PetalburgWoods/scripts.pory"
 	.string "What are you looking at?$"
 
 PetalburgWoods_Route_Clear_Text_0:
-# 498 "data/maps/PetalburgWoods/scripts.pory"
+# 497 "data/maps/PetalburgWoods/scripts.pory"
 	.string "Level cap has increased to 14.$"
 
 PetalburgWoods_EventScript_Rewards_Text_0:
-# 505 "data/maps/PetalburgWoods/scripts.pory"
+# 504 "data/maps/PetalburgWoods/scripts.pory"
 	.string "Would you like to accept the route\n"
 	.string "reward?$"
 
 PetalburgWoods_EventScript_Rewards_Text_1:
-# 513 "data/maps/PetalburgWoods/scripts.pory"
+# 512 "data/maps/PetalburgWoods/scripts.pory"
 	.string "No items were taken.$"

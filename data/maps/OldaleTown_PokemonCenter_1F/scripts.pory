@@ -47,7 +47,10 @@ OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat:
 	.string "POKéMON CENTERS are great!\p"
 	.string "You can use their services as much\n"
 	.string "as you like, and it's all for free.\l"
-	.string "You never have to worry!$"
+	.string "You never have to worry!\p"
+	.string "As it gets harder and harder to be\n"
+	.string "a trainer, I sure am glad to have \n"
+	.string "our local POKéMON CENTERS!$"
 
 OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable:
 	.string "The POKéMON WIRELESS CLUB on\n"
@@ -62,60 +65,47 @@ OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub:
 
 
 `
-script OldaleTown_PokemonCenter_1F_EventScript_Gentleman{
-	lockall
-	faceplayer
-	if(flag(FLAG_GOT_POKE_VIAL_0x493)){
-		msgbox(format("You can access the Poke Vial via the Key Items menu!"), MSGBOX_DEFAULT)
-	}
-
-    else{
-		msgbox(format("Running back and forth to the Pokemon centers can be so annoying. Don't you agree?"), MSGBOX_YESNO)
-			if(var(VAR_RESULT) == YES){
-				call(OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial)
-				setflag(FLAG_GOT_POKE_VIAL_0x493)
-			}
-			else{
-				msgbox(format("Well, if you really enjoy running, I understand!"), MSGBOX_DEFAULT)
-				release
-				end
-			}
-	}
-	release
-	end
-}
-
-// script OldaleTown_EventScript_OldRodFisherman{
-// 	lock
+// script OldaleTown_PokemonCenter_1F_EventScript_Gentleman{
+// 	lockall
 // 	faceplayer
-// 	if(flag(FLAG_RECEIVED_OLD_ROD)){
-// 		msgbox(format("Hey there! Hope the fish are biting. There are a lot of pokemon to catch!"), MSGBOX_DEFAULT)
+// 	if(flag(FLAG_GOT_POKE_VIAL_0x493)){
+// 		msgbox(format("You can access the Poke Vial via the Key Items menu!"), MSGBOX_DEFAULT)
 // 	}
-// 	else{
-// 		msgbox(format("Hey there, trainer! Do you like to fish?"), MSGBOX_YESNO)
-// 			if(var(VAR_RESULT)== YES){
-// 				call(OldaleTown_EventScript_GiveOldRod)
-// 				setflag(FLAG_RECEIVED_OLD_ROD)
-// 				}
+
+//     else{
+// 		msgbox(format("Running back and forth to the Pokemon centers can be so annoying. Don't you agree?"), MSGBOX_YESNO)
+// 			if(var(VAR_RESULT) == YES){
+// 				call(OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial)
+// 				setflag(FLAG_GOT_POKE_VIAL_0x493)
+// 			}
 // 			else{
-// 				msgbox(format("Shame. Shame."), MSGBOX_DEFAULT)
+// 				msgbox(format("Well, if you really enjoy running, I understand!"), MSGBOX_DEFAULT)
 // 				release
 // 				end
 // 			}
-// 	} 
+// 	}
 // 	release
 // 	end
-// 	}
+// }
 
-script OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial{
-	checkitem(ITEM_POKE_VIAL)
-	if(var(VAR_RESULT) == TRUE){
-		msgbox(format("Looks like you already have the Poke Vial."), MSGBOX_DEFAULT)
-		setflag(FLAG_GOT_POKE_VIAL_0x493)
-	}
-	elif(var(VAR_RESULT) == FALSE){
-		msgbox(format("Smart Lad! Here, a gift from me to you."), MSGBOX_DEFAULT)
-		giveitem(ITEM_POKE_VIAL, [1])
-	}
-	return
+
+// script OldaleTown_PokemonCenter_1F_EventScript_ReceivePokeVial{
+// 	checkitem(ITEM_POKE_VIAL)
+// 	if(var(VAR_RESULT) == TRUE){
+// 		msgbox(format("Looks like you already have the Poke Vial."), MSGBOX_DEFAULT)
+// 		setflag(FLAG_GOT_POKE_VIAL_0x493)
+// 	}
+// 	elif(var(VAR_RESULT) == FALSE){
+// 		msgbox(format("Smart Lad! Here, a gift from me to you."), MSGBOX_DEFAULT)
+// 		giveitem(ITEM_POKE_VIAL, [1])
+// 	}
+// 	return
+// }
+
+script OldaleTown_PokemonCenter_EventScript_Gentleman{
+	lockall
+	faceplayer
+	msgbox(format("My wife is lovely. She stands outside this building to give local trainers her healing item."), MSGBOX_DEFAULT)
+	release
+	end
 }

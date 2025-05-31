@@ -305,3 +305,19 @@ script RustboroGym_Clear{
     release
     end
 }
+
+script RustboroGym_Follower_Raticate{
+	lockall
+	faceplayer
+	msgbox(format("The Raticate leers at you disarmingly. It looks excited to fight."), MSGBOX_DEFAULT)
+	release
+	end
+}
+
+script RustboroGym_Follower_Anorith{
+	lockall
+	faceplayer
+	msgbox(format("The Anorith looks like it's sniffing you. It may want to eat your berries."), MSGBOX_DEFAULT)
+	release
+	end
+}

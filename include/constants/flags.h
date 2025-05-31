@@ -1222,10 +1222,10 @@
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
-#define FLAG_GOT_POKE_VIAL_0x493                                           0x493 // Unused Flag
-#define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
-#define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
-#define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
+#define FLAG_GOT_POKE_VIAL_0x493                                    0x493 // Unused Flag
+#define FLAG_FOLLOWERS_ON_0x494                                     0x494 // Unused Flag
+#define FLAG_GOT_SHINY_CHARM_0x495                                  0x495 // Unused Flag
+#define FLAG_GOT_CATCHING_CHARM_0x496                               0x496 // Unused Flag
 #define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
 #define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
 #define FLAG_UNUSED_0x499                                           0x499 // Unused Flag

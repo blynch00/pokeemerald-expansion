@@ -11774,7 +11774,7 @@ const struct Item  gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "Attacks the foe\n"
-            "with sharp blades\n"
+            "with steel blades\n"
             "or claws."),
         .importance = 1,
         .pocket = POCKET_TM_HM,

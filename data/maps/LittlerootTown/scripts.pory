@@ -905,6 +905,8 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	waitfanfare
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	msgbox LittlerootTown_Text_ExplainRunningShoes, MSGBOX_DEFAULT
+	msgbox LittlerootTown_Text_TakeShinyCharm, MSGBOX_DEFAULT
+	call LittlerootTown_Give_ShinyCharm
 	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -940,6 +942,9 @@ LittlerootTown_Text_SwitchShoesWithRunningShoes:
 	.string "{PLAYER} switched shoes with the\n"
 	.string "RUNNING SHOES.$"
 
+LittlerootTown_Text_TakeShinyCharm:
+	.string "{PLAYER} was given the Shiny Charm\n"
+	.string "from Mom!$"
 
 LittlerootTown_Text_ExplainRunningShoes:
 	.string "MOM: {PLAYER}, those shoes came with\n"
@@ -950,9 +955,10 @@ LittlerootTown_Text_ExplainRunningShoes:
 	.string "in the great outdoors!”$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
-	.string "… … … … … … … …\n"
 	.string "… … … … … … … …\p"
-	.string "To think that you have your very own\n"
+	.string "Honestly, {PLAYER}, you grew up so \n"
+	.string "fast. Even though it may not be safe, \n"
+	.string "to think that you have your very own\n"
 	.string "POKéMON now…\l"
 	.string "Your father will be overjoyed.\p"
 	.string "…But please be careful.\n"
@@ -1032,4 +1038,12 @@ script LittlerootTown_EventScript_NewSign {
 	Enjoy the game!"))
     releaseall
 	end
+}
+
+script LittlerootTown_Give_ShinyCharm{
+	playfanfare(MUS_OBTAIN_ITEM)
+	setflag(FLAG_GOT_SHINY_CHARM_0x495)
+	giveitem(ITEM_SHINY_CHARM, [1])
+	msgbox(format("This was left here by your father. He said he wanted to give it to you himself, but I don't know when he'll be home next."), MSGBOX_DEFAULT)
+	return
 }

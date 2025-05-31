@@ -374,12 +374,12 @@ PetalburgWoods_Text_YoureLoadedWithItems:
 	.string "I can't give you this GREAT BALL.$"
 
 PetalburgWoods_Text_GoBugPokemonTeam:
-	.string "I caught a whole bunch of POKéMON!\p"
-	.string "Go, go, go!\n"
-	.string "My BUG POKéMON team!$"
+	.string "I need to a get a whole bunch\n"
+	.string "of POKéMON! Go! Go! Go!\p"
+	.string "My BUG POKéMON!$"
 
 PetalburgWoods_Text_ICouldntWin:
-	.string "I have all these POKéMON,\n"
+	.string "I have strong POKéMON,\n"
 	.string "but I couldn't win…$"
 
 PetalburgWoods_Text_ImOutOfPokeBalls:
@@ -427,10 +427,9 @@ PetalburgWoods_Text_StayOutOfTallGrass:
 	.string "of tall grass.$"
 
 PetalburgWoods_Text_HiddenItemsExplanation:
-	.string "Sometimes, there are things on the\n"
-	.string "ground even if you can't see them.\p"
-	.string "That's why I always check where I'm\n"
-	.string "walking.$"
+	.string "GRRRR! I'm so sick of all these\n"
+	.string "rowdy trainers! Why can't we have\n"
+	.string "a single normal day around here?$"
 
 PetalburgWoods_Text_TryUsingThisItem:
 	.string "Oh, neat!\n"
@@ -478,7 +477,7 @@ script PetalburgWoods_EventScript_James{
 	if(flag(FLAG_PETALBURGWOODS_CLEAR_0x26B) == TRUE){
 		lockall
 		faceplayer
-		msgbox(format("We feel bad about disturbing the Pokemon. We just love bug Pokemon, so we wanted to catch more."), MSGBOX_AUTOCLOSE)
+		msgbox(format("We feel bad about disturbing the Pokemon. We just love bug POKéMON, so we wanted to catch more."), MSGBOX_AUTOCLOSE)
 	}
 	else{
 		lockall

@@ -1,6 +1,5 @@
 Route102_Text_CalvinIntro:
 	.string "If you have POKéMON with you, then\n"
-	.string "you're an official POKéMON TRAINER!\l"
 	.string "You can't say no to my challenge!$"
 
 Route102_Text_CalvinDefeated:
@@ -36,10 +35,10 @@ Route102_Text_CalvinRematchPostBattle:
 
 Route102_Text_AllenIntro:
 	.string "Did you just become a TRAINER?\n"
-	.string "We're both beginners!$"
+	.string "Haha! I'll beat you easily!$"
 
 Route102_Text_AllenDefeated:
-	.string "I called you because I thought\n"
+	.string "I fought you because I thought\n"
 	.string "I could beat you…$"
 
 Route102_Text_AllenPostBattle:
@@ -58,12 +57,12 @@ Route102_Text_RickPostBattle:
 	.string "you have to challenge! It's a rule!$"
 
 Route102_Text_TianaIntro:
-	.string "I'm going to keep winning and aim\n"
-	.string "to be the best TRAINER.\p"
-	.string "Help me further my career!$"
+	.string "I'm going to keep control of\n"
+	.string "this route to be the best.\p"
+	.string "Help me further my plans!$"
 
 Route102_Text_TianaDefeated:
-	.string "I ended up furthering your career…$"
+	.string "I ended up losing control…$"
 
 Route102_Text_PostBattle:
 	.string "To keep winning my way up, I see that\n"
@@ -308,9 +307,9 @@ Route104_Text_BillyPostBattle:
 	.string "disappear quickly…$"
 
 Route104_Text_HaleyIntro:
-	.string "Should I…\n"
-	.string "Or shouldn't I?\p"
-	.string "Okay, sure, I will battle!$"
+	.string "HUH? What's a weak trainer\n"
+	.string "doing on my route?\p"
+	.string "Okay, sure, I'll battle!$"
 
 Route104_Text_HaleyDefeat:
 	.string "I shouldn't have battled…$"
@@ -346,8 +345,10 @@ Route104_Text_HaleyPostRematch:
 	.string "I am still upset about losing!$"
 
 Route104_Text_WinstonIntro:
-	.string "Oh, sure, I'll accept your challenge.\n"
-	.string "I have a lot of money.$"
+	.string "What's that? You wanna fight?\n"
+	.string "I have a lot of money, so I\n"
+	.string "can afford some pretty great\n"
+	.string "items. I won't lose!$"
 
 Route104_Text_WinstonDefeat:
 	.string "Why couldn't I win?$"
@@ -2258,7 +2259,7 @@ Route116_Text_JerryPostRematch:
 	.string "If I don't, ROXANNE will be steamed.$"
 
 Route116_Text_KarenIntro:
-	.string "I study at school, and I study on\n"
+	.string "I study at school, and I battle on\n"
 	.string "the way home, too!$"
 
 Route116_Text_KarenDefeat:
@@ -2320,7 +2321,7 @@ Route116_Text_DevanIntro:
 	.string "We'll rock you hard!$"
 
 Route116_Text_DevanDefeat:
-	.string "Aiyiyi!\n"
+	.string "Holy Smokes!\n"
 	.string "No contest at all!$"
 
 Route116_Text_DevanPostBattle:
@@ -2328,11 +2329,12 @@ Route116_Text_DevanPostBattle:
 	.string "types, that's what I ought to do.$"
 
 Route116_Text_JohnsonIntro:
-	.string "It's a dead end up here.\n"
-	.string "I'm bored, so can we battle?$"
+	.string "No strong POKéMON must live\n"
+	.string "here. I'm bored, so can we battle?$"
 
 Route116_Text_JohnsonDefeat:
-	.string "That was fun even though I lost.$"
+	.string "Woah! Maybe any POKéMON could\n"
+	.string "be strong....$"
 
 Route116_Johnson_No_Pokemon:
 	.string "Get some more Pokemon!$"

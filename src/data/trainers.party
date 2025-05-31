@@ -11614,6 +11614,13 @@ Level: 6
 - Poison Sting  
 - Electroweb
 
+Pineco @ Black Belt
+Ability: Sturdy  
+Level: 7   
+- Pounce  
+- Rock Smash  
+- Bug Bite  
+- Headbutt
 
 Drowzee @ Twisted Spoon  
 Ability: Inner Focus  
@@ -11639,6 +11646,14 @@ Docile Nature
 - Aerial Ace  
 - Struggle Bug  
 - Poison Sting
+
+Vivillon @ Sharp Beak  
+Ability: Shield Dust  
+Level: 13  
+Modest Nature  
+- Gust  
+- Struggle Bug  
+- Bug Bite
 
 === TRAINER_JOSE ===
 Name: JOSE

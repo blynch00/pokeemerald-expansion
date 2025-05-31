@@ -275,16 +275,6 @@ Route104_EventScript_ReceivedBerry::
 	release
 	end
 
-Route104_EventScript_WhiteHerbFlorist::
-	lock
-	faceplayer
-	goto_if_set FLAG_RECEIVED_WHITE_HERB, Route104_EventScript_ReceivedWhiteHerb
-	msgbox Route104_Text_DontNeedThisTakeIt, MSGBOX_DEFAULT
-	giveitem ITEM_WHITE_HERB
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_WHITE_HERB
-	release
-	end
 
 Route104_EventScript_ReceivedWhiteHerb::
 	msgbox Route104_Text_FlowerShopSellingSaplings, MSGBOX_DEFAULT
@@ -938,7 +928,12 @@ Route104_EventScript_Mia::
 Route104_Text_WhatsItLikeAtBottomOfSea:
 	.string "The sea, huh?\p"
 	.string "I wonder what it's like at the bottom\n"
-	.string "of the sea?$"
+	.string "of the sea? Could it be horrors\n"
+	.string "beyond our comprehension? Or could\n"
+	.string "it be nothing but the void, swallowing\n$"
+	.string "all light around you, endlessly?\p"
+	.string "............\n"
+	.string "Sorry, I'm having a bad day.$"
 
 Route104_Text_ThrowBallAtWeakenedPokemon:
 	.string "If you're going through this area, \n"
@@ -954,10 +949,9 @@ Route104_Text_OnlyThrowBallAtWildPokemon:
 
 Route104_Text_ImNotATrainer:
 	.string "Oh, no, I'm not a TRAINER.\p"
-	.string "But that's right, if TRAINERS lock eyes,\n"
-	.string "it's a challenge to battle.\p"
-	.string "If you don't want to battle, stay out\n"
-	.string "of their sight.$"
+	.string "But I keep hearing a lonely cry\n"
+	.string "coming from this little cave.\p"
+	.string "I'm too scared to go down there!$"
 
 Route104_Text_LikeFillingMouthWithSeedsTakeThis:
 	.string "I like filling my mouth with seeds,\n"
@@ -1274,3 +1268,12 @@ script BrineyHouseBlockage {
 	release
 	end
 }
+
+script Route104_EventScript_WhiteHerbFlorist{
+	lock
+	faceplayer
+	msgbox(format("I used to have a White Herb I was gonna give out, but those dastardly trainers stole it!!"), MSGBOX_DEFAULT)
+	release
+	end
+}
+	

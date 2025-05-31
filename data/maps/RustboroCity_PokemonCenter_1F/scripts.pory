@@ -1,0 +1,63 @@
+raw `
+.set LOCALID_NURSE, 1
+
+RustboroCity_PokemonCenter_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_PokemonCenter_1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+RustboroCity_PokemonCenter_1F_OnTransition:
+	setrespawn HEAL_LOCATION_RUSTBORO_CITY
+	call Common_EventScript_UpdateBrineyLocation
+	end
+
+RustboroCity_PokemonCenter_1F_EventScript_Nurse::
+	setvar VAR_0x800B, LOCALID_NURSE
+	call Common_EventScript_PkmnCenterNurse
+	waitmessage
+	waitbuttonpress
+	release
+	end
+
+RustboroCity_PokemonCenter_1F_EventScript_Man::
+	msgbox RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities, MSGBOX_NPC
+	end
+
+RustboroCity_PokemonCenter_1F_EventScript_Girl::
+	msgbox RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor, MSGBOX_NPC
+	end
+
+RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities:
+	.string "My POKéMON has a NAIVE nature, and my\n"
+	.string "friend's has a JOLLY nature.\p"
+	.string "It's fascinating how POKéMON have\n"
+	.string "personalities!$"
+
+RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor:
+	.string "The man next door gave me an HM!\p"
+	.string "I used it to teach my POKéMON how to\n"
+	.string "CUT down skinny trees.$"
+`
+
+script RustboroCity_PokemonCenter_1F_EventScript_PokemonFollowerBoy{
+    lockall
+    faceplayer
+    msgbox(format("Yo! I find it so cool when Pokemon can be seen following their trainers. 
+	Do you want to allow your Pokemon to follow you?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        fadescreen(FADE_TO_BLACK)
+        setflag(FLAG_FOLLOWERS_ON_0x494)
+        msgbox(format("Follower Pokemon has been enabled!"), MSGBOX_DEFAULT)
+        fadescreen(FADE_FROM_BLACK)
+    	}
+    else{
+        msgbox(format("Alright, have it your way."), MSGBOX_DEFAULT)
+		fadescreen(FADE_TO_BLACK)
+        clearflag(FLAG_FOLLOWERS_ON_0x494)
+        msgbox(format("Follower Pokemon has been disabled!"), MSGBOX_DEFAULT)
+        fadescreen(FADE_FROM_BLACK)
+    	}
+	waitmessage
+    release
+    end
+}
