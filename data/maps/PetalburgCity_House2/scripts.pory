@@ -11,10 +11,8 @@ PetalburgCity_House2_EventScript_Woman::
 PetalburgCity_House2_Text_NormanBecameGymLeader:
 	.string "NORMAN became our town's new\n"
 	.string "GYM LEADER.\p"
-	.string "I think he called his family over from\n"
-	.string "somewhere far away, so he could help\n"
-    .string "the Hoenn region settle back into\n"
-    .string "normalcy. What a great guy!$"
+	.string "I think he moved from somewhere\n"
+	.string "somewhere far away.$"
 
 `
 
@@ -26,8 +24,8 @@ script PetalburgCity_House2_EventScript_SchoolKid{
 			if(var(VAR_RESULT) == YES){
 				getpartysize
 				compare(VAR_RESULT, 6)
-				goto_if_eq(Player_Has_Full_Party)
-				goto_if_ne(Player_Receives_Egg)
+				goto_if_eq(Petalburg_City_Player_Has_Full_Party)
+				goto_if_ne(Petalburg_City_Player_Receives_Egg)
 			}
 			else{
 				msgbox(format("Oh well, I guess I'll just sit here and stare at it until it hatches."), MSGBOX_DEFAULT)
@@ -42,12 +40,12 @@ script PetalburgCity_House2_EventScript_SchoolKid{
 	end
 }
 	
-script Player_Has_Full_Party{
+script Petalburg_City_Player_Has_Full_Party{
 	msgbox(format("Oh, too bad, you don't have room in your party."), MSGBOX_DEFAULT)
 	release
 	end
 }
-script Player_Receives_Egg{
+script Petalburg_City_Player_Receives_Egg{
 	random(5)
 	if(var(VAR_RESULT) == 0){
 		giveegg(SPECIES_TOGEPI)

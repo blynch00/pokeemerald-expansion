@@ -16,34 +16,34 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(HONEDGE)",
-      "x": 14,
-      "y": 4,
+      "x": 8,
+      "y": 3,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "LostWoods_ObtainHonedge",
+      "flag": "FLAG_LOST_WOODS_OBTAIN_HONEDGE_0x272"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 15,
-      "y": 4,
+      "x": 9,
+      "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "LostWoods_DuskStone",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
-      "x": 17,
-      "y": 12,
+      "x": 10,
+      "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -55,42 +55,42 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ABSOL)",
-      "x": 14,
-      "y": 6,
+      "x": 9,
+      "y": 5,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LostWoodsAbsolBlockade",
-      "flag": "0"
+      "flag": "FLAG_BADGE04_GET"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ABSOL)",
-      "x": 15,
-      "y": 6,
+      "x": 8,
+      "y": 5,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_RUN_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LostWoodsAbsolBlockade",
-      "flag": "0"
+      "flag": "FLAG_BADGE04_GET"
     }
   ],
   "warp_events": [
     {
-      "x": 14,
-      "y": 20,
+      "x": 8,
+      "y": 15,
       "elevation": 0,
       "dest_map": "MAP_PETALBURG_WOODS",
       "dest_warp_id": "6"
     },
     {
-      "x": 15,
-      "y": 20,
+      "x": 9,
+      "y": 15,
       "elevation": 0,
       "dest_map": "MAP_PETALBURG_WOODS",
       "dest_warp_id": "7"

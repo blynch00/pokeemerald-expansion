@@ -2175,7 +2175,7 @@ Route104_EventScript_Cindy::
 # 1101 "data/maps/Route104/scripts.pory"
 	msgbox Route104_EventScript_Cindy_Text_1, MSGBOX_AUTOCLOSE
 # 1103 "data/maps/Route104/scripts.pory"
-	release
+	releaseall
 	end
 
 Route104_EventScript_Cindy_2:
@@ -2186,7 +2186,7 @@ Route104_EventScript_Cindy_2:
 # 1094 "data/maps/Route104/scripts.pory"
 	msgbox Route104_EventScript_Cindy_Text_0, MSGBOX_AUTOCLOSE
 # 1095 "data/maps/Route104/scripts.pory"
-	release
+	releaseall
 	end
 
 
@@ -2229,7 +2229,7 @@ Route104_EventScript_RewardGirl::
 	msgbox Route104_EventScript_RewardGirl_Text_1, MSGBOX_DEFAULT
 Route104_EventScript_RewardGirl_1:
 # 1140 "data/maps/Route104/scripts.pory"
-	release
+	releaseall
 	end
 
 Route104_EventScript_RewardGirl_2:
@@ -2253,120 +2253,127 @@ Route_104_GauntletBlockade_Message::
 	lockall
 # 1186 "data/maps/Route104/scripts.pory"
 	msgbox Route_104_GauntletBlockade_Message_Text_0, MSGBOX_AUTOCLOSE
+# 1187 "data/maps/Route104/scripts.pory"
+	releaseall
 	end
 
 
 Route104_Text_TrainerTipsDoubleBattles::
-# 1191 "data/maps/Route104/scripts.pory"
-	lockall
 # 1192 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_TrainerTipsDoubleBattles_Text_0, MSGBOX_DEFAULT
+	lockall
 # 1193 "data/maps/Route104/scripts.pory"
-	release
+	msgbox Route104_Text_TrainerTipsDoubleBattles_Text_0, MSGBOX_DEFAULT
+# 1194 "data/maps/Route104/scripts.pory"
+	releaseall
 	end
 
 
 Route_104_Gauntlet2Blockade_Message::
-# 1199 "data/maps/Route104/scripts.pory"
-	lockall
 # 1200 "data/maps/Route104/scripts.pory"
-	faceplayer
+	lockall
 # 1201 "data/maps/Route104/scripts.pory"
-	msgbox Route_104_Gauntlet2Blockade_Message_Text_0, MSGBOX_DEFAULT
+	faceplayer
 # 1202 "data/maps/Route104/scripts.pory"
-	release
+	msgbox Route_104_Gauntlet2Blockade_Message_Text_0, MSGBOX_DEFAULT
+# 1203 "data/maps/Route104/scripts.pory"
+	releaseall
 	end
 
 
 Route104_EventScript_Haley::
-# 1208 "data/maps/Route104/scripts.pory"
-	trainerbattle_single TRAINER_HALEY_1, Route104_Text_HaleyIntro, Route104_Text_HaleyDefeat, Route104_Gauntlet2_EventScript_ClearRoute
 # 1209 "data/maps/Route104/scripts.pory"
+	trainerbattle_single TRAINER_HALEY_1, Route104_Text_HaleyIntro, Route104_Text_HaleyDefeat, Route104_Gauntlet2_EventScript_ClearRoute
+# 1210 "data/maps/Route104/scripts.pory"
 	goto_if_set FLAG_ROUTE104_PART2_CLEAR_0x26D, Route104_EventScript_Haley_2
-# 1217 "data/maps/Route104/scripts.pory"
+# 1216 "data/maps/Route104/scripts.pory"
 	lockall
-# 1218 "data/maps/Route104/scripts.pory"
+# 1217 "data/maps/Route104/scripts.pory"
 	faceplayer
-# 1219 "data/maps/Route104/scripts.pory"
+# 1218 "data/maps/Route104/scripts.pory"
 	msgbox Route104_EventScript_Cindy_Text_1, MSGBOX_AUTOCLOSE
-# 1221 "data/maps/Route104/scripts.pory"
-	release
+Route104_EventScript_Haley_1:
+# 1220 "data/maps/Route104/scripts.pory"
+	releaseall
 	end
 
 Route104_EventScript_Haley_2:
-# 1210 "data/maps/Route104/scripts.pory"
-	lockall
 # 1211 "data/maps/Route104/scripts.pory"
-	faceplayer
+	lockall
 # 1212 "data/maps/Route104/scripts.pory"
-	msgbox Route104_EventScript_Haley_Text_0, MSGBOX_AUTOCLOSE
+	faceplayer
 # 1213 "data/maps/Route104/scripts.pory"
-	release
-	end
+	msgbox Route104_EventScript_Haley_Text_0, MSGBOX_AUTOCLOSE
+	goto Route104_EventScript_Haley_1
 
 
 Route104_Gauntlet2_EventScript_ClearRoute::
-# 1226 "data/maps/Route104/scripts.pory"
+# 1225 "data/maps/Route104/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 1227 "data/maps/Route104/scripts.pory"
+# 1226 "data/maps/Route104/scripts.pory"
 	removeobject 39
-# 1228 "data/maps/Route104/scripts.pory"
+# 1227 "data/maps/Route104/scripts.pory"
 	removeobject 41
-# 1229 "data/maps/Route104/scripts.pory"
+# 1228 "data/maps/Route104/scripts.pory"
 	removeobject 42
-# 1230 "data/maps/Route104/scripts.pory"
+# 1229 "data/maps/Route104/scripts.pory"
 	msgbox Route104_Gauntlet2_EventScript_ClearRoute_Text_0, MSGBOX_DEFAULT
-# 1231 "data/maps/Route104/scripts.pory"
+# 1230 "data/maps/Route104/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 1232 "data/maps/Route104/scripts.pory"
+# 1231 "data/maps/Route104/scripts.pory"
 	setflag FLAG_ROUTE104_PART2_CLEAR_0x26D
 	return
 
 
 Route104_Gauntlet2_ClearReward::
-# 1237 "data/maps/Route104/scripts.pory"
+# 1236 "data/maps/Route104/scripts.pory"
 	lockall
-# 1238 "data/maps/Route104/scripts.pory"
+# 1237 "data/maps/Route104/scripts.pory"
 	goto_if_unset FLAG_ROUTE104_PART2_REWARDS_0x26E, Route104_Gauntlet2_ClearReward_2
 Route104_Gauntlet2_ClearReward_1:
-# 1246 "data/maps/Route104/scripts.pory"
-	release
+# 1245 "data/maps/Route104/scripts.pory"
+	releaseall
 	end
 
 Route104_Gauntlet2_ClearReward_2:
-# 1239 "data/maps/Route104/scripts.pory"
+# 1238 "data/maps/Route104/scripts.pory"
 	msgbox Route104_Gauntlet2_ClearReward_Text_0, MSGBOX_YESNO
-# 1240 "data/maps/Route104/scripts.pory"
+# 1239 "data/maps/Route104/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route104_Gauntlet2_ClearReward_4
 	goto Route104_Gauntlet2_ClearReward_1
 
 Route104_Gauntlet2_ClearReward_4:
-# 1241 "data/maps/Route104/scripts.pory"
+# 1240 "data/maps/Route104/scripts.pory"
 	giveitem ITEM_SCOPE_LENS, [ 1 ]
-# 1242 "data/maps/Route104/scripts.pory"
+# 1241 "data/maps/Route104/scripts.pory"
 	setflag FLAG_ROUTE104_PART2_REWARDS_0x26E
-# 1243 "data/maps/Route104/scripts.pory"
+# 1242 "data/maps/Route104/scripts.pory"
 	removeobject 43
 	goto Route104_Gauntlet2_ClearReward_1
 
 
 Route104_EventScript_WhiteHerbFlorist::
+# 1251 "data/maps/Route104/scripts.pory"
+	lockall
 # 1252 "data/maps/Route104/scripts.pory"
-	lock
-# 1253 "data/maps/Route104/scripts.pory"
 	faceplayer
-# 1254 "data/maps/Route104/scripts.pory"
+# 1253 "data/maps/Route104/scripts.pory"
 	msgbox Route104_EventScript_WhiteHerbFlorist_Text_0, MSGBOX_DEFAULT
-# 1255 "data/maps/Route104/scripts.pory"
-	release
+# 1254 "data/maps/Route104/scripts.pory"
+	releaseall
 	end
 
 
 Route104_Text_WhatsItLikeAtBottomOfSea::
+# 1259 "data/maps/Route104/scripts.pory"
+	lockall
 # 1260 "data/maps/Route104/scripts.pory"
+	faceplayer
+# 1261 "data/maps/Route104/scripts.pory"
 	msgbox Route104_Text_WhatsItLikeAtBottomOfSea_Text_0, MSGBOX_DEFAULT
-	return
+# 1262 "data/maps/Route104/scripts.pory"
+	releaseall
+	end
 
 
 Route104_EventScript_Cindy_Text_0:
@@ -2400,46 +2407,41 @@ Route104_EventScript_RewardGirl_Text_1:
 
 Route_104_GauntletBlockade_Message_Text_0:
 # 1186 "data/maps/Route104/scripts.pory"
-	.string "This Corphish is staring you down. It's\n"
-	.string "best to not ask it to move.$"
+	.string "You feel unnerved looking at the\n"
+	.string "POKéDEX. It's best to not ask it to\l"
+	.string "move.$"
 
 Route104_Text_TrainerTipsDoubleBattles_Text_0:
-# 1192 "data/maps/Route104/scripts.pory"
+# 1193 "data/maps/Route104/scripts.pory"
 	.string "Route 104, Gauntlet 2. Levels: 12-14.\n"
 	.string "Defeat all trainers to reach Rustboro\l"
 	.string "City.$"
 
 Route_104_Gauntlet2Blockade_Message_Text_0:
-# 1201 "data/maps/Route104/scripts.pory"
+# 1202 "data/maps/Route104/scripts.pory"
 	.string "The Wurmple looks upset. The constant\n"
 	.string "battling must have left it exhausted.$"
 
 Route104_EventScript_Haley_Text_0:
-# 1212 "data/maps/Route104/scripts.pory"
+# 1213 "data/maps/Route104/scripts.pory"
 	.string "I feel guilty about disrupting the\n"
 	.string "Pokemon. I just wanted to get stronger!$"
 
 Route104_Gauntlet2_EventScript_ClearRoute_Text_0:
-# 1230 "data/maps/Route104/scripts.pory"
+# 1229 "data/maps/Route104/scripts.pory"
 	.string "Level cap has increased to 15.$"
 
 Route104_Gauntlet2_ClearReward_Text_0:
-# 1239 "data/maps/Route104/scripts.pory"
+# 1238 "data/maps/Route104/scripts.pory"
 	.string "Would you like the route reward?$"
 
 Route104_EventScript_WhiteHerbFlorist_Text_0:
-# 1254 "data/maps/Route104/scripts.pory"
+# 1253 "data/maps/Route104/scripts.pory"
 	.string "I used to have a White Herb I was gonna\n"
 	.string "give out, but those dastardly trainers\l"
 	.string "stole it!!$"
 
 Route104_Text_WhatsItLikeAtBottomOfSea_Text_0:
-# 1260 "data/maps/Route104/scripts.pory"
-	.string "The sea, huh?\p"
-	.string "I wonder what it's like at the bottom\n"
-	.string "of the sea? Could it be horrors, beyond\n"
-	.string "our comprehension? Or is it just\n"
-	.string "nothing but the void, swallowing\n"
-	.string "all light around you, endlessly?\p"
-	.string "........\p"
-	.string "Sorry, I'm having a bad day.$"
+# 1261 "data/maps/Route104/scripts.pory"
+	.string "The sea, huh? I wonder what it's like at\n"
+	.string "the bottom of the sea?$"

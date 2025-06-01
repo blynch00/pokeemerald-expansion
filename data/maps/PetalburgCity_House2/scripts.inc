@@ -25,185 +25,181 @@ PetalburgCity_House2_Text_NormanBecameGymLeader:
 # 13 "data/maps/PetalburgCity_House2/scripts.pory"
 	.string "GYM LEADER.\p"
 # 14 "data/maps/PetalburgCity_House2/scripts.pory"
-	.string "I think he called his family over from\n"
+	.string "I think he moved from somewhere\n"
 # 15 "data/maps/PetalburgCity_House2/scripts.pory"
-	.string "somewhere far away, so he could help\n"
-# 16 "data/maps/PetalburgCity_House2/scripts.pory"
-    .string "the Hoenn region settle back into\n"
-# 17 "data/maps/PetalburgCity_House2/scripts.pory"
-    .string "normalcy. What a great guy!$"
+	.string "somewhere far away.$"
 
 PetalburgCity_House2_EventScript_SchoolKid::
-# 22 "data/maps/PetalburgCity_House2/scripts.pory"
+# 20 "data/maps/PetalburgCity_House2/scripts.pory"
 	lockall
-# 23 "data/maps/PetalburgCity_House2/scripts.pory"
+# 21 "data/maps/PetalburgCity_House2/scripts.pory"
 	faceplayer
-# 24 "data/maps/PetalburgCity_House2/scripts.pory"
+# 22 "data/maps/PetalburgCity_House2/scripts.pory"
 	goto_if_unset FLAG_BABY_POKEMON_PETALBURG_0x497, PetalburgCity_House2_EventScript_SchoolKid_2
-# 39 "data/maps/PetalburgCity_House2/scripts.pory"
+# 37 "data/maps/PetalburgCity_House2/scripts.pory"
 	msgbox PetalburgCity_House2_EventScript_SchoolKid_Text_2, MSGBOX_DEFAULT
 PetalburgCity_House2_EventScript_SchoolKid_1:
-# 41 "data/maps/PetalburgCity_House2/scripts.pory"
+# 39 "data/maps/PetalburgCity_House2/scripts.pory"
 	release
 	end
 
 PetalburgCity_House2_EventScript_SchoolKid_2:
-# 25 "data/maps/PetalburgCity_House2/scripts.pory"
+# 23 "data/maps/PetalburgCity_House2/scripts.pory"
 	msgbox PetalburgCity_House2_EventScript_SchoolKid_Text_0, MSGBOX_YESNO
-# 26 "data/maps/PetalburgCity_House2/scripts.pory"
+# 24 "data/maps/PetalburgCity_House2/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq PetalburgCity_House2_EventScript_SchoolKid_5
-# 33 "data/maps/PetalburgCity_House2/scripts.pory"
+# 31 "data/maps/PetalburgCity_House2/scripts.pory"
 	msgbox PetalburgCity_House2_EventScript_SchoolKid_Text_1, MSGBOX_DEFAULT
 	goto PetalburgCity_House2_EventScript_SchoolKid_1
 
 PetalburgCity_House2_EventScript_SchoolKid_5:
-# 27 "data/maps/PetalburgCity_House2/scripts.pory"
+# 25 "data/maps/PetalburgCity_House2/scripts.pory"
 	getpartysize
-# 28 "data/maps/PetalburgCity_House2/scripts.pory"
+# 26 "data/maps/PetalburgCity_House2/scripts.pory"
 	compare VAR_RESULT, 6
-# 29 "data/maps/PetalburgCity_House2/scripts.pory"
-	goto_if_eq Player_Has_Full_Party
-# 30 "data/maps/PetalburgCity_House2/scripts.pory"
-	goto_if_ne Player_Receives_Egg
+# 27 "data/maps/PetalburgCity_House2/scripts.pory"
+	goto_if_eq Petalburg_City_Player_Has_Full_Party
+# 28 "data/maps/PetalburgCity_House2/scripts.pory"
+	goto_if_ne Petalburg_City_Player_Receives_Egg
 	goto PetalburgCity_House2_EventScript_SchoolKid_1
 
 
-Player_Has_Full_Party::
-# 46 "data/maps/PetalburgCity_House2/scripts.pory"
-	msgbox Player_Has_Full_Party_Text_0, MSGBOX_DEFAULT
-# 47 "data/maps/PetalburgCity_House2/scripts.pory"
+Petalburg_City_Player_Has_Full_Party::
+# 44 "data/maps/PetalburgCity_House2/scripts.pory"
+	msgbox Petalburg_City_Player_Has_Full_Party_Text_0, MSGBOX_DEFAULT
+# 45 "data/maps/PetalburgCity_House2/scripts.pory"
 	release
 	end
 
 
-Player_Receives_Egg::
-# 51 "data/maps/PetalburgCity_House2/scripts.pory"
+Petalburg_City_Player_Receives_Egg::
+# 49 "data/maps/PetalburgCity_House2/scripts.pory"
 	random 5
-# 52 "data/maps/PetalburgCity_House2/scripts.pory"
+# 50 "data/maps/PetalburgCity_House2/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq Player_Receives_Egg_2
-# 60 "data/maps/PetalburgCity_House2/scripts.pory"
+	goto_if_eq Petalburg_City_Player_Receives_Egg_2
+# 58 "data/maps/PetalburgCity_House2/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq Player_Receives_Egg_3
-# 68 "data/maps/PetalburgCity_House2/scripts.pory"
+	goto_if_eq Petalburg_City_Player_Receives_Egg_3
+# 66 "data/maps/PetalburgCity_House2/scripts.pory"
 	compare VAR_RESULT, 2
-	goto_if_eq Player_Receives_Egg_4
-# 76 "data/maps/PetalburgCity_House2/scripts.pory"
+	goto_if_eq Petalburg_City_Player_Receives_Egg_4
+# 74 "data/maps/PetalburgCity_House2/scripts.pory"
 	compare VAR_RESULT, 3
-	goto_if_eq Player_Receives_Egg_5
-# 84 "data/maps/PetalburgCity_House2/scripts.pory"
+	goto_if_eq Petalburg_City_Player_Receives_Egg_5
+# 82 "data/maps/PetalburgCity_House2/scripts.pory"
 	compare VAR_RESULT, 4
-	goto_if_eq Player_Receives_Egg_6
+	goto_if_eq Petalburg_City_Player_Receives_Egg_6
+# 91 "data/maps/PetalburgCity_House2/scripts.pory"
+	msgbox Petalburg_City_Player_Receives_Egg_Text_1, MSGBOX_DEFAULT
+Petalburg_City_Player_Receives_Egg_1:
 # 93 "data/maps/PetalburgCity_House2/scripts.pory"
-	msgbox Player_Receives_Egg_Text_1, MSGBOX_DEFAULT
-Player_Receives_Egg_1:
-# 95 "data/maps/PetalburgCity_House2/scripts.pory"
 	release
 	end
 
-Player_Receives_Egg_2:
-# 53 "data/maps/PetalburgCity_House2/scripts.pory"
+Petalburg_City_Player_Receives_Egg_2:
+# 51 "data/maps/PetalburgCity_House2/scripts.pory"
 	giveegg SPECIES_TOGEPI
+# 52 "data/maps/PetalburgCity_House2/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 53 "data/maps/PetalburgCity_House2/scripts.pory"
+	msgbox Petalburg_City_Player_Receives_Egg_Text_0, MSGBOX_DEFAULT
 # 54 "data/maps/PetalburgCity_House2/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	waitmessage
 # 55 "data/maps/PetalburgCity_House2/scripts.pory"
-	msgbox Player_Receives_Egg_Text_0, MSGBOX_DEFAULT
+	waitfanfare
 # 56 "data/maps/PetalburgCity_House2/scripts.pory"
-	waitmessage
-# 57 "data/maps/PetalburgCity_House2/scripts.pory"
-	waitfanfare
-# 58 "data/maps/PetalburgCity_House2/scripts.pory"
 	setflag FLAG_BABY_POKEMON_PETALBURG_0x497
-	goto Player_Receives_Egg_1
+	goto Petalburg_City_Player_Receives_Egg_1
 
-Player_Receives_Egg_3:
-# 61 "data/maps/PetalburgCity_House2/scripts.pory"
+Petalburg_City_Player_Receives_Egg_3:
+# 59 "data/maps/PetalburgCity_House2/scripts.pory"
 	giveegg SPECIES_SMOOCHUM
+# 60 "data/maps/PetalburgCity_House2/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 61 "data/maps/PetalburgCity_House2/scripts.pory"
+	msgbox Petalburg_City_Player_Receives_Egg_Text_0, MSGBOX_DEFAULT
 # 62 "data/maps/PetalburgCity_House2/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	waitmessage
 # 63 "data/maps/PetalburgCity_House2/scripts.pory"
-	msgbox Player_Receives_Egg_Text_0, MSGBOX_DEFAULT
+	waitfanfare
 # 64 "data/maps/PetalburgCity_House2/scripts.pory"
-	waitmessage
-# 65 "data/maps/PetalburgCity_House2/scripts.pory"
-	waitfanfare
-# 66 "data/maps/PetalburgCity_House2/scripts.pory"
 	setflag FLAG_BABY_POKEMON_PETALBURG_0x497
-	goto Player_Receives_Egg_1
+	goto Petalburg_City_Player_Receives_Egg_1
 
-Player_Receives_Egg_4:
-# 69 "data/maps/PetalburgCity_House2/scripts.pory"
+Petalburg_City_Player_Receives_Egg_4:
+# 67 "data/maps/PetalburgCity_House2/scripts.pory"
 	giveegg SPECIES_MAGBY
+# 68 "data/maps/PetalburgCity_House2/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 69 "data/maps/PetalburgCity_House2/scripts.pory"
+	msgbox Petalburg_City_Player_Receives_Egg_Text_0, MSGBOX_DEFAULT
 # 70 "data/maps/PetalburgCity_House2/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	waitmessage
 # 71 "data/maps/PetalburgCity_House2/scripts.pory"
-	msgbox Player_Receives_Egg_Text_0, MSGBOX_DEFAULT
+	waitfanfare
 # 72 "data/maps/PetalburgCity_House2/scripts.pory"
-	waitmessage
-# 73 "data/maps/PetalburgCity_House2/scripts.pory"
-	waitfanfare
-# 74 "data/maps/PetalburgCity_House2/scripts.pory"
 	setflag FLAG_BABY_POKEMON_PETALBURG_0x497
-	goto Player_Receives_Egg_1
+	goto Petalburg_City_Player_Receives_Egg_1
 
-Player_Receives_Egg_5:
-# 77 "data/maps/PetalburgCity_House2/scripts.pory"
+Petalburg_City_Player_Receives_Egg_5:
+# 75 "data/maps/PetalburgCity_House2/scripts.pory"
 	giveegg SPECIES_ELEKID
+# 76 "data/maps/PetalburgCity_House2/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 77 "data/maps/PetalburgCity_House2/scripts.pory"
+	msgbox Petalburg_City_Player_Receives_Egg_Text_0, MSGBOX_DEFAULT
 # 78 "data/maps/PetalburgCity_House2/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	waitmessage
 # 79 "data/maps/PetalburgCity_House2/scripts.pory"
-	msgbox Player_Receives_Egg_Text_0, MSGBOX_DEFAULT
+	waitfanfare
 # 80 "data/maps/PetalburgCity_House2/scripts.pory"
-	waitmessage
-# 81 "data/maps/PetalburgCity_House2/scripts.pory"
-	waitfanfare
-# 82 "data/maps/PetalburgCity_House2/scripts.pory"
 	setflag FLAG_BABY_POKEMON_PETALBURG_0x497
-	goto Player_Receives_Egg_1
+	goto Petalburg_City_Player_Receives_Egg_1
 
-Player_Receives_Egg_6:
-# 85 "data/maps/PetalburgCity_House2/scripts.pory"
+Petalburg_City_Player_Receives_Egg_6:
+# 83 "data/maps/PetalburgCity_House2/scripts.pory"
 	giveegg SPECIES_MUNCHLAX
-# 86 "data/maps/PetalburgCity_House2/scripts.pory"
+# 84 "data/maps/PetalburgCity_House2/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 87 "data/maps/PetalburgCity_House2/scripts.pory"
-	msgbox Player_Receives_Egg_Text_0, MSGBOX_DEFAULT
-# 88 "data/maps/PetalburgCity_House2/scripts.pory"
+# 85 "data/maps/PetalburgCity_House2/scripts.pory"
+	msgbox Petalburg_City_Player_Receives_Egg_Text_0, MSGBOX_DEFAULT
+# 86 "data/maps/PetalburgCity_House2/scripts.pory"
 	waitmessage
-# 89 "data/maps/PetalburgCity_House2/scripts.pory"
+# 87 "data/maps/PetalburgCity_House2/scripts.pory"
 	waitfanfare
-# 90 "data/maps/PetalburgCity_House2/scripts.pory"
+# 88 "data/maps/PetalburgCity_House2/scripts.pory"
 	setflag FLAG_BABY_POKEMON_PETALBURG_0x497
-	goto Player_Receives_Egg_1
+	goto Petalburg_City_Player_Receives_Egg_1
 
 
 PetalburgCity_House2_EventScript_SchoolKid_Text_0:
-# 25 "data/maps/PetalburgCity_House2/scripts.pory"
+# 23 "data/maps/PetalburgCity_House2/scripts.pory"
 	.string "Well, I had planned on hatching this\n"
 	.string "egg, but it just doesn't seem to want to\l"
 	.string "come out. Would you like it?$"
 
 PetalburgCity_House2_EventScript_SchoolKid_Text_1:
-# 33 "data/maps/PetalburgCity_House2/scripts.pory"
+# 31 "data/maps/PetalburgCity_House2/scripts.pory"
 	.string "Oh well, I guess I'll just sit here and\n"
 	.string "stare at it until it hatches.$"
 
 PetalburgCity_House2_EventScript_SchoolKid_Text_2:
-# 39 "data/maps/PetalburgCity_House2/scripts.pory"
+# 37 "data/maps/PetalburgCity_House2/scripts.pory"
 	.string "Hey there! Hope that POKéMON is\n"
 	.string "treated well, and you form an\l"
 	.string "inexplicable bond together.$"
 
-Player_Has_Full_Party_Text_0:
-# 46 "data/maps/PetalburgCity_House2/scripts.pory"
+Petalburg_City_Player_Has_Full_Party_Text_0:
+# 44 "data/maps/PetalburgCity_House2/scripts.pory"
 	.string "Oh, too bad, you don't have room in your\n"
 	.string "party.$"
 
-Player_Receives_Egg_Text_0:
-# 55 "data/maps/PetalburgCity_House2/scripts.pory"
+Petalburg_City_Player_Receives_Egg_Text_0:
+# 53 "data/maps/PetalburgCity_House2/scripts.pory"
 	.string "{PLAYER} received an egg!$"
 
-Player_Receives_Egg_Text_1:
-# 93 "data/maps/PetalburgCity_House2/scripts.pory"
+Petalburg_City_Player_Receives_Egg_Text_1:
+# 91 "data/maps/PetalburgCity_House2/scripts.pory"
 	.string "ERROR: NUM OUTSIDE RANGE$"

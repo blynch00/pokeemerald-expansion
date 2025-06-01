@@ -20,3 +20,67 @@ script LostWoodsAbsolBlockade{
     release
     end
 }
+
+script LostWoods_ObtainHonedge{
+    // if(flag(FLAG_BADGE04_GET) == FALSE){
+        lockall
+        faceplayer
+        if(!(flag(FLAG_LOST_WOODS_OBTAIN_HONEDGE_0x272) == TRUE)){
+            msgbox(format("Honedge looks at you, challenging you to prove your worth. Do you accept?"), MSGBOX_YESNO)
+            if(var(VAR_RESULT) == YES){
+                playmoncry(SPECIES_HONEDGE, CRY_MODE_ENCOUNTER)
+                delay(40)
+                waitmoncry
+                setwildbattle(SPECIES_HONEDGE, 10, ITEM_METAL_COAT)
+                dowildbattle
+                specialvar(VAR_RESULT, GetBattleOutcome)
+                if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+                    setflag(FLAG_LOST_WOODS_OBTAIN_HONEDGE_0x272)
+                    call(Honedge_Won_Or_Caught)
+                }
+                elif(var(VAR_RESULT) == B_OUTCOME_WON){
+                    setflag(FLAG_LOST_WOODS_OBTAIN_HONEDGE_0x272)
+                    call(Honedge_Won_Or_Caught)
+                }
+                elif(var(VAR_RESULT) == B_OUTCOME_RAN){
+                    setflag(FLAG_LOST_WOODS_OBTAIN_HONEDGE_0x272)
+                    call(Honedge_Unworthy)
+                }
+                else{
+                    call(Honedge_Unworthy)
+                }
+
+                }
+        // }
+    }
+    else{
+        msgbox(format("Honedge doesn't look in your direction, as if you can't even be seen."), MSGBOX_DEFAULT)
+    }
+    waitmessage
+    releaseall
+    end
+}
+
+script Honedge_Won_Or_Caught{
+    playmoncry(SPECIES_HONEDGE, CRY_MODE_ENCOUNTER)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1)
+    msgbox(format("Honedge has found you to be worthy."), MSGBOX_DEFAULT)
+    fadescreen(FADE_FROM_BLACK)
+    return
+}
+
+script Honedge_Unworthy{
+    playmoncry(SPECIES_HONEDGE, CRY_MODE_ENCOUNTER)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1)
+    msgbox(format("Honedge finds you unworthy, and disappears into the grove."), MSGBOX_DEFAULT)
+    fadescreen(FADE_FROM_BLACK)
+    return
+}
+
+script LostWoods_DuskStone{
+    finditem(ITEM_DUSK_STONE, [1])
+    removeobject(2)
+    setflag(FLAG_LOST_WOODS_ITEM_DUSK_STONE_0x273)
+}

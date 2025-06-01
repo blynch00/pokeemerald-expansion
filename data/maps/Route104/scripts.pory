@@ -1092,7 +1092,7 @@ script Route104_EventScript_Cindy{
 		lockall
 		faceplayer
 		msgbox(format("Sorry for the ruckus. We will settle down and leave the pokemon alone."), MSGBOX_AUTOCLOSE)
-		release
+		releaseall
 		end
 	}
 	else{
@@ -1100,7 +1100,7 @@ script Route104_EventScript_Cindy{
 		faceplayer
 		msgbox(format("What are you looking at?"), MSGBOX_AUTOCLOSE)
 	}
-	release
+	releaseall
 	end
 }
 
@@ -1137,7 +1137,7 @@ script Route104_EventScript_RewardGirl{
     else{
     msgbox(format("Thank you for dealing with those meanies!"), MSGBOX_DEFAULT)
     }
-    release
+    releaseall
     end
 
 }
@@ -1183,14 +1183,15 @@ script Route104_EventScript_RewardGirl{
 
 script Route_104_GauntletBlockade_Message{
 	lockall
-	msgbox(format("This Corphish is staring you down. It's best to not ask it to move."), MSGBOX_AUTOCLOSE)
+	msgbox(format("You feel unnerved looking at the POKéDEX. It's best to not ask it to move."), MSGBOX_AUTOCLOSE)
+	releaseall
 	end
 }
 
 script Route104_Text_TrainerTipsDoubleBattles{
 	lockall
 	msgbox(format("Route 104, Gauntlet 2. Levels: 12-14. Defeat all trainers to reach Rustboro City."), MSGBOX_DEFAULT)
-	release
+	releaseall
 	end
 }
 
@@ -1199,7 +1200,7 @@ script Route_104_Gauntlet2Blockade_Message{
 	lockall
 	faceplayer
 	msgbox(format("The Wurmple looks upset. The constant battling must have left it exhausted."), MSGBOX_DEFAULT)
-	release
+	releaseall
 	end
 }
 
@@ -1210,15 +1211,13 @@ script Route104_EventScript_Haley{
 		lockall
 		faceplayer
 		msgbox(format("I feel guilty about disrupting the Pokemon. I just wanted to get stronger!"), MSGBOX_AUTOCLOSE)
-		release
-		end
 	}
 	else{
 		lockall
 		faceplayer
 		msgbox(format("What are you looking at?"), MSGBOX_AUTOCLOSE)
 	}
-	release
+	releaseall
 	end
 }
 	
@@ -1243,20 +1242,23 @@ script Route104_Gauntlet2_ClearReward{
 			removeobject(43)
 		}
     }
-    release
+    releaseall
     end
 }
 
 
 script Route104_EventScript_WhiteHerbFlorist{
-	lock
+	lockall
 	faceplayer
 	msgbox(format("I used to have a White Herb I was gonna give out, but those dastardly trainers stole it!!"), MSGBOX_DEFAULT)
-	release
+	releaseall
 	end
 }
 
 script Route104_Text_WhatsItLikeAtBottomOfSea{
-	msgbox(format("The sea, huh?\pI wonder what it's like at the bottom\n of the sea? Could it be horrors, beyond\n our comprehension? Or is it just\n nothing but 
-	the void, swallowing\n all light around you, endlessly?\p........\p Sorry, I'm having a bad day."), MSGBOX_DEFAULT)
+	lockall	
+	faceplayer
+	msgbox(format("The sea, huh? I wonder what it's like at the bottom of the sea?"), MSGBOX_DEFAULT)
+	releaseall
+	end
 }
