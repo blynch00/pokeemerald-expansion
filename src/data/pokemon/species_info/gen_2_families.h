@@ -1108,11 +1108,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_LEDIAN] =
     {
         .baseHP        = 55,
-        .baseAttack    = 35,
+        .baseAttack    = 90,
         .baseDefense   = 50,
         .baseSpeed     = 85,
         .baseSpAttack  = 55,
-        .baseSpDefense = 110,
+        .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_BUG, TYPE_FIGHTING),
         .catchRate = 90,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 137 : 134,
@@ -2708,7 +2708,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_JUMPLUFF] =
     {
         .baseHP        = 75,
-        .baseAttack    = 55,
+        .baseAttack    = 90,
         .baseDefense   = 70,
         .baseSpeed     = 110,
         .baseSpAttack  = 55,
@@ -3678,7 +3678,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseHP        = 100,
         .baseAttack    = 125,
         .baseDefense   = 52,
-        .baseSpeed     = 71,
+        .baseSpeed     = 95,
         .baseSpAttack  = 105,
         .baseSpDefense = 52,
         .types = MON_TYPES(TYPE_DARK, TYPE_FLYING),
@@ -4457,7 +4457,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     {
         .baseHP        = 100,
         .baseAttack    = 70,
-        .baseDefense   = 70,
+        .baseDefense   = 80,
         .baseSpeed     = 45,
         .baseSpAttack  = 65,
         .baseSpDefense = 65,
@@ -5124,10 +5124,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     {
         .baseHP        = 85,
         .baseAttack    = 115,
-        .baseDefense   = 95,
+        .baseDefense   = 105,
         .baseSpeed     = 85,
         .baseSpAttack  = 65,
-        .baseSpDefense = 65,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_DARK, TYPE_POISON),
         .catchRate = 45,
         .expYield = 179,
@@ -6428,7 +6428,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #else
     #define CORSOLA_EXP_YIELD 113
 #endif
-#define CORSOLA_HP       (P_UPDATED_STATS >= GEN_7 ? 65 : 55)
+#define CORSOLA_HP       (P_UPDATED_STATS >= GEN_7 ? 85 : 55)
 #define CORSOLA_DEFENSES (P_UPDATED_STATS >= GEN_7 ? 95 : 85)
 
     [SPECIES_CORSOLA] =
@@ -6507,9 +6507,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_GALARIAN_FORMS
     [SPECIES_CORSOLA_GALAR] =
     {
-        .baseHP        = CORSOLA_HP - 5,
+        .baseHP        = 65,
         .baseAttack    = 55,
-        .baseDefense   = CORSOLA_DEFENSES + 5,
+        .baseDefense   = 100,
         .baseSpeed     = 30,
         .baseSpAttack  = 65,
         .baseSpDefense = CORSOLA_DEFENSES + 5,
@@ -6947,7 +6947,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseAttack    = 40,
         .baseDefense   = 70,
         .baseSpeed     = 70,
-        .baseSpAttack  = 80,
+        .baseSpAttack  = 90,
         .baseSpDefense = 140,
         .types = MON_TYPES(TYPE_WATER, TYPE_FLYING),
         .catchRate = 25,
