@@ -888,18 +888,21 @@ RustboroCity_EventScript_RestoreBgm::
 RustboroCity_EventScript_BattleMayTreecko::
 	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_TREECKO, RustboroCity_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	call RustboroCity_GivesPokeRider
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
 
 RustboroCity_EventScript_BattleMayTorchic::
 	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_TORCHIC, RustboroCity_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	call RustboroCity_GivesPokeRider
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
 
 RustboroCity_EventScript_BattleMayMudkip::
 	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_MUDKIP, RustboroCity_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	call RustboroCity_GivesPokeRider
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
 
@@ -951,18 +954,21 @@ RustboroCity_EventScript_BrendanBrineyHint::
 RustboroCity_EventScript_BattleBrendanTreecko::
 	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TREECKO, RustboroCity_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	call RustboroCity_GivesPokeRider
 	goto RustboroCity_EventScript_BrendanBrineyHint
 	end
 
 RustboroCity_EventScript_BattleBrendanTorchic::
 	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TORCHIC, RustboroCity_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	call RustboroCity_GivesPokeRider
 	goto RustboroCity_EventScript_BrendanBrineyHint
 	end
 
 RustboroCity_EventScript_BattleBrendanMudkip::
 	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_MUDKIP, RustboroCity_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	call RustboroCity_GivesPokeRider
 	goto RustboroCity_EventScript_BrendanBrineyHint
 	end
 
@@ -1315,3 +1321,15 @@ script RustboroCity_EventScript_GymBlockade{
     release
     end
 }
+
+script RustboroCity_GivesPokeRider{
+	setflag(FLAG_ENABLE_POKE_RIDER_0x274)
+	msgbox(format("Here, let me give you a cool upgrade to your POKéNAV!"), MSGBOX_DEFAULT)
+	playfanfare(MUS_OBTAIN_ITEM)
+	msgbox(format("{PLAYER} obtained the POKéRIDER!"), MSGBOX_DEFAULT)
+	waitfanfare
+	waitmessage
+	msgbox(format("{RIVAL}: This is the POKéRIDER, letting you fly to cities from the POKéNAV map. You can't fly from most routes, though. "), MSGBOX_DEFAULT)
+	return
+}
+	

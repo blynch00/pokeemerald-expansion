@@ -22,7 +22,7 @@ script LostWoodsAbsolBlockade{
 }
 
 script LostWoods_ObtainHonedge{
-    // if(flag(FLAG_BADGE04_GET) == FALSE){
+    if(flag(FLAG_BADGE04_GET) == TRUE){
         lockall
         faceplayer
         if(!(flag(FLAG_LOST_WOODS_OBTAIN_HONEDGE_0x272) == TRUE)){
@@ -51,7 +51,7 @@ script LostWoods_ObtainHonedge{
                 }
 
                 }
-        // }
+}
     }
     else{
         msgbox(format("Honedge doesn't look in your direction, as if you can't even be seen."), MSGBOX_DEFAULT)

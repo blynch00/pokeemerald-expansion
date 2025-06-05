@@ -229,7 +229,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER 
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO 
 
 Thievul (M) @ Chople Berry  
 Ability: Stakeout  
@@ -334,7 +334,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER / AI_FLAG_ACE_POKEMON
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Palpitoad @ Sitrus Berry  
 Ability: Water Absorb  
@@ -2124,7 +2124,7 @@ Pic: Lady
 Gender: Female
 Music: Female
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER 
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO 
 
 Nidorino @ Oran Berry  
 Ability: Poison Point  
@@ -2541,7 +2541,7 @@ Pic: Rich Boy
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER 
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Kricketune @ Silver Powder  
 Level: 13
@@ -4827,7 +4827,7 @@ Pic: Leader Roxanne
 Gender: Female
 Music: Female
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER 
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO 
 
 Corsola-Galar @ Sitrus Berry  
 Ability: Cursed Body  
@@ -4835,7 +4835,7 @@ Level: 14
 - Rock Tomb  
 - Will-O-Wisp  
 - Self-Destruct  
-- Curse  
+- Hex  
 
 Shuppet @ Eviolite  
 Ability: Insomnia  
@@ -4871,33 +4871,53 @@ Class: Leader
 Pic: Leader Brawly
 Gender: Male
 Music: Male
-Items: Super Potion / Super Potion
 Double Battle: No
-AI: Basic Trainer
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
-Machop
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Karate Chop
-- Low Kick
-- Seismic Toss
-- Bulk Up
+Sneasel-Hisui @ Muscle Band  
+Ability: Inner Focus  
+Level: 25   
+Adamant Nature  
+- Fake Out  
+- Poison Jab  
+- Brick Break  
+- Throat Chop
 
-Meditite
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Focus Punch
-- Light Screen
-- Reflect
-- Bulk Up
+Salazzle @ Black Sludge  
+Ability: Corrosion  
+Level: 25   
+Timid Nature   
+- Toxic  
+- Protect  
+- Venoshock  
+- Flame Burst
 
-Makuhita @ Sitrus Berry
-Level: 19
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Arm Thrust
-- Vital Throw
-- Reversal
-- Bulk Up
+Ledian @ Charti Berry  
+Ability: Iron Fist  
+Level: 26  
+Jolly Nature  
+- First Impression  
+- Drain Punch  
+- Bug Bite  
+- Thunder Punch
+
+Qwilfish-Hisui @ Leftovers  
+Ability: Intimidate  
+Level: 26   
+Sassy Nature  
+- Waterfall  
+- Aqua Jet  
+- Barb Barrage  
+- Throat Chop
+
+Araquanid @ Expert Belt  
+Ability: Water Bubble  
+Level: 27
+Adamant Nature  
+- Liquidation  
+- Leech Life  
+- Pounce  
+- Poison Jab
 
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
@@ -5293,7 +5313,7 @@ Pic: School Kid F
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Hattrem @ Eviolite  
 Ability: Magic Bounce  
@@ -6003,7 +6023,7 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Poochyena @ Oran Berry
 Level: 6
@@ -6029,7 +6049,7 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER 
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Vulpix @ Passho Berry  
 Ability: Flash Fire  
@@ -6056,7 +6076,7 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Meowth @ Normal Gem  
 Ability: Technician  
@@ -6135,7 +6155,7 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Yanma @ Bug Gem  
 Ability: Compound Eyes  
@@ -6355,7 +6375,7 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Lillipup @ Normal Gem  
 Ability: Pickup  
@@ -6476,7 +6496,7 @@ Pic: Fisherman
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Feebas @ Expert Belt  
 Ability: Adaptability  
@@ -8963,7 +8983,7 @@ Pic: Twins
 Gender: Male
 Music: Twins
 Double Battle: Yes
-AI: AI_FLAG_SMART_TRAINER 
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO 
 
 Murkrow @ Oran Berry  
 Ability: Super Luck  
@@ -10735,7 +10755,7 @@ Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER / AI_FLAG_ACE_POKEMON
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO / AI_FLAG_ACE_POKEMON
 
 Shuckle @ Oran Berry  
 Ability: Sturdy  
@@ -11045,7 +11065,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Beedrill @ Charti Berry  
 Ability: Sniper  
@@ -11091,7 +11111,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Beedrill @ Charti Berry  
 Ability: Sniper  
@@ -11227,7 +11247,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Beedrill @ Charti Berry  
 Ability: Sniper  
@@ -11270,7 +11290,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Kadabra @ Twisted Spoon  
 Ability: Synchronize  
@@ -11360,7 +11380,7 @@ Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER 
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO 
 
 Rockruff @ Hard Stone  
 Ability: Vital Spirit  
@@ -11398,7 +11418,7 @@ Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Combusken @ Charcoal  
 Ability: Blaze  
@@ -11604,7 +11624,7 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Wurmple @ Oran Berry  
 Ability: Shield Dust  
@@ -11636,7 +11656,7 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER 
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Beedrill @ Poison Barb  
 Ability: Swarm  
@@ -11662,7 +11682,7 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Weepinbell @ Iapapa Berry  
 Ability: Gluttony  
@@ -11736,7 +11756,7 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: AI_FLAG_SMART_TRAINER 
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO 
 
 Cottonee @ Kebia Berry  
 Ability: Prankster  
@@ -11938,7 +11958,7 @@ Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Carkol @ Passho Berry  
 Ability: Flash Fire  
@@ -13380,7 +13400,7 @@ Pic: Fisherman
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER 
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO 
 
 Tentacool  
 Ability: Clear Body  
@@ -14277,7 +14297,7 @@ Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER / AI_FLAG_RISKY 
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO / AI_FLAG_RISKY 
 
 Onix @ Berry Juice  
 Ability: Sturdy  
@@ -14303,7 +14323,7 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: AI_FLAG_SMART_TRAINER 
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Archen @ Oran Berry  
 Ability: Defeatist  
@@ -14582,7 +14602,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Combusken @ Muscle Band  
 Ability: Blaze  
@@ -14628,7 +14648,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Lopunny @ Toxic Orb  
 Ability: Cute Charm  

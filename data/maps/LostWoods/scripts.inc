@@ -30,12 +30,8 @@ LostWoodsAbsolBlockade::
 
 
 LostWoods_ObtainHonedge::
-# 26 "data/maps/LostWoods/scripts.pory"
-	lockall
-# 27 "data/maps/LostWoods/scripts.pory"
-	faceplayer
-# 28 "data/maps/LostWoods/scripts.pory"
-	goto_if_unset FLAG_LOST_WOODS_OBTAIN_HONEDGE_0x272, LostWoods_ObtainHonedge_2
+# 25 "data/maps/LostWoods/scripts.pory"
+	goto_if_set FLAG_BADGE04_GET, LostWoods_ObtainHonedge_2
 # 57 "data/maps/LostWoods/scripts.pory"
 	msgbox LostWoods_ObtainHonedge_Text_1, MSGBOX_DEFAULT
 LostWoods_ObtainHonedge_1:
@@ -46,14 +42,23 @@ LostWoods_ObtainHonedge_1:
 	end
 
 LostWoods_ObtainHonedge_2:
+# 26 "data/maps/LostWoods/scripts.pory"
+	lockall
+# 27 "data/maps/LostWoods/scripts.pory"
+	faceplayer
+# 28 "data/maps/LostWoods/scripts.pory"
+	goto_if_unset FLAG_LOST_WOODS_OBTAIN_HONEDGE_0x272, LostWoods_ObtainHonedge_5
+	goto LostWoods_ObtainHonedge_1
+
+LostWoods_ObtainHonedge_5:
 # 29 "data/maps/LostWoods/scripts.pory"
 	msgbox LostWoods_ObtainHonedge_Text_0, MSGBOX_YESNO
 # 30 "data/maps/LostWoods/scripts.pory"
 	compare VAR_RESULT, YES
-	goto_if_eq LostWoods_ObtainHonedge_5
+	goto_if_eq LostWoods_ObtainHonedge_7
 	goto LostWoods_ObtainHonedge_1
 
-LostWoods_ObtainHonedge_5:
+LostWoods_ObtainHonedge_7:
 # 31 "data/maps/LostWoods/scripts.pory"
 	playmoncry SPECIES_HONEDGE, CRY_MODE_ENCOUNTER
 # 32 "data/maps/LostWoods/scripts.pory"
@@ -68,32 +73,32 @@ LostWoods_ObtainHonedge_5:
 	specialvar VAR_RESULT, GetBattleOutcome
 # 37 "data/maps/LostWoods/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
-	goto_if_eq LostWoods_ObtainHonedge_7
+	goto_if_eq LostWoods_ObtainHonedge_9
 # 41 "data/maps/LostWoods/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
-	goto_if_eq LostWoods_ObtainHonedge_8
+	goto_if_eq LostWoods_ObtainHonedge_10
 # 45 "data/maps/LostWoods/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
-	goto_if_eq LostWoods_ObtainHonedge_9
+	goto_if_eq LostWoods_ObtainHonedge_11
 # 50 "data/maps/LostWoods/scripts.pory"
 	call Honedge_Unworthy
 	goto LostWoods_ObtainHonedge_1
 
-LostWoods_ObtainHonedge_7:
+LostWoods_ObtainHonedge_9:
 # 38 "data/maps/LostWoods/scripts.pory"
 	setflag FLAG_LOST_WOODS_OBTAIN_HONEDGE_0x272
 # 39 "data/maps/LostWoods/scripts.pory"
 	call Honedge_Won_Or_Caught
 	goto LostWoods_ObtainHonedge_1
 
-LostWoods_ObtainHonedge_8:
+LostWoods_ObtainHonedge_10:
 # 42 "data/maps/LostWoods/scripts.pory"
 	setflag FLAG_LOST_WOODS_OBTAIN_HONEDGE_0x272
 # 43 "data/maps/LostWoods/scripts.pory"
 	call Honedge_Won_Or_Caught
 	goto LostWoods_ObtainHonedge_1
 
-LostWoods_ObtainHonedge_9:
+LostWoods_ObtainHonedge_11:
 # 46 "data/maps/LostWoods/scripts.pory"
 	setflag FLAG_LOST_WOODS_OBTAIN_HONEDGE_0x272
 # 47 "data/maps/LostWoods/scripts.pory"
