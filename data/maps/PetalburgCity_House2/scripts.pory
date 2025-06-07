@@ -46,7 +46,8 @@ script Petalburg_City_Player_Has_Full_Party{
 	end
 }
 script Petalburg_City_Player_Receives_Egg{
-	random(5)
+	lockall
+	random(8)
 	if(var(VAR_RESULT) == 0){
 		giveegg(SPECIES_TOGEPI)
 		playfanfare(MUS_OBTAIN_ITEM)
@@ -81,6 +82,30 @@ script Petalburg_City_Player_Receives_Egg{
 	}
 	elif(var(VAR_RESULT) == 4){
 		giveegg(SPECIES_MUNCHLAX)
+		playfanfare(MUS_OBTAIN_ITEM)
+		msgbox(format("{PLAYER} received an egg!"), MSGBOX_DEFAULT)
+		waitmessage
+		waitfanfare
+		setflag(FLAG_BABY_POKEMON_PETALBURG_0x497)
+	}
+	elif(var(VAR_RESULT) == 5){
+		giveegg(SPECIES_PICHU)
+		playfanfare(MUS_OBTAIN_ITEM)
+		msgbox(format("{PLAYER} received an egg!"), MSGBOX_DEFAULT)
+		waitmessage
+		waitfanfare
+		setflag(FLAG_BABY_POKEMON_PETALBURG_0x497)
+	}
+	elif(var(VAR_RESULT) == 6){
+		giveegg(SPECIES_CHINGLING)
+		playfanfare(MUS_OBTAIN_ITEM)
+		msgbox(format("{PLAYER} received an egg!"), MSGBOX_DEFAULT)
+		waitmessage
+		waitfanfare
+		setflag(FLAG_BABY_POKEMON_PETALBURG_0x497)
+	}
+	elif(var(VAR_RESULT) == 7){
+		giveegg(SPECIES_TOXEL)
 		playfanfare(MUS_OBTAIN_ITEM)
 		msgbox(format("{PLAYER} received an egg!"), MSGBOX_DEFAULT)
 		waitmessage

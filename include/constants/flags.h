@@ -673,7 +673,7 @@
 #define FLAG_LOST_WOODS_OBTAIN_HONEDGE_0x272  0x272 // Unused Flag
 #define FLAG_LOST_WOODS_ITEM_DUSK_STONE_0x273  0x273 // Unused Flag
 #define FLAG_ENABLE_POKE_RIDER_0x274  0x274 // Unused Flag
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
+#define FLAG_ROUTE106_CLEAR_0x275  0x275 // Unused Flag
 #define FLAG_UNUSED_0x276  0x276 // Unused Flag
 #define FLAG_UNUSED_0x277  0x277 // Unused Flag
 #define FLAG_UNUSED_0x278  0x278 // Unused Flag
@@ -1227,8 +1227,8 @@
 #define FLAG_GOT_SHINY_CHARM_0x495                                  0x495 // Unused Flag
 #define FLAG_GOT_CATCHING_CHARM_0x496                               0x496 // Unused Flag
 #define FLAG_BABY_POKEMON_PETALBURG_0x497                           0x497 // Unused Flag
-#define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
+#define FLAG_DEXNAV_OBTAIN_0x498                                    0x498 // Unused Flag
+#define FLAG_DEXNAV_DETECTOR_MODE_0x499                             0x499 // Unused Flag
 #define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
 #define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
 #define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag

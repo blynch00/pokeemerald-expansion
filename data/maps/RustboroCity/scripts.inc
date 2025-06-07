@@ -2477,9 +2477,9 @@ RustboroCity_Text_BrendanMrBrineyHint:
 # 1239 "data/maps/RustboroCity/scripts.pory"
 	.string "I bet you didn't know this, since you\n"
 # 1240 "data/maps/RustboroCity/scripts.pory"
-	.string "just moved here, {PLAYER}, but\l"
+	.string "just moved here, {PLAYER}, but MR. BRINEY\l"
 # 1241 "data/maps/RustboroCity/scripts.pory"
-	.string "MR. BRINEY was once a great sailor.$"
+	.string " was once a great sailor.$"
 # 1242 "data/maps/RustboroCity/scripts.pory"
 
 # 1243 "data/maps/RustboroCity/scripts.pory"

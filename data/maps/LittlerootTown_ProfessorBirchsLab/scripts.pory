@@ -516,6 +516,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedex::
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex, MSGBOX_DEFAULT
 	call UpgradeNationalDex
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_ExplainDexNav, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_RIVAL, LittlerootTown_ProfessorBirchsLab_Movement_RivalApproachPlayer
 	waitmovement 0
@@ -711,7 +712,7 @@ LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon:
 
 LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival:
 	.string "PROF. BIRCH: The world is changing rapidly.\n"
-	.string "And with our local routes taken over, and\n"
+	.string "And with our local routes taken over, and\l"
 	.string "the increase in Grunt activities, it's\n"
 	.string "become harder and harder to study POKéMON.\p"
 	.string "However, if you raise this POKéMON well\n"
@@ -755,6 +756,12 @@ LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex:
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex:
 	.string "{PLAYER} received the POKéDEX!$"
 
+LittlerootTown_ProfessorBirchsLab_Text_ExplainDexNav:
+	.string "PROF. BIRCH: The DexNav is a new tool\n"
+	.string "designed to help you locate POKéMON!\p"
+	.string "Just search in any route for what's\n"
+	.string "around.$"
+
 LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
 	.string "PROF. BIRCH: The POKéDEX is a high-tech\n"
 	.string "tool that automatically makes a record\l"
@@ -762,12 +769,12 @@ LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
 	.string "My kid, {RIVAL}, goes everywhere\n"
 	.string "with it.\p"
 	.string "Whenever my kid catches a rare POKéMON\n"
-	.string "and records its data in the POKéDEX,\n"
-	.string "why, {RIVAL} looks for me while I'm out\n"
-	.string "doing fieldwork, and shows me.\p"
+	.string "and records its data in the POKéDEX,\l"
+	.string "why, {RIVAL} looks for me while I'm\l"
+	.string "out doing fieldwork, and shows me.\p"
 	.string "As we discover new POKéMON every day,\n"
-	.string "I have given you the upgraded form,\n"
-	.string "so you can continue to collect new \n"
+	.string "I have given you the upgraded form,\l"
+	.string "so you can continue to collect new \p"
 	.string "information to benefit all of Hoenn!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
@@ -1018,6 +1025,12 @@ script UpgradeNationalDex {
 	waitfanfare
 	setflag(FLAG_SYS_NATIONAL_DEX)
 	special(EnableNationalPokedex)
+	setflag(0x498)
+	setflag(0x499)
+	playfanfare(MUS_OBTAIN_ITEM)
+	msgbox(format("{PLAYER} obtained the DexNav!"), MSGBOX_DEFAULT)
+	waitfanfare
+	waitmessage
 	return
 }
 
@@ -1025,7 +1038,7 @@ script LittlerootTown_ProfessorBirchsLab_New_Aide{
 	faceplayer
 	lockall
 	if (!(flag(FLAG_SYS_NATIONAL_DEX) == TRUE)){
-		msgbox(format("Hello, {PLAYER}! I have something very interesting to give to you, so come see me if you ever obtain a Pokedex!"), MSGBOX_DEFAULT)
+		msgbox(format("Hello, {PLAYER}! I have something very interesting to give to you, so come see me if you ever obtain a POKéDEX!"), MSGBOX_DEFAULT)
 	}
 	else{
 		if(!(flag(FLAG_GOT_CATCHING_CHARM_0x496) == TRUE)){
@@ -1036,7 +1049,7 @@ script LittlerootTown_ProfessorBirchsLab_New_Aide{
 					playfanfare(MUS_OBTAIN_ITEM)
 					giveitem(ITEM_CATCHING_CHARM, [1])
 					waitfanfare
-					
+					setflag(FLAG_GOT_CATCHING_CHARM_0x496)
 				}
 				else{
 					msgbox(format("Understood. I'll have one waiting for you, if you decide you want it."), MSGBOX_DEFAULT)

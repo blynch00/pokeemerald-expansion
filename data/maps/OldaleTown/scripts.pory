@@ -34,10 +34,6 @@ OldaleTown_EventScript_TownSign::
 	msgbox OldaleTown_Text_TownSign, MSGBOX_SIGN
 	end
 
-OldaleTown_EventScript_Girl::
-	msgbox OldaleTown_Text_SavingMyProgress, MSGBOX_NPC
-	end
-
 OldaleTown_EventScript_MartEmployee::
 	lock
 	faceplayer
@@ -344,10 +340,7 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	walk_left
 	step_end
 
-OldaleTown_Text_SavingMyProgress:
-	.string "I want to go to Petalburg, but\n"
-	.string "the route is taken over. I guess\n"
-	.string "I'll have to wait here....$"
+
 
 OldaleTown_Text_IWorkAtPokemonMart:
 	.string "Hi!\n"
@@ -459,11 +452,11 @@ script OldaleTown__EventScript_GivePokeVial{
 	lockall
 	faceplayer
 	if(flag(FLAG_GOT_POKE_VIAL_0x493)){
-		msgbox(format("You can access the Poke Vial via the Key Items menu!"), MSGBOX_DEFAULT)
+		msgbox(format("You can access the POKéVIAL via the Key Items menu!"), MSGBOX_DEFAULT)
 	}
 
     else{
-		msgbox(format("Running back and forth to the Pokemon centers can be so annoying. Don't you agree?"), MSGBOX_YESNO)
+		msgbox(format("Running back and forth to POKéMON centers can be so annoying. Don't you agree?"), MSGBOX_YESNO)
 			if(var(VAR_RESULT) == YES){
 				call(OldaleTown_EventScript_ReceivePokeVial)
 				setflag(FLAG_GOT_POKE_VIAL_0x493)
@@ -481,7 +474,7 @@ script OldaleTown__EventScript_GivePokeVial{
 script OldaleTown_EventScript_ReceivePokeVial{
 	checkitem(ITEM_POKE_VIAL)
 	if(var(VAR_RESULT) == TRUE){
-		msgbox(format("Looks like you already have the Poke Vial."), MSGBOX_DEFAULT)
+		msgbox(format("Looks like you already have the POKéVIAL."), MSGBOX_DEFAULT)
 		setflag(FLAG_GOT_POKE_VIAL_0x493)
 	}
 	elif(var(VAR_RESULT) == FALSE){
@@ -489,4 +482,17 @@ script OldaleTown_EventScript_ReceivePokeVial{
 		giveitem(ITEM_POKE_VIAL, [1])
 	}
 	return
+}
+
+script OldaleTown_Text_SavingMyProgress{
+	lock
+	faceplayer
+	if(flag(FLAG_ROUTE102_GIFTS_0x267) == FALSE){
+		msgbox("I want to go to Petalburg, but the\nroute is taken over. I guess I'll \lhave to wait here...", MSGBOX_DEFAULT)	
+	}
+	else{
+		msgbox(format("Now I'm too lazy to walk all\n the way there..."), MSGBOX_DEFAULT)
+	}
+	release
+	end
 }

@@ -49,7 +49,7 @@ OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat:
 	.string "as you like, and it's all for free.\l"
 	.string "You never have to worry!\p"
 	.string "As it gets harder and harder to be\n"
-	.string "a trainer, I sure am glad to have \n"
+	.string "a trainer, I sure am glad to have \l"
 	.string "our local POKéMON CENTERS!$"
 
 OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable:
@@ -105,7 +105,7 @@ OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub:
 script OldaleTown_PokemonCenter_EventScript_Gentleman{
 	lockall
 	faceplayer
-	msgbox(format("My wife is lovely. She stands outside this building to give local trainers her healing item."), MSGBOX_DEFAULT)
+	msgbox(format("My wife is lovely. She stands outside this building to give local trainers her healing items."), MSGBOX_DEFAULT)
 	release
 	end
 }

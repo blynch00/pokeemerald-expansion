@@ -222,7 +222,7 @@ Taillow
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_PETALBURG_WOODS ===
+=== TRAINER_GRUNT_PETALBURG_WOODS ===  /* Petalburg Woods */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -240,9 +240,17 @@ Adamant Nature
 - Attract  
 - Assurance  
 
+Mareanie @ Black Sludge  
+Ability: Regenerator  
+Level: 13  
+Bold Nature   
+- Sludge Bomb  
+- Chilling Water  
+- Frost Breath
+
 Golbat @ Oran Berry  
 Ability: Inner Focus  
-Level: 12  
+Level: 13  
 Jolly Nature  
 - Poison Fang  
 - Pluck  
@@ -345,13 +353,23 @@ Modest Nature
 - Mud Shot  
 - Toxic  
 
+Nuzleaf @ Tanga Berry  
+Ability: Chlorophyll  
+Level: 16  
+Jolly Nature  
+- Fake Out  
+- Seed Bomb  
+- Rock Tomb  
+- Body Slam
+
 Arbok @ Poison Barb  
-Ability: Intimidate  
+Ability: Intimidate
+Adamant Nature  
 Level: 16  
 - Pursuit  
 - Bulldoze  
 - Poison Fang  
-- Snarl  
+- Dig  
 
 === TRAINER_GRUNT_WEATHER_INST_1 ===
 Name: GRUNT
@@ -2117,7 +2135,7 @@ Grumpig
 Level: 42
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_CINDY_1 ===
+=== TRAINER_CINDY_1 === /* Route 104 Pt 1 */
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -2534,7 +2552,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Glare
 - Crunch
 
-=== TRAINER_WINSTON_1 ===
+=== TRAINER_WINSTON_1 ===  /* Route 104 Pt 2 */
 Name: WINSTON
 Class: Rich Boy
 Pic: Rich Boy
@@ -2547,7 +2565,7 @@ Kricketune @ Silver Powder
 Level: 13
 Ability: Technician   
 Naive Nature  
-- Sing  
+- Cut  
 - Sticky Web  
 - Fury Cutter  
 - Aerial Ace
@@ -2558,9 +2576,9 @@ Ability: Simple
 Happiness: 100   
 Sassy Nature  
 - Aqua Jet  
-- Return  
+- Take Down  
 - Super Fang 
-- Defense Curl
+- Yawn
 
 
 === TRAINER_MOLLIE ===
@@ -4827,10 +4845,11 @@ Pic: Leader Roxanne
 Gender: Female
 Music: Female
 Double Battle: No
-AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO 
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO / AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE
 
 Corsola-Galar @ Sitrus Berry  
-Ability: Cursed Body  
+Ability: Cursed Body
+Relaxed Nature  
 Level: 14  
 - Rock Tomb  
 - Will-O-Wisp  
@@ -4844,7 +4863,7 @@ Bashful Nature
 - Pursuit  
 - Icy Wind  
 - Ominous Wind  
-- Facade  
+- Headbutt 
 
 Raticate @ Flame Orb  
 Ability: Guts  
@@ -4852,11 +4871,12 @@ Level: 16
 Naive Nature  
 - Quick Attack  
 - Headbutt 
-- Rock Smash  
-- Hyper Fang  
+- Rock Smash    
+- Bite
 
 Anorith @ Hard Stone  
 Ability: Swift Swim  
+Adamant Nature
 Level: 16  
 - Smack Down  
 - Aqua Jet  
@@ -5306,7 +5326,7 @@ Medicham
 Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_KAREN_1 ===
+=== TRAINER_KAREN_1 ===  /* Route 116 */
 Name: KAREN
 Class: School Kid
 Pic: School Kid F
@@ -6028,6 +6048,7 @@ AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 Poochyena @ Oran Berry
 Level: 6
 Ability: ABILITY_RATTLED
+Hasty Nature
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Tackle
 - Sand Attack
@@ -6040,9 +6061,9 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Covet
 - Sand Attack
 - Growl
-- Tail Whip
+- Headbutt
 
-=== TRAINER_BILLY ===
+=== TRAINER_BILLY === /* //Route 104 Pt 1 */
 Name: BILLY
 Class: Youngster
 Pic: Youngster
@@ -6065,7 +6086,7 @@ Ability: Simple
 Level: 9
 Quiet Nature  
 - Charge Beam  
-- Taunt  
+- Gust 
 - U-turn  
 - Confusion
 
@@ -6148,8 +6169,8 @@ Adamant Nature
 - Aerial Ace  
 - Reversal 
 
-=== TRAINER_JOEY ===
-Name: JOEY
+=== TRAINER_JOEY === /* Route 116 */
+Name: JOEY 
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -6157,11 +6178,10 @@ Music: Male
 Double Battle: No
 AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
-Yanma @ Bug Gem  
+Yanma @ Charti Berry  
 Ability: Compound Eyes  
 Level: 15  
-Timid Nature  
-IVs: 0 Atk  
+Timid Nature     
 - Air Cutter  
 - Sonic Boom  
 - Bug Buzz  
@@ -6379,6 +6399,7 @@ AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Lillipup @ Normal Gem  
 Ability: Pickup  
+Adamant Nature
 Level: 7  
 - Tackle  
 - Yawn  
@@ -6386,7 +6407,8 @@ Level: 7
 - Bite
 
 Taillow @ Silk Scarf  
-Ability: Guts  
+Ability: Guts
+Jolly Nature  
 Level: 8
 - Peck  
 - Quick Attack  
@@ -6489,7 +6511,7 @@ Magikarp
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_IVAN ===
+=== TRAINER_IVAN ===   /* Route 104 Pt 2 */
 Name: IVAN
 Class: Fisherman
 Pic: Fisherman
@@ -6507,18 +6529,19 @@ Modest Nature
 - Mud Shot  
 - Scale Shot
 
-Magikarp @ Choice Scarf 
+Magikarp @ Choice Specs 
 Level: 15 
+Timid Nature
 Ability: Swift Swim  
 - Hydro Pump
 
-Kabuto @ Oran Berry  
-Ability: Battle Armor  
-Level: 13   
+Omanyte @ Oran Berry  
+Ability: Shell Armor  
+Level: 13    
+Hardy Nature  
 - Rock Tomb  
-- Aerial Ace  
-- Confuse Ray  
-- Ancient Power
+- Ancient Power  
+- Bubble Beam  
 
 === TRAINER_CLAUDE ===
 Name: CLAUDE
@@ -8976,7 +8999,7 @@ Minun
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_GINA_AND_MIA_1 ===
+=== TRAINER_GINA_AND_MIA_1 === /* Route 104 */
 Name: GINA & MIA
 Class: Twins
 Pic: Twins
@@ -8988,11 +9011,11 @@ AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 Murkrow @ Oran Berry  
 Ability: Super Luck  
 Level: 14   
-Jolly Nature  
-- Lash Out  
+Quirky Nature  
+- Snarl  
 - Wing Attack  
 - Quick Attack  
-- Taunt
+- Icy Wind
 
 Diglett @ Hard Stone  
 Ability: Arena Trap 
@@ -9003,12 +9026,12 @@ Jolly Nature
 - Bulldoze  
 - Pursuit
 
-
 Minccino @ Eviolite  
 Ability: Technician  
 Level: 14  
 - Tail Slap  
 - Super Fang
+- Bullet Seed
 - Sing
 
 === TRAINER_MIU_AND_YUKI ===
@@ -11135,7 +11158,7 @@ Sealeo @ Chesto Berry
 Ability: Thick Fat  
 Level: 17    
 Sassy Nature  
-- Ice Beam  
+- Aurora Beam 
 - Toxic  
 - Rest  
 - Bulldoze  
@@ -11258,13 +11281,14 @@ Jolly Nature
 - Bug Bite  
 - Acrobatics  
 
-Miltank @ Silk Scarf  
-Ability: Sap Sipper  
-Level: 17   
-- Body Slam  
-- Wake-Up Slap  
-- Stealth Rock  
-- Milk Drink  
+Primeape @ Oran Berry
+Ability: Vital Spirit  
+Level: 16  
+Bashful Nature  
+- Low Kick  
+- Aerial Ace  
+- Rock Tomb  
+- Pursuit
 
 Marshtomp @ Eviolite  
 Ability: Torrent  
@@ -11299,14 +11323,14 @@ Naive Nature
 IVs: 31 HP / 0 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
 - Grass Knot  
 - Confusion  
-- Disable  
+- Shock Wave  
 - Hidden Power
 
 Sealeo @ Chesto Berry  
 Ability: Thick Fat  
 Level: 17  
 Sassy Nature  
-- Ice Beam  
+- Aurora Beam  
 - Toxic  
 - Rest  
 - Bulldoze  
@@ -11405,13 +11429,13 @@ Ability: Thick Fat
 Level: 8   
 Bashful Nature  
 - Covet  
-- Mud-Slap  
+- Tackle  
 - Stuff Cheeks  
 - Trailblaze  
 
 
 
-=== TRAINER_HALEY_1 ===
+=== TRAINER_HALEY_1 === /* Route 104 Pt 2 */
 Name: HALEY
 Class: Lass
 Pic: Lass
@@ -11432,11 +11456,10 @@ Adamant Nature
 Bayleef @ Miracle Seed  
 Level: 13 
 Ability: Overgrow  
-Rash Nature  
-IVs: 0 Atk  
-- Giga Drain  
+Quirky Nature    
+- Magical Leaf  
 - Draining Kiss  
-- Grass Whistle  
+- Poison Powder 
 
 Prinplup @ Mystic Water
 Level: 13   
@@ -11627,7 +11650,8 @@ Double Battle: No
 AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Wurmple @ Oran Berry  
-Ability: Shield Dust  
+Ability: Shield Dust 
+Adamant Nature 
 Level: 6  
 - Bug Bite  
 - String Shot  
@@ -11635,7 +11659,8 @@ Level: 6
 - Electroweb
 
 Pineco @ Black Belt
-Ability: Sturdy  
+Ability: Sturdy 
+Bold Nature 
 Level: 7   
 - Pounce  
 - Rock Smash  
@@ -11645,11 +11670,13 @@ Level: 7
 Drowzee @ Twisted Spoon  
 Ability: Inner Focus  
 Level: 8  
+IVs: 31 HP / 3 Atk / 31 Def / 31 SpA / 30 SpD / 30 Spe
+Naive Nature
 - Swift  
 - Confusion  
-- Taunt
+- Hidden Power
 
-=== TRAINER_LYLE ===
+=== TRAINER_LYLE === /* Petalburg Woods */
 Name: LYLE
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -11674,8 +11701,9 @@ Modest Nature
 - Gust  
 - Struggle Bug  
 - Bug Bite
+- Poison Powder
 
-=== TRAINER_JOSE ===
+=== TRAINER_JOSE === /* Route 116 */
 Name: JOSE
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -11694,7 +11722,7 @@ Modest Nature
 - Hidden Power
 
 Whirlipede @ Scope Lens  
-Ability: Poison Point  
+Ability: Speed Boost  
 Level: 15  
 Jolly Nature  
 - Pursuit  
@@ -11749,7 +11777,7 @@ Ninjask
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JAMES_1 ===
+=== TRAINER_JAMES_1 ===   /* Petalburg Woods */
 Name: JAMES
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -11778,7 +11806,7 @@ Naive Nature
 
 Togepi @ Eviolite  
 Ability: Serene Grace  
-Level: 13  
+Level: 14  
 Docile Nature  
 - Metronome
 
@@ -13393,7 +13421,7 @@ Zigzagoon @ Nugget
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DARIAN ===
+=== TRAINER_DARIAN === /* Route 104 Pt 1 */
 Name: DARIAN
 Class: Fisherman
 Pic: Fisherman
@@ -14290,7 +14318,7 @@ Spoink
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DEVAN ===
+=== TRAINER_DEVAN ===  /* Route 116 */
 Name: DEVAN
 Class: Hiker
 Pic: Hiker
@@ -14316,7 +14344,7 @@ Level: 15
 - Rock Tomb  
 - Covet
 
-=== TRAINER_JOHNSON ===
+=== TRAINER_JOHNSON === /* Route 116 */
 Name: JOHNSON
 Class: Youngster
 Pic: Youngster
@@ -14342,15 +14370,7 @@ Lax Nature
 - U-turn  
 - Rock Smash  
 
-Salandit (F) @ Poison Barb  
-Ability: Corrosion  
-Level: 16  
-- Toxic  
-- Fake Out  
-- Venoshock  
-- Ember  
-
-Carvanha @ Iron Ball  
+Carvanha @ Mystic Water  
 Ability: Rough Skin  
 Level: 15  
 Adamant Nature  
@@ -14604,6 +14624,15 @@ Music: Female
 Double Battle: No
 AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
+Lombre @ Wise Glasses  
+Ability: Own Tempo  
+Level: 17  
+Modest Nature  
+- Fake Out  
+- Giga Drain  
+- Knock Off  
+- Water Pulse  
+
 Combusken @ Muscle Band  
 Ability: Blaze  
 Level: 18  
@@ -14621,15 +14650,6 @@ Adamant Nature
 - Drain Punch  
 - Retaliate  
 - Brutal Swing  
-
-Lombre @ Wise Glasses  
-Ability: Own Tempo  
-Level: 17  
-Modest Nature  
-- Fake Out  
-- Giga Drain  
-- Knock Off  
-- Water Pulse  
 
 Dunsparce @ Sitrus Berry  
 Ability: Serene Grace  
@@ -14650,6 +14670,15 @@ Music: Female
 Double Battle: No
 AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
+Fletchinder @ Sharp Beak  
+Ability: Gale Wings  
+Level: 17    
+Jolly Nature  
+- Dual Wingbeat  
+- Will-O-Wisp  
+- Flame Charge  
+- U-turn 
+
 Lopunny @ Toxic Orb  
 Ability: Cute Charm  
 Level: 17   
@@ -14659,22 +14688,14 @@ Adamant Nature
 - Retaliate  
 - Brutal Swing  
 
-Fletchinder @ Sharp Beak  
-Ability: Gale Wings  
+Girafarig @ Sitrus Berry  
+Ability: Inner Focus  
 Level: 17    
-Jolly Nature  
-- Dual Wingbeat  
-- Will-O-Wisp  
-- Flame Charge  
-- Roost  
-
-Miltank @ Silk Scarf  
-Ability: Sap Sipper  
-Level: 17    
-- Body Slam  
-- Wake-Up Slap  
-- Stealth Rock  
-- Milk Drink  
+Quirky Nature   
+- Attract  
+- Round  
+- Confusion  
+- Grass Knot  
 
 Marshtomp @ Eviolite  
 Ability: Torrent  
@@ -15376,7 +15397,6 @@ Class: Leader
 Pic: Leader Flannery
 Gender: Female
 Music: Female
-Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 

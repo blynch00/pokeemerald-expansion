@@ -14102,7 +14102,7 @@ const struct Item  gItemsInfo[] =
 
     [ITEM_POKE_VIAL] =
     {
-        .name = _("Poke Vial"),
+        .name = _("PokéVial"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A portable Nurse\n"

@@ -2408,7 +2408,7 @@ Route104_EventScript_RewardGirl_Text_1:
 Route_104_GauntletBlockade_Message_Text_0:
 # 1186 "data/maps/Route104/scripts.pory"
 	.string "You feel unnerved looking at the\n"
-	.string "POKéDEX. It's best to not ask it to\l"
+	.string "POKéMON. It's best to not ask it to\l"
 	.string "move.$"
 
 Route104_Text_TrainerTipsDoubleBattles_Text_0:

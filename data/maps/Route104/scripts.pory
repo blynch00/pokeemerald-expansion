@@ -1183,7 +1183,7 @@ script Route104_EventScript_RewardGirl{
 
 script Route_104_GauntletBlockade_Message{
 	lockall
-	msgbox(format("You feel unnerved looking at the POKéDEX. It's best to not ask it to move."), MSGBOX_AUTOCLOSE)
+	msgbox(format("You feel unnerved looking at the POKéMON. It's best to not ask it to move."), MSGBOX_AUTOCLOSE)
 	releaseall
 	end
 }

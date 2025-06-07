@@ -943,8 +943,7 @@ LittlerootTown_Text_SwitchShoesWithRunningShoes:
 	.string "RUNNING SHOES.$"
 
 LittlerootTown_Text_TakeShinyCharm:
-	.string "{PLAYER} was given the Shiny Charm\n"
-	.string "from Mom!$"
+	.string "You should also take this, dear.$"
 
 LittlerootTown_Text_ExplainRunningShoes:
 	.string "MOM: {PLAYER}, those shoes came with\n"
@@ -956,13 +955,13 @@ LittlerootTown_Text_ExplainRunningShoes:
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "… … … … … … … …\p"
-	.string "Honestly, {PLAYER}, you grew up so \n"
-	.string "fast. Even though it may not be safe, \n"
+	.string "Honestly, {PLAYER}, you grew up so \l"
+	.string "fast. Even though it may not be safe,\n"
 	.string "to think that you have your very own\n"
-	.string "POKéMON now…\l"
+	.string "POKéMON now…\p"
 	.string "Your father will be overjoyed.\p"
 	.string "…But please be careful.\n"
-	.string "If anything happens, please come home.\p"
+	.string "If anything happens, please come home.\l"
 	.string "Go on, go get them, honey!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
