@@ -2211,17 +2211,15 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CINDY_2 ===
 Name: CINDY
-Class: Lady
-Pic: Lady
+Class: TRAINER_CLASS_RIVAL
+Pic: Leaf
 Gender: Female
 Music: Female
-Items: Full Restore
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
 Zigzagoon @ Nugget
 Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 - Tail Whip
 
@@ -6407,7 +6405,7 @@ Level: 7
 - Bite
 
 Taillow @ Silk Scarf  
-Ability: Guts
+Ability: Scrappy
 Jolly Nature  
 Level: 8
 - Peck  
@@ -11426,6 +11424,7 @@ Bold Nature
 
 Lechonk @ Oran Berry  
 Ability: Thick Fat  
+Shiny: Yes
 Level: 8   
 Bashful Nature  
 - Covet  
@@ -11685,18 +11684,18 @@ Music: Male
 Double Battle: No
 AI: AI_FLAG_SMART_TRAINER / AI_FLAG_TRY_TO_2HKO
 
-Beedrill @ Poison Barb  
+Dottler @ Oran Berry  
 Ability: Swarm  
-Level: 13  
-Docile Nature  
-- Rock Smash  
-- Aerial Ace  
+Level: 13   
+Relaxed Nature  
 - Struggle Bug  
-- Poison Sting
+- Psyshock  
+- Light Screen  
+- Future Sight
 
 Vivillon @ Sharp Beak  
 Ability: Shield Dust  
-Level: 13  
+Level: 12  
 Modest Nature  
 - Gust  
 - Struggle Bug  

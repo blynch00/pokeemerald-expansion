@@ -3,64 +3,109 @@ BeachCave2F_MapScripts::
 	.byte 0
 `
 
-script BeachCave2F_EventScript_SadCubone{
+// script BeachCave2F_EventScript_SadCubone{
+//     lockall
+//     showmonpic(SPECIES_CUBONE, 10, 3)
+//     msgbox(format("This Cubone is alone and afraid. It looks at you, wondering if you will take care of it.
+//     Do you accept?"), MSGBOX_YESNO)
+//     if(var(VAR_RESULT) == YES){
+//         givemon(SPECIES_CUBONE, 5, ITEM_THICK_CLUB)
+//         if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+//             playfanfare(MUS_OBTAIN_ITEM)
+//             msgbox("You got Cubone!")
+//             removeobject(1)
+//             setflag(FLAG_GIFT_BEACHCAVE_0x268)
+//             call(BeachCave_NicknamePartyMon)
+//         }
+//         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+//             playfanfare(MUS_OBTAIN_ITEM)
+//             msgbox("You got Cubone!")
+//             removeobject(1)
+//             setflag(FLAG_GIFT_BEACHCAVE_0x268)
+//             call(BeachCave_NicknameBoxMon)
+//         }
+//         else{
+//             hidemonpic
+//             msgbox("No more room.")
+//         }
+//     }
+//     else{
+//         hidemonpic
+//         msgbox(BeachCave2F_LeaveCubone)
+//     }
+//     waitmessage
+//     releaseall
+//     end
+// }
+
+// script BeachCave_NicknamePartyMon{
+//     msgbox("Give this Cubone a nickname?", MSGBOX_YESNO)
+//     hidemonpic
+//     if(var(VAR_RESULT) == YES){
+//         call(Common_EventScript_GetGiftMonPartySlot)
+//         call(Common_EventScript_NameReceivedPartyMon)
+//     }
+// }
+
+// script BeachCave_NicknameBoxMon{
+//     msgbox("Give this Cubone a nickname?", MSGBOX_YESNO)
+//     hidemonpic
+//     if(var(VAR_RESULT) == YES){
+//         call(Common_EventScript_NameReceivedBoxMon)
+//     }
+//     bufferspeciesname(STR_VAR_2, SPECIES_CUBONE)
+//     setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CUBONE)
+//     call(Common_EventScript_TransferredToPC)
+
+// }
+
+// text BeachCave2F_LeaveCubone{
+//     "You didn't take the Cubone."
+// }
+
+script BeachCave2F_AttackedByCubone{
     lockall
-    showmonpic(SPECIES_CUBONE, 10, 3)
-    msgbox(format("This Cubone is alone and afraid. It looks at you, wondering if you will take care of it.
-    Do you accept?"), MSGBOX_YESNO)
-    if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_CUBONE, 5, ITEM_THICK_CLUB)
-        if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
-            playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("You got Cubone!")
-            removeobject(1)
+    faceplayer
+    playmoncry(SPECIES_CUBONE, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_CUBONE, 5, ITEM_THICK_CLUB)
+    msgbox(format("The Cubone is scared, and lashes out at you in fear!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+        if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
             setflag(FLAG_GIFT_BEACHCAVE_0x268)
-            call(BeachCave_NicknamePartyMon)
+            call(BeachCave2F_Cubone_Caught)
+         }
+        elif(var(VAR_RESULT) == B_OUTCOME_WON){
+            setflag(FLAG_GIFT_BEACHCAVE_0x268)
+            call(BeachCave2F_Cubone_Disappeared)
         }
-        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
-            playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("You got Cubone!")
-            removeobject(1)
+        elif(var(VAR_RESULT) == B_OUTCOME_RAN){
             setflag(FLAG_GIFT_BEACHCAVE_0x268)
-            call(BeachCave_NicknameBoxMon)
+            call(BeachCave2F_Cubone_Disappeared)
         }
         else{
-            hidemonpic
-            msgbox("No more room.")
-        }
-    }
-    else{
-        hidemonpic
-        msgbox(BeachCave2F_LeaveCubone)
-    }
+            call(BeachCave2F_Cubone_Disappeared)
+            }
+}
+
+script BeachCave2F_Cubone_Caught{
+    playmoncry(SPECIES_CUBONE, CRY_MODE_ENCOUNTER)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1)
+    msgbox(format("Cubone has joined your party!"), MSGBOX_AUTOCLOSE)
     waitmessage
-    releaseall
-    end
+    fadescreen(FADE_FROM_BLACK)
+    return
 }
 
-script BeachCave_NicknamePartyMon{
-    msgbox("Give this Cubone a nickname?", MSGBOX_YESNO)
-    hidemonpic
-    if(var(VAR_RESULT) == YES){
-        call(Common_EventScript_GetGiftMonPartySlot)
-        call(Common_EventScript_NameReceivedPartyMon)
-    }
+script BeachCave2F_Cubone_Disappeared{
+    playmoncry(SPECIES_CUBONE, CRY_MODE_ENCOUNTER)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1)
+    msgbox(format("The Cubone disappeared into the back of the cave."), MSGBOX_AUTOCLOSE)
+    waitmessage
+    fadescreen(FADE_FROM_BLACK)
+    return
 }
-
-script BeachCave_NicknameBoxMon{
-    msgbox("Give this Cubone a nickname?", MSGBOX_YESNO)
-    hidemonpic
-    if(var(VAR_RESULT) == YES){
-        call(Common_EventScript_NameReceivedBoxMon)
-    }
-    bufferspeciesname(STR_VAR_2, SPECIES_CUBONE)
-    setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CUBONE)
-    call(Common_EventScript_TransferredToPC)
-
-}
-
-text BeachCave2F_LeaveCubone{
-    "You didn't take the Cubone."
-}
-
-    

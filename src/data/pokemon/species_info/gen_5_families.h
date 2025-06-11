@@ -4089,12 +4089,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_PETILIL
     [SPECIES_PETILIL] =
     {
-        .baseHP        = 45,
+        .baseHP        = 75,
         .baseAttack    = 35,
-        .baseDefense   = 50,
-        .baseSpeed     = 30,
+        .baseDefense   = 70,
+        .baseSpeed     = 65,
         .baseSpAttack  = 70,
-        .baseSpDefense = 50,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 190,
         .expYield = 56,
@@ -4163,12 +4163,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 
     [SPECIES_LILLIGANT] =
     {
-        .baseHP        = 70,
+        .baseHP        = 85,
         .baseAttack    = 60,
-        .baseDefense   = 75,
-        .baseSpeed     = 90,
+        .baseDefense   = 90,
+        .baseSpeed     = 105,
         .baseSpAttack  = 110,
-        .baseSpDefense = 75,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FAIRY),
         .catchRate = 75,
         .expYield = 168,
@@ -4234,12 +4234,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_HISUIAN_FORMS
     [SPECIES_LILLIGANT_HISUI] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 105,
-        .baseDefense   = 75,
+        .baseHP        = 85,
+        .baseAttack    = 110,
+        .baseDefense   = 90,
         .baseSpeed     = 105,
         .baseSpAttack  = 50,
-        .baseSpDefense = 75,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FIGHTING),
         .catchRate = 75,
         .expYield = 168,
@@ -4305,12 +4305,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_BASCULIN
     [SPECIES_BASCULIN_RED_STRIPED] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 70,
+        .baseHP        = 65,
+        .baseAttack    = 80,
         .baseDefense   = 55,
-        .baseSpeed     = 65,
+        .baseSpeed     = 80,
         .baseSpAttack  = 50,
-        .baseSpDefense = 50,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 190,
         .expYield = 161,
@@ -4374,12 +4374,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 
     [SPECIES_BASCULIN_BLUE_STRIPED] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 70,
+        .baseHP        = 65,
+        .baseAttack    = 80,
         .baseDefense   = 55,
-        .baseSpeed     = 65,
+        .baseSpeed     = 80,
         .baseSpAttack  = 50,
-        .baseSpDefense = 50,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 190,
         .expYield = 161,
@@ -4444,12 +4444,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_HISUIAN_FORMS
     [SPECIES_BASCULIN_WHITE_STRIPED] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 70,
+        .baseHP        = 65,
+        .baseAttack    = 80,
         .baseDefense   = 55,
-        .baseSpeed     = 65,
+        .baseSpeed     = 80,
         .baseSpAttack  = 50,
-        .baseSpDefense = 50,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 190,
         .expYield = 161,
@@ -4513,11 +4513,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 
     [SPECIES_BASCULEGION_M] =
     {
-        .baseHP        = 120,
-        .baseAttack    = 112,
-        .baseDefense   = 65,
-        .baseSpeed     = 78,
-        .baseSpAttack  = 80,
+        .baseHP        = 110,
+        .baseAttack    = 105,
+        .baseDefense   = 75,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 105,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_WATER, TYPE_GHOST),
         .catchRate = 45,
@@ -4578,11 +4578,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 
     [SPECIES_BASCULEGION_F] =
     {
-        .baseHP        = 120,
-        .baseAttack    = 112,
-        .baseDefense   = 65,
-        .baseSpeed     = 78,
-        .baseSpAttack  = 80,
+        .baseHP        = 110,
+        .baseAttack    = 105,
+        .baseDefense   = 75,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 105,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_WATER, TYPE_GHOST),
         .catchRate = 45,

@@ -1846,7 +1846,7 @@
               {
                 "min_level": 6,
                 "max_level": 6,
-                "species": "SPECIES_TAROUNTULA"
+                "species": "SPECIES_FOONGUS"
               },
               {
                 "min_level": 5,
@@ -9040,22 +9040,22 @@
               {
                 "min_level": 10,
                 "max_level": 20,
-                "species": "SPECIES_MARILL"
+                "species": "SPECIES_DONDOZO"
               },
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_MARILL"
+                "species": "SPECIES_TATSUGIRI"
               },
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_MARILL"
+                "species": "SPECIES_TATSUGIRI"
               },
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_MARILL"
+                "species": "SPECIES_TATSUGIRI"
               }
             ]
           },
@@ -11650,7 +11650,7 @@
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_BASCULIN"
+                "species": "SPECIES_LAPRAS"
               },
               {
                 "min_level": 25,

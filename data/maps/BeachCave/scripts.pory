@@ -1,0 +1,14 @@
+raw `
+BeachCave_MapScripts::
+	.byte 0
+
+`
+
+script BeachCaveLeafTest{
+    lockall
+    faceplayer
+    msgbox(format("Lets battle!"), MSGBOX_DEFAULT)
+    trainerbattle_single(TRAINER_CINDY_2, Route102_Text_RickIntro, Route102_Text_RickDefeated)
+    release
+    end
+}

@@ -955,9 +955,9 @@ LittlerootTown_Text_ExplainRunningShoes:
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "… … … … … … … …\p"
-	.string "Honestly, {PLAYER}, you grew up so \l"
-	.string "fast. Even though it may not be safe,\n"
-	.string "to think that you have your very own\n"
+	.string "Honestly, {PLAYER}, you grew up so fast.\l"
+	.string "Even though it may not be safe, to\n"
+	.string "think that you have your very own\l"
 	.string "POKéMON now…\p"
 	.string "Your father will be overjoyed.\p"
 	.string "…But please be careful.\n"

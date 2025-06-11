@@ -880,3 +880,27 @@ PlayersHouse_1F_Text_StillUnknownPokemon:
 	.string "MOM: Well, isn't that something!\n"
 # 441 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	.string "There are still unknown POKéMON.$"
+
+BrendanHouse_Mime::
+# 446 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+	lock
+# 447 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+	faceplayer
+# 448 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+	playmoncry SPECIES_MR_MIME, CRY_MODE_ENCOUNTER
+# 449 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+	waitmoncry
+# 450 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+	msgbox BrendanHouse_Mime_Text_0, MSGBOX_DEFAULT
+# 451 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+	turnobject 8, DIR_NORTH
+# 452 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+	waitmessage
+# 453 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+	release
+	end
+
+
+BrendanHouse_Mime_Text_0:
+# 450 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+	.string "Mr. Mime is cleaning the windows!$"

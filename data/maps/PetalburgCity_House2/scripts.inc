@@ -77,7 +77,7 @@ Petalburg_City_Player_Receives_Egg::
 # 49 "data/maps/PetalburgCity_House2/scripts.pory"
 	lockall
 # 50 "data/maps/PetalburgCity_House2/scripts.pory"
-	random 8
+	random 9
 # 51 "data/maps/PetalburgCity_House2/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Petalburg_City_Player_Receives_Egg_2
@@ -102,16 +102,19 @@ Petalburg_City_Player_Receives_Egg::
 # 107 "data/maps/PetalburgCity_House2/scripts.pory"
 	compare VAR_RESULT, 7
 	goto_if_eq Petalburg_City_Player_Receives_Egg_9
-# 116 "data/maps/PetalburgCity_House2/scripts.pory"
+# 115 "data/maps/PetalburgCity_House2/scripts.pory"
+	compare VAR_RESULT, 8
+	goto_if_eq Petalburg_City_Player_Receives_Egg_10
+# 124 "data/maps/PetalburgCity_House2/scripts.pory"
 	msgbox Petalburg_City_Player_Receives_Egg_Text_1, MSGBOX_DEFAULT
 Petalburg_City_Player_Receives_Egg_1:
-# 118 "data/maps/PetalburgCity_House2/scripts.pory"
+# 126 "data/maps/PetalburgCity_House2/scripts.pory"
 	release
 	end
 
 Petalburg_City_Player_Receives_Egg_2:
 # 52 "data/maps/PetalburgCity_House2/scripts.pory"
-	giveegg SPECIES_TOGEPI
+	giveegg SPECIES_MUNCHLAX
 # 53 "data/maps/PetalburgCity_House2/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 54 "data/maps/PetalburgCity_House2/scripts.pory"
@@ -126,7 +129,7 @@ Petalburg_City_Player_Receives_Egg_2:
 
 Petalburg_City_Player_Receives_Egg_3:
 # 60 "data/maps/PetalburgCity_House2/scripts.pory"
-	giveegg SPECIES_SMOOCHUM
+	giveegg SPECIES_CHINGLING
 # 61 "data/maps/PetalburgCity_House2/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 62 "data/maps/PetalburgCity_House2/scripts.pory"
@@ -141,7 +144,7 @@ Petalburg_City_Player_Receives_Egg_3:
 
 Petalburg_City_Player_Receives_Egg_4:
 # 68 "data/maps/PetalburgCity_House2/scripts.pory"
-	giveegg SPECIES_MAGBY
+	giveegg SPECIES_SIZZLIPEDE
 # 69 "data/maps/PetalburgCity_House2/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 70 "data/maps/PetalburgCity_House2/scripts.pory"
@@ -156,7 +159,7 @@ Petalburg_City_Player_Receives_Egg_4:
 
 Petalburg_City_Player_Receives_Egg_5:
 # 76 "data/maps/PetalburgCity_House2/scripts.pory"
-	giveegg SPECIES_ELEKID
+	giveegg SPECIES_DRIFLOON
 # 77 "data/maps/PetalburgCity_House2/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 78 "data/maps/PetalburgCity_House2/scripts.pory"
@@ -171,7 +174,7 @@ Petalburg_City_Player_Receives_Egg_5:
 
 Petalburg_City_Player_Receives_Egg_6:
 # 84 "data/maps/PetalburgCity_House2/scripts.pory"
-	giveegg SPECIES_MUNCHLAX
+	giveegg SPECIES_SNOM
 # 85 "data/maps/PetalburgCity_House2/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 86 "data/maps/PetalburgCity_House2/scripts.pory"
@@ -201,7 +204,7 @@ Petalburg_City_Player_Receives_Egg_7:
 
 Petalburg_City_Player_Receives_Egg_8:
 # 100 "data/maps/PetalburgCity_House2/scripts.pory"
-	giveegg SPECIES_CHINGLING
+	giveegg SPECIES_CLEFFA
 # 101 "data/maps/PetalburgCity_House2/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 102 "data/maps/PetalburgCity_House2/scripts.pory"
@@ -216,7 +219,7 @@ Petalburg_City_Player_Receives_Egg_8:
 
 Petalburg_City_Player_Receives_Egg_9:
 # 108 "data/maps/PetalburgCity_House2/scripts.pory"
-	giveegg SPECIES_TOXEL
+	giveegg SPECIES_IGGLYBUFF
 # 109 "data/maps/PetalburgCity_House2/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 110 "data/maps/PetalburgCity_House2/scripts.pory"
@@ -229,12 +232,27 @@ Petalburg_City_Player_Receives_Egg_9:
 	setflag FLAG_BABY_POKEMON_PETALBURG_0x497
 	goto Petalburg_City_Player_Receives_Egg_1
 
+Petalburg_City_Player_Receives_Egg_10:
+# 116 "data/maps/PetalburgCity_House2/scripts.pory"
+	giveegg SPECIES_MAGIKARP
+# 117 "data/maps/PetalburgCity_House2/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 118 "data/maps/PetalburgCity_House2/scripts.pory"
+	msgbox Petalburg_City_Player_Receives_Egg_Text_0, MSGBOX_DEFAULT
+# 119 "data/maps/PetalburgCity_House2/scripts.pory"
+	waitmessage
+# 120 "data/maps/PetalburgCity_House2/scripts.pory"
+	waitfanfare
+# 121 "data/maps/PetalburgCity_House2/scripts.pory"
+	setflag FLAG_BABY_POKEMON_PETALBURG_0x497
+	goto Petalburg_City_Player_Receives_Egg_1
+
 
 PetalburgCity_House2_EventScript_SchoolKid_Text_0:
 # 23 "data/maps/PetalburgCity_House2/scripts.pory"
-	.string "Well, I had planned on hatching this\n"
-	.string "egg, but it just doesn't seem to want to\l"
-	.string "come out. Would you like it?$"
+	.string "I got this egg from the Trainer\n"
+	.string "School, but I already have a full\l"
+	.string "party. Do you want it instead?$"
 
 PetalburgCity_House2_EventScript_SchoolKid_Text_1:
 # 31 "data/maps/PetalburgCity_House2/scripts.pory"
@@ -243,9 +261,8 @@ PetalburgCity_House2_EventScript_SchoolKid_Text_1:
 
 PetalburgCity_House2_EventScript_SchoolKid_Text_2:
 # 37 "data/maps/PetalburgCity_House2/scripts.pory"
-	.string "Hey there! Hope that POKéMON is\n"
-	.string "treated well, and you form an\l"
-	.string "inexplicable bond together.$"
+	.string "Hey there! Hope that POKéMON is helping\n"
+	.string "you out!$"
 
 Petalburg_City_Player_Has_Full_Party_Text_0:
 # 44 "data/maps/PetalburgCity_House2/scripts.pory"
@@ -257,5 +274,5 @@ Petalburg_City_Player_Receives_Egg_Text_0:
 	.string "{PLAYER} received an egg!$"
 
 Petalburg_City_Player_Receives_Egg_Text_1:
-# 116 "data/maps/PetalburgCity_House2/scripts.pory"
+# 124 "data/maps/PetalburgCity_House2/scripts.pory"
 	.string "ERROR: NUM OUTSIDE RANGE$"

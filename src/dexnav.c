@@ -1939,6 +1939,7 @@ static void DexNavLoadEncounterData(void)
     u16 headerId = GetCurrentMapWildMonHeaderId();
     const struct WildPokemonInfo* landMonsInfo = gWildMonHeaders[headerId].landMonsInfo;
     const struct WildPokemonInfo* waterMonsInfo = gWildMonHeaders[headerId].waterMonsInfo;
+    // const struct WildPokemonInfo* fishingMonsInfo = gWildMonHeaders[headerId].fishingMonsInfo;
     const struct WildPokemonInfo* hiddenMonsInfo = gWildMonHeaders[headerId].hiddenMonsInfo;
 
     // nop struct data

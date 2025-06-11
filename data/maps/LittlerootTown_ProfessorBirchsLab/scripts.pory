@@ -711,10 +711,10 @@ LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon:
 	.string "give a nickname to that {STR_VAR_1}?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival:
-	.string "PROF. BIRCH: The world is changing rapidly.\n"
-	.string "And with our local routes taken over, and\l"
-	.string "the increase in Grunt activities, it's\n"
-	.string "become harder and harder to study POKéMON.\p"
+	.string "PROF. BIRCH: The world is changing.\n"
+	.string "And with our local routes taken over,\l"
+	.string "and the increase in Grunt activities,\l"
+	.string "it's become harder to study POKéMON.\p"
 	.string "However, if you raise this POKéMON well\n"
 	.string "and gain experience, I think you'll make\l"
 	.string "an extremely good TRAINER.\p"

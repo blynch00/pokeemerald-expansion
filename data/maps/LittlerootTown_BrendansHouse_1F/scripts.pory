@@ -441,3 +441,15 @@ PlayersHouse_1F_Text_StillUnknownPokemon:
 	.string "There are still unknown POKéMON.$"
 
 `
+
+script BrendanHouse_Mime{
+	lock
+	faceplayer
+	playmoncry(SPECIES_MR_MIME, CRY_MODE_ENCOUNTER)
+	waitmoncry
+	msgbox(format("Mr. Mime is cleaning the windows!"), MSGBOX_DEFAULT)
+	turnobject( 8, DIR_NORTH)
+	waitmessage
+	release
+	end
+}
